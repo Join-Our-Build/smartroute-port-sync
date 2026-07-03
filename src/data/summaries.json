@@ -1,0 +1,898 @@
+{
+  "JOB-1427": {
+    "type": "epic",
+    "summary": "Umbrella refresh of the Clients list and profile pages so SmartRoute reads like a real service-business SaaS instead of a bare CRUD, benchmarked against SimplePractice. Bundles foundation work (business-type vocab, custom-field visibility), list-page changes (Create button restyle, merchant-configurable Profile column, filter menu, date range), and profile-page changes (custom fields display, notes sidebar card) into a coordinated design pass anchored to a locked HTML spec."
+  },
+  "JOB-1367": {
+    "type": "epic",
+    "summary": "Umbrella to rebuild the Calendar-page onboarding checklist as a two-surface system: a full-page inline-expand accordion for first-time setup (zero appointments) and a thin banner that links out to canonical settings pages for returning users (1+ appointments). Owns the shell/wrapper behavior for 10-11 child cards, plus round-trip parity so completion state stays in sync whether merchants finish steps inline or via settings. Kills the current \"click card, leave to settings, come back\" loop that breaks the mental model twice per step."
+  },
+  "JOB-1599": {
+    "type": "epic",
+    "summary": "Parent epic bundling two platform-agnostic lead magnets (an impossible-booking CSV audit for mid-funnel email capture, then a viral browser game for top-of-funnel awareness) that funnel mobile service merchants on Vagaro/Booksy/Square into SmartRoute trials. Ship-sequenced Audit-first so email\u2192trial conversion validates the channel before investing in the higher-scope Game. Deliberately avoids depending on any specific API partnership since the first integration partner is still TBD."
+  },
+  "JOB-1417": {
+    "type": "epic",
+    "summary": "Three-phase rollout of Attio as the CRM system of record: pipe inbound sales-form leads in first (JOB-880), then sync onboarding signups with subscriber/lead lifecycle gating (JOB-906), then layer behavioral PQL triggers that promote subscribers to leads based on in-app usage (JOB-907). Establishes the lifecycle-stage plumbing needed before marketing automation and PQL scoring can run."
+  },
+  "JOB-1419": {
+    "type": "epic",
+    "summary": "Pre-launch umbrella bundling the marketing site rebuild, brand visuals across customer surfaces, SPF/DMARC email auth, cold-outreach infrastructure (domains, inboxes, Instantly warming), and a clinic-language audit across help docs and emails. Groups five child tickets so external presence and outbound sending are launch-ready together."
+  },
+  "JOB-1378": {
+    "type": "epic",
+    "summary": "Umbrella epic to overhaul SmartRoute's first-run onboarding so users land with sensible defaults and understand what they just configured. Currently tracks the accordion redesign (JOB-1367) that replaces the wizard-style \"few quick questions\" page with a grouped, skippable, persistent surface, and coordinates with the Settings configuration UX workstream on the shared BusinessTypeSelector component."
+  },
+  "JOB-1595": {
+    "type": "epic",
+    "summary": "Contingency plan to pivot SmartRoute from a routing layer into a full standalone booking platform (Vagaro/Booksy parity: service payments, consumer marketplace, marketing automation, partner API, CRM) if all upstream integration paths dead-end. Stays dormant until Vagaro/Booksy both decline API access, Square/Acuity fail to drive merchant acquisition, and partial-fit outreach closes empty. Captured now so the strategic fork and rough scope aren't re-derived later."
+  },
+  "JOB-543": {
+    "type": "epic",
+    "summary": "Post-booking management epic covering the customer-facing cancel and reschedule flows that follow JOB-500's booking page. Requires new company-level cancellation policy settings (window hours, fee amount), late-cancel fee charging via Stripe, and cascading status/time updates into SmartRoute's internal calendar and sessions, which the current admin cancel path and reschedule API don't handle."
+  },
+  "JOB-1401": {
+    "type": "epic",
+    "summary": "Umbrella epic indexing the MVP transactional notification surface for booking lifecycle events across customer, merchant, and team recipients on email and SMS. Coordinates child tickets covering customer confirmations/reminders, merchant new-booking and cancel/reschedule/no-show alerts, clinician schedule sync, and the 3-sender email domain architecture, with a shared recipient\u00d7event matrix as source of truth."
+  },
+  "JOB-1413": {
+    "type": "epic",
+    "summary": "Tracking epic bundling the MVP pricing, billing, and retention surface: 4-tier pricing reconciliation across Stripe/marketing/in-app, no-CC 14-day trial with lapse emails, upgrade/downgrade flows with Stripe proration, at-capacity UX, seat-cap enforcement, and Stripe Connect + Klaviyo verifications. Gates launch since none of the paid conversion or retention flows work end-to-end until these children ship."
+  },
+  "JOB-1519": {
+    "type": "epic",
+    "summary": "MVP epic bundling the launch-blocking work for SmartRoute's multi-location, service-area, and mobile-delivery flows across booking, settings, checkout, and admin surfaces. Current children cover the customer service-area checkout gate with admin soft-override (JOB-720) and the per-merchant toggle for which mobile sub-modes are offered (JOB-1513); post-MVP polish is deferred to sibling epic JOB-1415."
+  },
+  "JOB-1468": {
+    "type": "epic",
+    "summary": "Unifies the admin Calendar's 8 no-shift states (empty, partial coverage, off-shift, outside hours, time-off, plus inline shift creation) into one inline-warning shell modeled on SimplePractice, replacing today's locked fields and modal CTAs. Locks design decisions like always-visible providers, Date staying live in Any-Available, and a \"Schedule\" verb across entry points, and parents ~12 child tickets (JOB-1411, 1394, 680, 569, 1467, etc.) as the workstream map."
+  },
+  "JOB-1399": {
+    "type": "epic",
+    "summary": "Splits the monolithic /settings/notifications page into a collapsible sidebar group with sub-pages (Channels, Customer events, Templates, Compliance) mirroring the Company IA pattern. Establishes locked decisions for platform-managed SMS on the shared Twilio number, per-merchant editable templates with content-filter guardrails, and a five-layer defense-in-depth model to protect SmartRoute's shared A2P brand reputation."
+  },
+  "JOB-1380": {
+    "type": "epic",
+    "summary": "Audit epic covering every Settings page that reuses onboarding components, since the reused copy still reads as first-contact (\"What kind of business do you run?\") and doesn't warn users about destructive re-configuration. Coordinates child audits across Business Type, Company Info, Services, Locations, Team, Cancellation, Stripe, and Booking publish against five lenses (visual QA, design system, intent/IA, destructive-op safety, a11y). Paired with JOB-1378 onboarding UX since components are shared."
+  },
+  "JOB-1418": {
+    "type": "epic",
+    "summary": "Groups four child tickets hardening the Google routing pipeline: regional fallback plus cache infrastructure, retry/safe-failure on transient errors, a post-MVP self-hosted OSRM path, and per-tier API cost telemetry with budget alerts. Goal is to keep drive-time lookups reliable under Google outages while capping runaway API spend as usage scales."
+  },
+  "JOB-1416": {
+    "type": "epic",
+    "summary": "Umbrella tracking issue bundling five provider-side scheduling primitives: time-off blocks (JOB-617), break/lunch windows (JOB-679), single-date schedule exceptions (JOB-680), individual provider logins with self-service (JOB-684), and override protection against accidental 'requested provider' assignments (JOB-581). Closes gaps that currently force admins to manage every provider's availability by hand and risk mis-booking overrides."
+  },
+  "JOB-1647": {
+    "type": "feature",
+    "summary": "Adds a warm cream, collapsible sticky-note banner (one per client) between the meta row and note editor on the client profile, with expand/collapse, edit-in-place, and inline delete confirmation. Enforces one-sticky-per-client at the data layer, sanitizes rich text (strips scripts/images/non-standard links), and shows creation metadata in the account's business timezone. Ships rendering, edit, and delete only; the pin/unpin affordance and companion UI live in separate tickets."
+  },
+  "JOB-1650": {
+    "type": "quick-win",
+    "summary": "Trim the client-profile \"no appointments\" yellow alert copy to \"No appointments scheduled. Schedule more\" (drop the \"or mark client inactive\" nudge) and lock its design tokens (background #fef8d9, border #efe0a3, text #78350f, 8px 14px padding, 14px font) so it renders as a thin single-line notice matching the rest of the profile chrome. Copy + styling only, no behavior changes."
+  },
+  "JOB-1643": {
+    "type": "feature",
+    "summary": "Introduces an Adult/Minor client type with DOB handling that auto-transitions Minors to Adult at 18 on read, and standardizes the client profile sub-header (gray type pill, Phone, DOB with age, Next date, Edit link) while dropping the Active green pill. Also adds a Type column to the Clients list and a Birthday row to the sidebar, with stricter DOB validation for Minors."
+  },
+  "JOB-1634": {
+    "type": "bug",
+    "summary": "Client profile's \"Next Appt\" header and \"Upcoming appointments\" sidebar filter by date-only, so appointments that already finished earlier today keep showing as upcoming until midnight. Fix requires switching to a datetime comparison (start_time > now(), timezone-aware) and auditing other \"next/upcoming\" surfaces for the same bug. High priority because every client profile shows misleading info during evening reschedule calls and end-of-day review."
+  },
+  "JOB-1633": {
+    "type": "regression",
+    "summary": "Three regressions on the client profile timeline: WYSIWYG notes render raw `<p>` HTML tags as literal text, Note entries use smaller typography than Appointment entries, and the editor doesn't clear after saving or pinning (forcing manual delete and risking duplicate submissions). Makes the notes feature look broken on every client profile."
+  },
+  "JOB-1400": {
+    "type": "feature",
+    "summary": "Adds merchant-facing transactional emails for four booking lifecycle events (customer cancel, customer reschedule, no-show, provider cancel) that today only notify the customer, gated by /settings/notifications prefs and sent to owner + assigned provider deduped. Provider-cancel is the priority since silent-swap reassignment currently gives merchants zero signal until they scan the Auto-Changes Log. SMS variants are carved out to JOB-1482."
+  },
+  "JOB-1532": {
+    "type": "bug",
+    "summary": "Cold loads of /calendar paint in three cascading frames \u2014 app shell alone (footer floats up under the search bar), then chrome/toolbar, then the grid \u2014 instead of arriving as a coherent skeleton. Fix requires a skeleton in the grid's final layout position plus first-paint placeholders for the trial/income cluster so the footer stays pinned to the viewport bottom."
+  },
+  "JOB-1636": {
+    "type": "regression",
+    "summary": "Client profile note editor shows optimistic success when admins click \"+ Add Note\" but never writes to the database, so notes vanish on refresh or navigation. Silent data loss on a trust-critical surface; blocks JOB-1631 (appointment modal notes wiring) and JOB-1632 (past-session note linking)."
+  },
+  "JOB-1631": {
+    "type": "launch-blocker",
+    "summary": "Converts Date, Start/End Time, and Duration in the appointment edit modal into borderless read-only text so admins can't silently bypass the JOB-1615 reschedule flow (which handles drive-time, notifications, and chain links). Also deletes the vestigial Memo stub, wires Notes to appointments.notes, keeps Services editable with non-blocking overlap warnings, and hides service affordances on terminal statuses. Blocks JOB-1615 shipping \u2014 the sanctioned reschedule architecture is bypassable until these fields are locked."
+  },
+  "JOB-1646": {
+    "type": "quick-win",
+    "summary": "Adds an amber empty-state banner below the client profile sub-header when the client has zero upcoming appointments, with an inline \"Schedule appointment\" link that opens the New appointment flow pre-selected to that client. Turns a silent profile into an active nudge so merchants rebook lapsed clients instead of missing them."
+  },
+  "JOB-1645": {
+    "type": "improvement",
+    "summary": "Strip the Client status UI (Active pill on profile sub-header, Status column and filter chip on the Clients list, Status dropdown and info panel on the Create/Edit form) since every merchant only has Active clients today, making the surface pure theater. DB enum stays untouched so JOB-1644's Notify-me lead capture can reintroduce the pill once real Prospective clients exist."
+  },
+  "JOB-1632": {
+    "type": "feature",
+    "summary": "Makes the past-note date chips in the appointment edit modal clickable, deep-linking to the client profile timeline and auto-scrolling/pulse-highlighting the referenced note. Shows the two most recent past appointments with non-empty notes plus a \"Show all\" link, giving admins one-click access to session history without leaving the current appointment context. Bridge feature until the dedicated per-note detail page (JOB-1635) ships."
+  },
+  "JOB-1628": {
+    "type": "quick-win",
+    "summary": "Swap the appointment edit modal's 3-dot overflow menu for a borderless trashcan icon button matching the header's neutral-gray icon treatment. Once Cancel moves to the status dropdown (JOB-1615/1627), Delete is the meatball's only action, so hiding it behind menu chrome adds friction for admins deleting appointments under phone-call pressure."
+  },
+  "JOB-1629": {
+    "type": "quick-win",
+    "summary": "Strips the legacy \"Create Invoice\" button from the appointment edit modal, client detail, and calendar context menus, plus any orphan `/api/invoices/*` routes that only backed it. SmartRoute is a scheduling tool, not a billing tool \u2014 the affordance is a no-op that implies functionality we don't own and confuses admins who assume it works. Per-service pricing metadata in the modal stays untouched."
+  },
+  "JOB-1627": {
+    "type": "quick-win",
+    "summary": "Hide the raw \"Cancelled\" option from the appointment status dropdown in AppointmentHeader so admins can't bypass the JOB-1615 reschedule prompt flow, leaving \"Cancelled by Team\" as the sole pickable terminal-cancel path. The enum value stays in the DB so historical cancelled appointments still render correctly; this is a UI filter only, no migration."
+  },
+  "JOB-1612": {
+    "type": "feature",
+    "summary": "Adds an adaptive helper line under the provider picker in the admin new-appointment side panel that changes copy based on selection: \"Any available\" explains the auto-swap-to-preserve-time contract, while a named provider warns that a cancellation will generate a callback task. Teaches merchants the cancellation contract at the moment of choice instead of hiding it in tooltips. Customer-facing equivalent is deferred post-MVP."
+  },
+  "JOB-1614": {
+    "type": "feature",
+    "summary": "Promotes the Auto-Changes Log out of a Tasks-page tab into its own top-level \"Activity\" sidebar item (between Tasks and Analytics), separating passive system-audit events from active admin to-dos. Uses a two-entry event model with filter chips and date range, and future-proofs the surface for emails, safety-net fires, and cron runs."
+  },
+  "JOB-1609": {
+    "type": "tech-debt",
+    "summary": "The Settings toggle and booking flow currently imply customer SMS confirmations/reminders work, but only team-member vCard SMS is actually wired \u2014 flipping sms_enabled fires nothing customer-facing. Audit and either hide or re-scope the toggle, and strip any \"we'll text you\" copy from the booking and confirmation pages to close the trust gap until real customer SMS ships post-MVP."
+  },
+  "JOB-1561": {
+    "type": "feature",
+    "summary": "Inline post-connect confirmation panel inside onboarding Card 4 that shows Vagaro merchants which services just auto-imported, why some might be missing, and how future edits sync \u2014 so the OAuth step doesn't end with a \"did it work?\" gap. Parked until the post-MVP Vagaro service auto-import ships; at MVP, services are entered manually via JOB-1531's mapping table, so there's no auto-import moment to confirm yet."
+  },
+  "JOB-1559": {
+    "type": "feature",
+    "summary": "Builds an inline, native React walk-through during Vagaro onboarding showing merchants exactly which Vagaro notification toggles to disable (booking, reminder, cancel, reschedule) and which to leave on (payment receipts), each with screenshots. Prevents day-one trust burn from duplicate emails when both Vagaro and SmartRoute send confirmations. Mirrors the JOB-1558 Stripe guide pattern and sits alongside the JOB-1557 config checklist before the OAuth handoff."
+  },
+  "JOB-1607": {
+    "type": "feature",
+    "summary": "Replaces the in-row \"Possible duplicate\" chip on the Clients list with a dedicated review-queue page (side-by-side pair cards, batch actions, empty state) plus an auto-match activity feed with per-row Undo and real-time amber/green toasts. Keeps the busy Clients list clean and concentrates duplicate-resolution work in one focused surface, sitting on top of the JOB-1537 matching engine."
+  },
+  "JOB-1605": {
+    "type": "marketing",
+    "summary": "Launch Google Ads targeting merchants on SmartRoute's future booking-platform partner (Square/Vagaro/Acuity/etc.), positioning SmartRoute as an add-on route-awareness layer rather than a replacement. Feeds the MVP GTM lead-magnet funnel with paid acquisition from day one, using three intent buckets and A/B-tested landing pages routing to trial, Audit, or Calculator CTAs. Blocked until the partner integration is chosen and the marketing site (JOB-1402) ships, but keyword/copy/tracking templates can be drafted now."
+  },
+  "JOB-1604": {
+    "type": "marketing",
+    "summary": "Free 6-input web calculator that shows mobile service merchants their true effective hourly rate after drive time and unfilled gaps, then email-gates a \"with SmartRoute\" reveal projecting the optimized rate. Lower-friction sister to the Impossible Booking Audit, feeding the GTM lead-magnet funnel with a shareable 9:16 result card and Attio email capture."
+  },
+  "JOB-1597": {
+    "type": "marketing",
+    "summary": "A 60-second lo-fi browser game where players run a mobile service business plagued by flat-buffer scheduling \u2014 late arrivals, fuming customers, lost revenue \u2014 ending in a shareable 9:16 score card and SmartRoute CTA. Designed as a top-of-funnel viral lead magnet for salon/barber/groomer TikTok, with 3+ tribe variants, 3+ boss levels, and email capture feeding SmartRoute trial signups."
+  },
+  "JOB-1598": {
+    "type": "marketing",
+    "summary": "Free CSV-upload web tool that audits a mobile-service merchant's last 30 days of bookings, geocodes each stop, and flags no-shows/cancellations where drive time from the prior appointment exceeded the scheduled buffer \u2014 reframing churn as a scheduling failure, not a client failure. Middle-of-funnel lead magnet paired with the JOB-1597 game: captures email at upload, shows a map + revenue-lost headline, and CTAs into a SmartRoute trial. Platform-agnostic by design so it works before any OAuth integration partner is signed."
+  },
+  "JOB-1531": {
+    "type": "feature",
+    "summary": "MVP Vagaro integration: merchants paste an API key into onboarding Card 2, SmartRoute fetches their Vagaro service catalog, and they manually map each SmartRoute service to a Vagaro service ID (persisted via a new vagaro_service_id FK). Manual mapping (not auto-import) is the design-partner ask so merchants review every match before trusting the sync. Unblocks the Vagaro appointment sync in JOB-1544, which resolves incoming bookings via that FK."
+  },
+  "JOB-1547": {
+    "type": "feature",
+    "summary": "Replaces the placeholder trend math on the header income card (JOB-452 shipped visuals only) with a real month-to-date total plus month-over-month up/down arrow, comparing MTD against the prior month through the same day-of-month in business timezone. Defines \"income\" as paid appointment services (via Vagaro amountDue=0, all-or-nothing on partial payments) plus Stripe Connect fee revenue, refreshed on a 60s poll. At MVP most merchants will see only Connect fees until JOB-1544 lights up service revenue \u2014 that interim state is intentional."
+  },
+  "JOB-1524": {
+    "type": "feature",
+    "summary": "Adds a locked two-option onboarding question (\"We come to customers\" vs \"We come to customers AND have a shop\") that gates the Location step: mobile-only merchants skip it with an auto-created mobile sentinel, hybrid merchants must enter a shop address. Replaces today's silent inference with an explicit, stored answer so downstream flows (sub-mode step, settings) branch deterministically. In banner mode, the card links out to /settings/company/information rather than inline-expanding."
+  },
+  "JOB-1527": {
+    "type": "feature",
+    "summary": "Adds an inline 3-5 field service creation form (name, category, duration, price, description) that expands inside the onboarding accordion's services card, so merchants can add services with safe defaults without leaving onboarding for the full Services settings editor. In banner mode the card routes to /settings/services instead. Feeds JOB-1531's downstream Vagaro mapping table."
+  },
+  "JOB-1581": {
+    "type": "feature",
+    "summary": "Adds a dedicated \"Connect payments\" accordion card to the Go Live section of onboarding that inline-hosts the Stripe Connect OAuth flow plus payment-methods setup, decoupling it from the Cancellation Policy step where it's currently bundled. In Surface B banner mode the row routes to /settings/payments instead of expanding inline, per the JOB-1367 spec. Unlocks charging customers and no-show/deposit fees without leaving /admin."
+  },
+  "JOB-1525": {
+    "type": "feature",
+    "summary": "Adds a new onboarding accordion step asking merchants which mobile sub-modes they offer (home/office/venue and/or mobile unit), writing to the same data store as the JOB-1513 Mobile Service settings page. Without it, new SmartRoute merchants launch their booking page with whatever default we pick and have to hunt through Settings to correct it. Surface B routes to /settings/company/mobile-service instead of inline-expanding."
+  },
+  "JOB-1582": {
+    "type": "feature",
+    "summary": "Adds an inline-expand onboarding accordion card in the Your Business section (after the Services card) that hosts the Vagaro connection flow: pre-connect notifications-disable guide (JOB-1559), then API-key entry and manual SmartRoute-to-Vagaro service mapping (JOB-1531). Card flips to a \"Connected \u00b7 N services mapped\" done state when validated; in banner mode it routes returning merchants to /settings/integrations instead of expanding. This is the onboarding surface for MVP's critical Vagaro integration, since Vagaro has no OAuth and auto-import is post-MVP."
+  },
+  "JOB-1529": {
+    "type": "improvement",
+    "summary": "Converts the \"Protect your business\" onboarding card from a deep-link row into an inline-expand cancellation-policy form so merchants can save without bouncing out to Settings and back to /admin. On Surface A the card expands with the existing onboarding-mode form (pre-filled, Save & continue auto-advances the accordion); Surface B banner mode instead routes to /settings/company/cancellation-policy per JOB-1367's locked spec."
+  },
+  "JOB-1528": {
+    "type": "improvement",
+    "summary": "Replaces the onboarding \"Who's on your team?\" deep-link row with an inline-expand card offering a one-tap \"I work alone\" solo setup and an inline Add-teammate form reusing the settings modal's body. Also migrates the solo-completion flag from localStorage to a server field so completion survives device switches, with backfill inferred from existing single-member teams. Surface B (banner mode) keeps routing to /settings/team per the JOB-1367 spec."
+  },
+  "JOB-1530": {
+    "type": "improvement",
+    "summary": "Converts the \"Book your first client\" onboarding row into an inline-expanding accordion body showing a prerequisite checklist (operating base, service, team member) plus a \"Schedule appointment\" button that opens the existing side panel unchanged. Missing prerequisites disable the button and link back to earlier accordion cards, and completion auto-refreshes when an appointment is saved to prevent a JOB-132-style stale-state regression. Part of the JOB-1367 accordion redesign; card is intentionally unreachable in Surface B banner mode."
+  },
+  "JOB-1526": {
+    "type": "improvement",
+    "summary": "Converts the \"What kind of business do you run?\" onboarding card from a deep-link that navigates to Custom Fields settings into an inline-expand tile picker within the accordion body, so new merchants can pick their business type without leaving the onboarding flow. Reuses the existing selector component and preserves JOB-450's industry-based custom-field auto-seeding; returning merchants in banner mode (Surface B) still route out to /settings/custom-fields per JOB-1367's locked spec."
+  },
+  "JOB-1587": {
+    "type": "feature",
+    "summary": "Promotes service category from an optional afterthought to a first-class field in Onboarding Card 4's slim form (with autocomplete), and renders the public booking-page catalog grouped by category with section headers. Reduces cognitive load for salons with many services and aligns SmartRoute's data model with how Vagaro merchants already think, unblocking that integration story."
+  },
+  "JOB-1389": {
+    "type": "ux-audit",
+    "summary": "Five-lens review of the Payments/Stripe Connect settings surface to see whether returning users get a proper reconfigure experience \u2014 disconnect, reconnect, switch accounts, view connection status \u2014 with change-voiced copy, a current-connection anchor, and warnings before destructive actions like disconnecting an account with pending payouts. Mirrors the JOB-1383 Business Type audit and feeds child improvement tickets. First step is confirming where these settings actually live in SmartRoute today."
+  },
+  "JOB-1558": {
+    "type": "feature",
+    "summary": "Ports an existing standalone HTML Stripe payment-methods setup guide into a native React component embedded directly inside the Stripe Connect onboarding step, ending with a soft-gate \"I've completed setup\" acknowledgement checkbox. Prevents merchants from bouncing to another tab and misconfiguring Stripe, which currently causes fee charges to fail and merchants to blame SmartRoute."
+  },
+  "JOB-1365": {
+    "type": "ux-audit",
+    "summary": "Restyle the /admin onboarding checklist cards to match SmartRoute's design system: 8px radius, gray-200 borders, blue-50 active fill with blue-500 border, circular icon tiles, and completed cards that keep a bright green check without the opacity wrapper. Also normalizes the four section headers to sentence-case 15px semibold. Visual layer under the JOB-1367 accordion redesign so a fresh 0/9 account stops reading as harsh/off-brand."
+  },
+  "JOB-1542": {
+    "type": "launch-blocker",
+    "summary": "The public /contact form routes submissions to hello@smartroute.io \u2014 a domain SmartRoute doesn't own \u2014 so inbound leads are silently dropped, and the Resend fallback sender is missing the hyphen (smartroute.app vs smart-route.app) which will fail DKIM/SPF. Also adds the canonical BILLING_FROM_EMAIL / SUPPORT_FROM_EMAIL constants that JOB-1486, JOB-1489, and JOB-1540 depend on for trial-end and dunning email wiring."
+  },
+  "JOB-1481": {
+    "type": "improvement",
+    "summary": "Build one shared merchant transactional email template \u2014 merchant-brand header, logo, human-readable dates, active-voice copy, standardized CTA, and \"Powered by SmartRoute\" footer \u2014 and roll it across all five lifecycle emails (New Booking, customer cancel/reschedule, no-show, provider cancel). Closes the gap where JOB-503's \"branded with business colors\" AC never actually shipped, so every merchant email currently renders as generic platform-blue with ISO dates."
+  },
+  "JOB-1555": {
+    "type": "ops",
+    "summary": "Add a demo merchant fixture to the seed script with paid appointments and Stripe Connect fees distributed across the current and prior calendar months, with three toggleable scenarios (up/down/neutral) plus a month-length edge case. Unblocks QA of JOB-1547's header income card trend arrow without waiting on real Vagaro paid-flag data, resolving the INCONCLUSIVE verdict Zarian hit on JOB-452."
+  },
+  "JOB-1422": {
+    "type": "quick-win",
+    "summary": "Typo fix in the Create Client side panel: the \"Archived:\" line in the Client status info callout is missing the space after the colon that the other three status lines have. One-character copy fix to keep the callout consistent."
+  },
+  "JOB-1473": {
+    "type": "bug",
+    "summary": "The Add modal, Edit page, and Team Members list have no way to set or display a member's Role (Admin/Manager/Member/Viewer) or Provider status, so the Role column shows an em-dash for everyone and the header counters (\"4 of 10 providers \u00b7 1 of 3 admin\") can never be driven by real data. Adds independent role picker and provider toggle to both surfaces and surfaces both on the list row."
+  },
+  "JOB-1453": {
+    "type": "epic",
+    "summary": "Epic grouping the catalog-page redesign work surfaced by the 2026-06-15 booking-flow walkthrough: fixing services with no qualified provider, blank/unnamed categories, dual-mode Book button routing, and a \"Where should we meet?\" step 2. Gates JOB-500 MVP launch and supersedes the older JOB-519 catalog design plus the canceled JOB-715 polish pass."
+  },
+  "JOB-1514": {
+    "type": "feature",
+    "summary": "Adds a per-sub-mode surcharge so merchants offering both in-home and in-vehicle mobile service can charge extra for whichever mode costs more to deliver. Customers see the adjusted total on the Almost Done summary once they pick a sub-mode, and the surcharge flows through to the appointment record, confirmation email, and receipt. Only surfaces for merchants with both sub-modes enabled."
+  },
+  "JOB-1394": {
+    "type": "feature",
+    "summary": "Adds an inline soft-block warning inside the New Appointment sidebar (plus drag-create/reschedule paths) when a booking falls outside provider shifts, hits time off, or \"Any Available\" has no coverage \u2014 four color-coded flavors with one-click recovery and a relabeled submit that preserves admin override authority. Replaces today's confirmation modals and locked empty states with a single consistent pattern so admins keep the form fully editable while seeing why coverage is missing."
+  },
+  "JOB-1508": {
+    "type": "improvement",
+    "summary": "Rework the transactional booking-email footer to match the Mindbody/Calendly pattern: formatted tap-to-call phone, contact hint (reply-to or email), and a grey \"Powered by SmartRoute\" row, with no unsubscribe link. Same footer must be rolled out to reschedule, cancellation, and reminder emails to keep the white-label transactional look consistent."
+  },
+  "JOB-1510": {
+    "type": "improvement",
+    "summary": "Booking Confirmed email hardcodes the Manage Booking/Book Again CTAs in dark navy instead of reading the merchant's brand_primary token used on the booking page, so customers see a color break between booking flow and email. Fix routes the primary CTA through the same brand-color token (secondary stays neutral grey) and applies the pattern across all customer transactional emails under JOB-503 to stay aligned with the merchant template standardization in JOB-1481."
+  },
+  "JOB-1395": {
+    "type": "bug",
+    "summary": "On the admin Calendar Day/Week views, the \"Schedule a shift\" entry point renders briefly on first interaction then unmounts and never reappears, forcing admins to detour through Settings \u2192 Team \u2192 Shifts to add a shift. Same render-then-unmount race family as JOB-455/299/514; likely absorbed by JOB-1468's inline sidebar panel redesign but tracked separately as a regression guard."
+  },
+  "JOB-1495": {
+    "type": "improvement",
+    "summary": "Rewrites the \"Shade outside office hours\" subcopy to reflect that working hours are company-wide (not per-location), and adds an inline hint under the \"Show team member shifts\" toggle when it's ON but no shifts exist in the visible view. Removes the ambiguity that caused admins to think the toggle was broken during the JOB-1494/JOB-1468 investigation."
+  },
+  "JOB-1499": {
+    "type": "feature",
+    "summary": "Deactivated/terminated team members still show as normal columns on the admin Day view and their future appointments become orphaned with no reassignment path. Adds a collapsed \"Inactive providers\" section below \"Off shift today,\" per-appointment \"Provider inactive\" badges, a bulk-reassign panel, and hard-blocks new bookings on inactive columns. Matters before the first merchant offboarding hits this gap."
+  },
+  "JOB-1498": {
+    "type": "improvement",
+    "summary": "Extends JOB-1394's soft-block warning to check appointment duration, not just start time: booking a 90-min service at 12pm into a shift that ends at 1pm currently passes silently because the click is inside the shift. Adds an amber warning naming the overflow minutes plus one-click \"Extend shift to [end time]\" and \"Pick a shorter service\" recovery affordances. Matters because multi-hour services (house cleaning, lawn care, detailing) are SmartRoute's dominant ICP, so this overflow case is common."
+  },
+  "JOB-1497": {
+    "type": "feature",
+    "summary": "Shift creation panel currently lets two providers claim the same shared vehicle for overlapping time slots with no warning, so dispatchers only discover the conflict in the field. Adds an amber inline warning (matching JOB-1394's pattern) when a vehicle assignment overlaps another active shift, with recovery actions to pick a different vehicle, reassign the conflicting shift, or save with conflict. Applies to mobile-mode shifts only and to both new shifts and edits."
+  },
+  "JOB-1494": {
+    "type": "improvement",
+    "summary": "Flip the default of the `Show team member shifts` calendar toggle to ON for new accounts while preserving existing user preferences. Unblocks JOB-1468 and JOB-1411 empty-state/off-shift redesigns, which rely on the pink shift overlay being visible by default so \"no shift\" stops reading as \"calendar broken\"."
+  },
+  "JOB-1411": {
+    "type": "bug",
+    "summary": "Admin Day view treats providers with zero shifts identically to on-shift ones: no off-shift indicator, drag-create succeeds, and they appear bookable in the New Appointment dropdown. Fix renders all providers in a single grid (active left, off-shift right) with neutral styling plus an \"Off shift today\" caption and inline \"Schedule shift\" button, gates them from Any Available, and badges orphaned appointments as \"Outside shift\". Admin twin of the public-booking JOB-1392 regression."
+  },
+  "JOB-1406": {
+    "type": "feature",
+    "summary": "Build the real /settings/profile/notification-preferences page for admin billing and account events (payment failed, subscription/trial updates, new-device login, password changed) with per-event Email/SMS toggles, a read-only contact card, and quiet-hours SMS suppression. Today all three Profile sub-items route to the same page, so this fills a broken sidebar link and wires backend dispatch to check per-user preferences. Deliberately scoped to admin billing/security only \u2014 booking-event prefs live on JOB-1410."
+  },
+  "JOB-1410": {
+    "type": "feature",
+    "summary": "Builds the Customer events settings sub-page: a 5\u00d74 matrix letting merchants pick which booking events (new, cancel, reschedule, no-show, provider-cancel) ping them by email or SMS, split by whether the customer or merchant triggered it. Defaults notify only on customer-initiated actions so self-booked appointments don't spam the inbox. Becomes the source of truth that lifecycle notification senders read before firing, replacing today's ad-hoc dispatch logic."
+  },
+  "JOB-1408": {
+    "type": "tech-debt",
+    "summary": "Rip out the dead \"Twilio Credentials\" card and the twilio_account_sid/auth_token/phone_number columns on companies \u2014 the form writes to columns nothing reads, since SMS dispatch uses platform env vars against SmartRoute's shared number. Clears the foundation so JOB-1399 can rebuild the Client notifications IA without BYOT baggage. Preserve sms_enabled and smoke-test one transactional SMS after the schema drop."
+  },
+  "JOB-1409": {
+    "type": "feature",
+    "summary": "Builds the Channels sub-page under the restructured Client notifications area: an always-on Email row and a master SMS on/off toggle that gates all customer-facing SMS regardless of per-event preferences. Locks in the platform-managed SMS architecture (SmartRoute's own Twilio number, no BYOT) as the single control merchants have over outbound channel usage."
+  },
+  "JOB-1387": {
+    "type": "ux-audit",
+    "summary": "Five-lens audit of /settings/team to check whether post-onboarding roster edits use change-voiced copy, show the current roster clearly, warn before destructive actions (removing members with assigned appointments, demoting admins), and comply with the design system for modals and a11y. Mirrors the Business Type audit (JOB-1383) under the JOB-1367 onboarding-accordion redesign. Findings land as a comment plus child improvement tickets or explicit no-action notes."
+  },
+  "JOB-1393": {
+    "type": "ux-audit",
+    "summary": "Bundles three visual polish fixes on the public booking calendar: force date-cell backgrounds to render as true 1:1 circles (not squished ovals), drop trailing calendar rows that are entirely next-month dates, and restructure the time-slot list into a 2-column grid with Morning/Afternoon/Evening headers, slot counts, chip-sized pills, and a scroll-fade affordance. Optional follow-on flips the date-cell hierarchy so \"available\" becomes the primary CTA (thin pink ring) pending Sabine's sign-off."
+  },
+  "JOB-1456": {
+    "type": "improvement",
+    "summary": "Full redesign spec for the booking flow's Step 1 service catalog: swap the top Mobile/In-Office toggle for per-card mode chips, convert dark pill category chips to sentence-case underline tabs with sticky/scroll-spy behavior, render admin-managed service descriptions with a Read more expand, and lock canonical brand button shape (6px rounded-rect, 40px tier-A). Also folds in provider gating and unnamed-category fixes (JOB-1443/1444) and defines Step 2 routing branches for single- vs dual-mode services."
+  },
+  "JOB-1457": {
+    "type": "feature",
+    "summary": "Spec for the booking flow's location-picker page, which renders only when a service supports both in-office and mobile. Adds a new \"Your place\" mobile destination row, brand-color Continue CTA, map suppression for single-office businesses, search input at 6+ locations, and skip rules when only one mode/location applies. Locks topbar, progress bar, and button system to match JOB-1456's canonical treatment."
+  },
+  "JOB-1445": {
+    "type": "feature",
+    "summary": "Adds an optional per-service description field in admin that renders as a 2-line clamp with Read more/less on the public booking card, so customers understand unfamiliar services like NAD+ or Meyer's Cocktail instead of bouncing. Enforces all-or-nothing coverage per category: a loud red admin warning on mixed coverage, and graceful degrade that hides all descriptions in a category if any service lacks one, keeping the card grid visually uniform."
+  },
+  "JOB-1447": {
+    "type": "improvement",
+    "summary": "Public service catalog cards currently render one chip per office plus a mobile chip, so a service at 8 offices + mobile shows 9 chips. Collapse to mode-level chips (\"In-office (N locations) \u00b7 We come to you\") matching Mindbody/Vagaro/Booksy patterns, capped at 3 chips and never wrapping past 2 lines at 375px. Specific office selection moves to the post-Book step."
+  },
+  "JOB-1439": {
+    "type": "regression",
+    "summary": "Live /billing page drifted from the JOB-760 spec Zarian shipped in PR #66: it shows a marketing-style pricing calculator, a contradictory 5-tile usage block, only 3 of 5 tier cards, and no payment-method card or billing history. This ticket restores the shipped design \u2014 trial-expired banner, current-plan card, 3-row usage card, payment method, invoice table, and full 5-tier change-plan grid \u2014 so account management actually works and trial-expired users can add a card."
+  },
+  "JOB-1428": {
+    "type": "feature",
+    "summary": "Adds per-business-type vocabulary defaults (visit/appointment label and client custom-fields card title, e.g. \"Job\" for lawn care, \"Vehicle\" for detailing) with merchant override in Settings, plus a per-field \"Show in clients list\" toggle capped at 3 fields. Foundational work the Profile column, right-rail card, and appointment labels across the clients-page refresh all depend on."
+  },
+  "JOB-1429": {
+    "type": "quick-win",
+    "summary": "Restyle the Clients page's Create client button to solid blue-600 with a 6px radius and leading \"+\" glyph, anchored top-right of the header row instead of inside the table toolbar. Establishes the visual pattern for primary page-level actions going forward."
+  },
+  "JOB-1430": {
+    "type": "feature",
+    "summary": "Swaps the noisy Location column in the clients list for a merchant-configurable Profile column that renders 1-3 custom fields flagged \"Show in list\" (booleans as \u2713/\u2717 chips, selects as gray pills, text truncated). Also relabels Last/Next columns to match business-type vocabulary (visit vs appointment) so the table reads naturally for wellness, auto, pet, and lawn-care verticals."
+  },
+  "JOB-1432": {
+    "type": "improvement",
+    "summary": "Replaces the client profile's plain \"All Time\" select with a SimplePractice-style popover: left-rail preset chips (All time, Last 30 days, This/Last month, This/Last year, Custom) plus a dual-month calendar with synced From/To text inputs and Apply/Cancel. Trigger label reflects the active range. Matches the filtering pattern users expect from comparable practice-management tools."
+  },
+  "JOB-1431": {
+    "type": "feature",
+    "summary": "Defines the client profile timeline filter dropdown with 5 launch options (All items, Appointments/Visits, Notes, Files & uploads, Tasks) plus a disabled \"Payments\" item reserved for the Stripe rollout. Includes the future chip taxonomy for service payments, late-cancel fees, and refunds so timeline rows can link back to their originating appointment."
+  },
+  "JOB-1433": {
+    "type": "quick-win",
+    "summary": "Relabel the client profile's right-rail \"Notes\" card to \"Last note\" so it stops implying it's the full notes list, and add a \"View all (N notes)\" link below the body when more than one note exists. Hide the card entirely when the client has zero notes rather than showing an empty state."
+  },
+  "JOB-1421": {
+    "type": "ux-audit",
+    "summary": "The bottom half of the Create Client side panel (Custom Fields, Client status, Notes) drifts from the top half's styling: header weight is lighter, required-asterisk position flips between left and right across sections, subtext is inconsistent, and Client status uses a heavy blue info callout unlike anywhere else. Fix normalizes headers, asterisk position, subtext usage, and demotes the status explainer to standard helper text."
+  },
+  "JOB-1407": {
+    "type": "improvement",
+    "summary": "Introduces a reusable amber \"Unsaved changes\" pill component (plus companion success toast) to the design system so settings forms give an in-page visual signal of pending edits, complementing the existing beforeunload hook and navigation modal. Standardizes behavior across settings pages, starting with ProfileSecuritySection as the reference migration, before JOB-1406's new notification preferences page ships and locks in an inconsistent pattern."
+  },
+  "JOB-1424": {
+    "type": "bug",
+    "summary": "Client Custom Field values (allergies, medications, consent toggles) save correctly but never render on the client profile page, so staff can't see them without reopening the Edit panel. Fix adds a business-type-titled right-rail card (Health profile / Vehicle / Pet / etc.) using a hybrid pattern: filled fields inline, required-empty in an amber banner, optional-empty behind an expander, with an Edit link deep-linking into the side panel."
+  },
+  "JOB-1423": {
+    "type": "bug",
+    "summary": "Appointment Custom Fields configured under Settings render nowhere in the booking flow \u2014 verified with Treatment Type (Select) and Blood Pressure (Text) on a Mobile IV account, neither appears when creating or viewing appointments. Same missing-display class as the sibling Client Custom Fields bug from JOB-450, which was marked Done but never actually wired the display surfaces. Open question for dev on which surfaces to render (admin new-appointment, public booking, detail modal, or all three)."
+  },
+  "JOB-1383": {
+    "type": "improvement",
+    "summary": "Reworks the Business Type \"Change\" modal on /settings/custom-fields so it reads as a reconfigure rather than first-run onboarding \u2014 new heading and consequence subhead, a persistent \"Current\" badge separate from the blue selection ring, Continue disabled until a different tile is chosen, and a low-emphasis text trigger instead of the filled blue chip. Adds destructive-op safety around switching industries (which replaces auto-populated custom fields) and demotes the trigger from the filter-chip style used elsewhere. Blocked by JOB-1382's decision on whether to split or branch the shared onboarding component."
+  },
+  "JOB-1390": {
+    "type": "ux-audit",
+    "summary": "Five-lens review of the Booking page publish settings surface to check whether returning users get change-voiced copy, a clear live-URL anchor, destructive-change warnings (slug edits break customer links, unpublishing rejects in-flight bookings), and design-system-compliant chrome. Mirrors the JOB-1383 Business Type audit and feeds child improvement tickets. Open question: locate where publish settings actually live in SmartRoute today."
+  },
+  "JOB-1384": {
+    "type": "ux-audit",
+    "summary": "Five-lens UX review of /settings/company/information (operate mode, business hours) to check whether post-onboarding reconfiguration uses change-voiced copy, shows the current config, warns before destructive overwrites, and matches the design system for chrome and a11y. Mirrors the JOB-1383 Business Type audit; findings become child improvement tickets or documented no-action notes."
+  },
+  "JOB-1386": {
+    "type": "ux-audit",
+    "summary": "Five-lens UX audit of /settings/company/locations to verify that post-onboarding changes to start location, travel radius, and location list use change-voiced copy, show current config (including radius on map), warn before destructive edits (removing referenced locations, shrinking radius below served customers), and match design-system chrome/a11y. Mirrors the JOB-1383 Business Type audit method; findings become child improvement tickets or documented no-ops."
+  },
+  "JOB-1388": {
+    "type": "ux-audit",
+    "summary": "Five-lens audit of the Cancellation Policy settings page to check whether editing the cancellation window or fee post-onboarding uses change-voiced copy, shows the current policy as a visual anchor, warns before destructive tightening/loosening that affects booked appointments, and complies with design-system chrome and a11y. Mirrors the JOB-1383 Business Type review under the JOB-1380 re-configure audit epic; each finding spawns a child improvement ticket or a \"no action\" note."
+  },
+  "JOB-1385": {
+    "type": "ux-audit",
+    "summary": "Five-lens audit of /settings/services to check whether post-onboarding edits (add/remove/re-price a service) use change-voiced copy, show a current-config anchor, warn before destructive changes referenced by past appointments, and follow design-system chrome and a11y rules. Mirrors the JOB-1383 Business Type audit, producing either child improvement tickets with mockups or explicit no-action notes."
+  },
+  "JOB-1381": {
+    "type": "bug",
+    "summary": "The Change Business Type modal on /settings/custom-fields renders a scrim that stops short of the page footer, leaving the copyright strip un-dimmed and visually clickable. Likely a stacking/height issue in the Settings layout that affects every modal rendered there, so the fix should spot-check other settings modals too."
+  },
+  "JOB-699": {
+    "type": "feature",
+    "summary": "Adds the Tasks page UI layer left over from JOB-594: a Tasks/Auto-Changes Log tab split, a read-only informational-task log with date and category filters, and interleaves urgent/monitoring auto-tasks into the main list with red-pinned and amber \"watching\" visual states. Unblocks JOB-552's cancellation side-effects engine from getting proper surfacing rather than dumping auto-tasks into an undifferentiated list."
+  },
+  "JOB-594": {
+    "type": "launch-blocker",
+    "summary": "Wires the provider-cancellation side-effects engine (JOB-552) into the Tasks system so unrecoverable cancellations auto-create High-priority tasks for the office manager with client context, requested-vs-auto framing, and a configurable safety-net auto-email deadline. Also adds an Auto-changes log tab and sidebar badge, replacing the need for a separate notifications panel. Closes the loop so managers see exactly what the system handled silently vs what still needs a call."
+  },
+  "JOB-552": {
+    "type": "launch-blocker",
+    "summary": "Central side-effects engine for provider-initiated cancellations: auto-reassigns \"Any Available\" bookings via round-robin, and for \"Requested\" bookings emails/texts the customer 2-3 options (accept alternative, reschedule with same provider only, cancel) with stale-state protection and a <2h urgent-task escalation. Preserves audit trail via replaced_by_id links and distinguishes provider_cancelled (lost) vs provider_rescheduled (moved) for analytics. No fee ever charged when provider_initiated=true."
+  },
+  "JOB-1517": {
+    "type": "bug",
+    "summary": "The Stripe PaymentElement disclosure on the booking Almost Done step tells customers they're authorizing \"www.smart-route.app\" to charge their card, but SmartRoute isn't the merchant of record \u2014 each connected Stripe account is. Fix routes the merchant's Company Name (Settings \u2192 Company \u2192 Information) into the disclosure everywhere PaymentElement mounts, so header, \"Payment collected by ___\", and the authorization all name the same entity and point to the cancellation policy instead of \"their terms\"."
+  },
+  "JOB-1404": {
+    "type": "tech-debt",
+    "summary": "Removes the redundant SettingsBreadcrumbs component from all 15 settings pages and deletes the shared component, since sidebar active-state plus the H1 title already tell users where they are. Aligns SmartRoute's settings shell with modern SaaS patterns (Linear, Stripe, Vercel) and cuts visual noise across the entire settings surface."
+  },
+  "JOB-1506": {
+    "type": "bug",
+    "summary": "Booking confirmation state lives only in memory, so tab-switching or refreshing wipes the \"You're Booked!\" screen and drops the customer back at step 1 (Pick a Service) \u2014 they lose visibility into their confirmation number, calendar export links, and Manage Booking button even though the booking exists on the backend. Fix persists confirmation to the URL (e.g. `/book/[slug]/confirmation/[token]`) so the view re-renders from the booking record."
+  },
+  "JOB-1486": {
+    "type": "feature",
+    "summary": "Ships two trial-end nudge emails for cardless merchants: a day-14 \"trial ended, add a card\" transactional from billing@smart-route.app via Resend, and a day-51 founder-voiced re-engagement via Klaviyo before the day-65 deletion sweep. Both surface the concrete deletion date and auto-cancel if a card is added; day-51 is deferred pending Klaviyo sender auth (JOB-1541)."
+  },
+  "JOB-1504": {
+    "type": "bug",
+    "summary": "On the Almost Done step, the Google Places address field ships with a black border on fresh load while the other four fields are light-gray, and the dropdown panel's border intensity flips between empty vs filled states. Fix aligns the autocomplete with the shared focus pattern (gray unfocused, black on focus) and gives the dropdown one consistent border, so the input plus panel read as one cohesive control."
+  },
+  "JOB-1520": {
+    "type": "bug",
+    "summary": "On the booking flow's hold-expired screen, the \"Try same time\" button silently swallows the first click and only re-acquires the slot hold on the second, so customers double-click before anything responds. Fix routes them to Almost Done with a fresh countdown on a single click and surfaces an inline error if the re-hold fails."
+  },
+  "JOB-1537": {
+    "type": "feature",
+    "summary": "Auto-dedupes public booking submissions against existing client records using name/email/phone normalization, with slot-based overflow into second-email/second-phone fields and address tiebreaker for common-name collisions. Ambiguous cases create a new client tagged with a \"Possible duplicate\" chip that opens a review panel offering merge/keep-separate. Eliminates duplicate client rows on every rebook and the manual after-the-fact linking merchants do today."
+  },
+  "JOB-1539": {
+    "type": "feature",
+    "summary": "Updates the public /book/{slug} widget to show pause copy when a merchant is in the trial-end read-only state, surfacing their business phone so existing customers can call to schedule, with a name-only fallback when no phone is on file. Page stays 200 so bookmarked links keep resolving, and copy auto-clears once the merchant adds a card. Complements JOB-762's read-only state and JOB-1486's nudge emails."
+  },
+  "JOB-1540": {
+    "type": "feature",
+    "summary": "Adds a two-email in-trial drip for merchants: a Day 0 welcome from support@ and a Day 12 \"trial ends in 2 days\" nudge from billing@ that only fires if no card is on file and cancels when one is added. Catches conversion before the Day 14 cliff, where saves are cheaper than the post-lock TR-1/TR-3 recovery sequence."
+  },
+  "JOB-742": {
+    "type": "tech-debt",
+    "summary": "Converts `appointments.date` (and sibling columns like `shifts.date`, `schedule_exceptions.date`) from Postgres `text` to native `date`, so the DB rejects malformed values and queries can use range indexes instead of string equality. Surfaced during JOB-680's TZ-drift RCA; ~28 files currently do string `.date ===` comparisons that need to keep compiling or migrate to a typed helper."
+  },
+  "JOB-1348": {
+    "type": "bug",
+    "summary": "Toggling between Office and Mobile location during new-appointment creation causes the calendar preview block to snap to 8:00 AM even though the form still shows the correct 10:30 AM start time. The saved appointment is correct, but the visual mismatch misleads admins into thinking the booking time changed. Fix landed in PR #129 and is currently in review."
+  },
+  "JOB-1351": {
+    "type": "bug",
+    "summary": "When editing Start/End time fields in the New Appointment panel, the live calendar preview block stays pinned to the initial 8:00 AM slot even though the saved appointment uses the correct form time. Purely visual desync that erodes trust in the preview during booking; save path is unaffected."
+  },
+  "JOB-1471": {
+    "type": "bug",
+    "summary": "Opening Role Permissions under Admin Settings collapses the entire Settings sidebar, stranding admins with no nav back to Profile, Locations, or Team without a reload. Every other Settings sub-page keeps the sidebar mounted and highlights the active row, so this one route is rendering outside the shared settings layout."
+  },
+  "JOB-1502": {
+    "type": "bug",
+    "summary": "Business phone renders as raw digits (5128787388) in the header across every customer-facing booking step and the confirmation screen instead of standard US format. Fix applies (NNN) NNN-NNNN formatting at render time only, keeping stored values untouched, and must be verified on manage-booking and transactional emails too."
+  },
+  "JOB-1503": {
+    "type": "improvement",
+    "summary": "Renames the ambiguous \"We come to you\" / \"In our mobile unit\" pills on the booking flow's service-location step to \"Home, office, or venue\" and \"Our mobile unit\", since both options actually happen at the customer's address and the old copy misled customers into thinking one was a pickup location. Also gates the picker so it only renders when the merchant enables both sub-modes (per JOB-1513)."
+  },
+  "JOB-1513": {
+    "type": "feature",
+    "summary": "Renames the Vehicles settings tab to Mobile Service and adds two checkboxes (\"Home, office, or venue\" and \"Mobile unit\") so merchants can declare which service modes they offer. The booking page then only shows pills for enabled modes, hiding the picker entirely for single-mode merchants \u2014 fixing the current bug where in-home-only shops get customers requesting a nonexistent van (and vice versa)."
+  },
+  "JOB-1516": {
+    "type": "improvement",
+    "summary": "Disables Stripe Link's \"Save my info for faster checkout\" opt-in on the booking Almost Done step, where it duplicates the email/phone already collected and confusingly offers a second (Stripe-side) account. Card, Klarna, and Cash App Pay remain; the fix must apply to every SmartRoute PaymentElement mount (admin phone booking, reschedule, etc.)."
+  },
+  "JOB-1522": {
+    "type": "improvement",
+    "summary": "Strips the `Confirmation: SR-...` line from the Google, Outlook, and Apple/.ics event descriptions generated by the You're Booked screen's calendar download buttons. Customers manage bookings via the magic-link token, so the confirmation number is noise in the calendar event. Sibling to JOB-1507, which removed the same number from the in-app confirmation screen and transactional email."
+  },
+  "JOB-1536": {
+    "type": "bug",
+    "summary": "Next appt column renders \"Invalid Date\" for every client row and Last appt never populates, so admins can't see recent or upcoming visits at a glance. Both columns share the same broken appointment-date code path \u2014 the fix should render em-dash when no matching appointment exists and the formatted date otherwise."
+  },
+  "JOB-706": {
+    "type": "improvement",
+    "summary": "Add-to-Calendar exports (Google, Outlook, Apple .ics, and the clinician subscription feed) currently drop the location's full street address and strip out other attendees, so tapping the location in Google Calendar doesn't map-resolve and group/provider guests lose visibility. Fix populates the calendar LOCATION with the booked address (mobile appointments use the customer's service address) and attaches provider + consented group guests as formal ATTENDEEs across all four export surfaces."
+  },
+  "JOB-766": {
+    "type": "bug",
+    "summary": "Snapshot a location's address (name, street, city, state, zip) onto the appointment at booking time so calendar exports keep pointing customers to where they actually booked, even if the merchant later edits that location. Rescheduling to a different location refreshes the snapshot; mobile appointments are unaffected since they already capture the customer's service address. Closes the last edge case from JOB-706."
+  },
+  "JOB-1414": {
+    "type": "epic",
+    "summary": "Umbrella epic unifying the cancel/reschedule customer flows (JOB-543, smart time suggestions, blocked-reschedule mode, group-booking policy copy) with the policy-fee enforcement stack that backs them: persistence, Stripe PaymentIntent batching, Connect webhook reconciliation, refunds, full_service fee-type support, and simplified fee settings. Ties eight in-flight children into one shippable lifecycle so cancellations, reschedules, and their associated fees behave consistently end-to-end."
+  },
+  "JOB-1466": {
+    "type": "bug",
+    "summary": "Sentry caught a React \"Rendered more hooks than during the previous render\" crash on the home route, traced to AdminPageClient calling useSearchParams without a Suspense boundary. Fix wraps the component in Suspense (PR #119) so SPA navigation from home to admin no longer trips the hook-order mismatch."
+  },
+  "JOB-1512": {
+    "type": "regression",
+    "summary": "Public booking page still offers off-shift and on-time-off providers whenever a date has partial coverage \u2014 customers booked 3 real appointments onto providers with no shift. Sibling to JOB-1392's zero-shift fix: the date is correctly bookable, but the per-provider/per-slot filter never runs, and \"Any Available\" auto-routing can land on off-shift providers. Fix must cover the reschedule flow (JOB-548) too."
+  },
+  "JOB-447": {
+    "type": "improvement",
+    "summary": "Swaps the freeform category text input on the Create/Edit Service (and Product) forms for a searchable combo-box that pulls existing categories, normalizes new entries to title case, and lets users create categories inline. Also auto-groups the services list under alphabetical category headers with Uncategorized at the bottom, and adds inline rename/delete/merge management next to the filter dropdown so the \"All Categories\" filter and stat actually work."
+  },
+  "JOB-878": {
+    "type": "feature",
+    "summary": "Builds the merchant-initiated downgrade flow on /billing with a centered retention modal that always fires but keeps Confirm disabled until active providers/admins/locations fit the target tier's caps, with inline deep-links to Settings for cleanup. Includes usage-evidence retention lever, end-of-cycle Stripe scheduling with no proration, a pre-renewal server-side cap-check that auto-cancels the downgrade if the merchant re-exceeds caps, and reversibility via a Cancel downgrade action. Prevents billing surprises while preserving the retention moment at click time."
+  },
+  "JOB-877": {
+    "type": "feature",
+    "summary": "Builds the merchant-initiated upgrade modal on /billing with a plan diff, prorated Stripe charge preview, and inline card capture for trial conversions. Mirrors the JOB-878 downgrade modal for symmetry, handles 3DS/decline/network failures inline, and lifts read-only/trial state on success. Covers past-due, scheduled-downgrade cancellation, and expiring-card edge cases."
+  },
+  "JOB-887": {
+    "type": "launch-blocker",
+    "summary": "Stands up SmartRoute's transactional email stack for the first time: verifies smart-route.app in Resend, adds RESEND_API_KEY to Vercel, and fixes a fallback in resend.ts that points to the wrong (unowned) smartroute.app domain. Splits sending into three senders \u2014 noreply@ for end-customer booking mail with dynamic merchant reply-to, support@ for merchant relational mail plus the contact form, and billing@ for dunning \u2014 so dunning complaint rates can't poison merchant deliverability. Blocks JOB-874, JOB-761, and JOB-762."
+  },
+  "JOB-886": {
+    "type": "ops",
+    "summary": "Stand up a dedicated billing@smart-route.app Resend sender that carries only the four dunning emails (day 1 / 3 / 7 / ~21), with reply-to routed back to support@ so a spam-complaint spike on failed-payment mail can't torch the deliverability reputation of welcomes, receipts, and other merchant transactional mail. Part of the three-sender split (noreply / support / billing) and blocks the JOB-874 dunning template rollout."
+  },
+  "JOB-452": {
+    "type": "quick-win",
+    "summary": "Polish the header's monthly income display so it reads as a real KPI: stacked label + bold abbreviated amount ($10.7k) with a month-over-month trend icon (green up / red down / gray neutral), and consistent gap-3/4 spacing against the + button, trial badge, and avatar. Purely visual \u2014 data is already dynamic \u2014 with a zero-state rule to hide the trend icon for new users."
+  },
+  "JOB-524": {
+    "type": "feature",
+    "summary": "Builds the public booking flow's checkout step across all variants (new vs returning customer, mobile vs in-office, solo vs group over capacity), including Stripe card-hold tokenization with no charge, a 10-minute amber slot-hold countdown, and a required cancellation-policy checkbox. Returning customers arriving via a Book Again token confirm in two clicks; fresh-visit returners get a gentle inline \"welcome back\" recognition after typing their email. Unblocks Mindbody-synced bookings from the customer-facing site."
+  },
+  "JOB-763": {
+    "type": "feature",
+    "summary": "Adds a \"How do you operate?\" question (on-site / mobile / hybrid) to signup and stores it on the merchant record, editable later in settings, so the team can validate the 25/75 office-to-mobile assumption underpinning the 85% margin model. Also wires an internal admin mix dashboard plus alerts if the ratio drifts >10pp; churn-segmentation ACs were descoped to JOB-911/JOB-912."
+  },
+  "JOB-720": {
+    "type": "launch-blocker",
+    "summary": "Enforces the merchant's operating base and service radius end-to-end: customer checkout runs a Haversine check on address selection and hard-blocks Confirm with a call-us fallback when out of area, while admins get a soft warning plus a required override modal (reason + notes) that flags the appointment and shows an amber \"OUT OF AREA\" badge on the calendar. Closes the loop on JOB-719's radius capture so the setting actually gates bookings on both public and admin surfaces."
+  },
+  "JOB-1392": {
+    "type": "regression",
+    "summary": "When zero shifts exist across the whole team, the public booking calendar highlights every future date as bookable while the side panel correctly says \"No availability in the next 30 days\" \u2014 a direct visual/text contradiction that misleads customers into clicking dead dates. Regression of JOB-628: the empty-shift-set edge case conflates \"still loading\" with \"loaded zero shifts\", so the fix must also route the JOB-548 reschedule flow through the shared hasAvailableSlots helper."
+  },
+  "JOB-548": {
+    "type": "feature",
+    "summary": "Builds the customer-facing reschedule flow from the manage-booking page: pick a new date/time, create a new appointment linked to the old one, transfer the Stripe card hold and manage token, and apply the business's reschedule policy (fee, free-limit, or provider-initiated exemption). Includes schema migrations for reschedule_count, replaced_by_id, lifetime_reschedule_count, and new *_rescheduled cancellation reasons so analytics can distinguish moved business from lost business."
+  },
+  "JOB-709": {
+    "type": "bug",
+    "summary": "The in-app Manage Booking CTA on the post-booking Confirmation screen routes customers to an \"Invalid Link\" error page, while the equivalent link in the confirmation email works correctly. Customers who close the tab without opening the email are stranded with no way to reschedule or cancel, and this blocks verification of the cancel/reschedule flows in JOB-526, JOB-546, and JOB-548."
+  },
+  "JOB-1440": {
+    "type": "bug",
+    "summary": "On day view, toggling between days briefly renders a single provider spanning the full grid width before the correct multi-provider roster paints in. The flash makes admins think providers are missing from the schedule. Fix PR #112 is up and in review."
+  },
+  "JOB-993": {
+    "type": "tech-debt",
+    "summary": "SmartRoute's local git state has drifted badly: 12 unpushed commits, 5 dangling stashes, and 11 active worktrees spanning half a dozen old JOB branches plus agent scratch dirs. Cleanup requires pruning worktrees, triaging stashes (commit or drop), and pushing ahead commits to restore a sane baseline before more parallel work compounds the mess."
+  },
+  "JOB-954": {
+    "type": "bug",
+    "summary": "Sentry was capturing \"SyntaxError: Unexpected EOF\" noise coming from the third-party Featurebase CDN script loading on the root route. The fix wraps the Featurebase CDN load to absorb its errors so they stop polluting Sentry, keeping the widget's happy-path behavior intact. PR #111 is up in review with AC screenshots attached."
+  },
+  "JOB-873": {
+    "type": "infra",
+    "summary": "Wires `prisma migrate deploy` into the Vercel build so pending migrations apply to prod/staging before the app accepts traffic, closing the gap that caused the 2026-04-23 /admin outage (a schema.prisma column shipped without its migration being run). Also adds a PR check flagging schema edits with no migration file and a Sentry alert on \"column/relation does not exist\" errors to catch future drift early."
+  },
+  "JOB-1353": {
+    "type": "bug",
+    "summary": "A Sentry-reported crash on /admin where raw Prisma calls in AdminPageContent surface an \"unexpected response from the server\" error to admins during transient DB hiccups or RSC refetches on soft-nav. Fix wraps those queries in error guards so the admin dashboard stays intact instead of tripping the error boundary."
+  },
+  "JOB-630": {
+    "type": "bug",
+    "summary": "The \"free trial has ended\" upgrade banner renders as a top bar on desktop viewports when it should be mobile-only, cluttering wide layouts across the app (e.g. Settings pages). Fix hides the banner at >=1024px and moves the upgrade prompt into a pill + button near the user menu, keeping mobile behavior unchanged."
+  },
+  "JOB-1377": {
+    "type": "quick-win",
+    "summary": "Point the sidebar's Roadmap link at https://roadmap.smart-route.app/roadmap, opening in a new tab with rel=\"noopener noreferrer\" so users can browse the public roadmap and submit feedback without losing in-app state. Icon, label, and spacing stay unchanged."
+  },
+  "JOB-932": {
+    "type": "bug",
+    "summary": "Sentry is flooding with a SyntaxError from next/script.tsx caused by the Featurebase CDN script injecting invalid tokens into appendChild. The fix (PR #102) swallows Featurebase CDN errors so they stop polluting Sentry with noise unrelated to app code."
+  },
+  "JOB-1492": {
+    "type": "bug",
+    "summary": "When calendar shift-scheduling fails, users see two stacked error fallbacks with mismatched copy (\"loading your dashboard\" on the Calendar route) and a \"Return to dashboard\" button that doesn't match its destination. Fix collapses it to a single accurate error state with route-correct copy and button labels. Split from JOB-1467's crash fix, which made this fallback unreachable in the happy path but left the UI wrong."
+  },
+  "JOB-1467": {
+    "type": "bug",
+    "summary": "Clicking the empty-day calendar CTA throws admins into a cascading pair of error fallbacks with mismatched copy (\"loading your dashboard\" when they're on the Calendar), and the \"Return to dashboard\" recovery button actually dumps them back on the Calendar. Net effect: no shift ever gets scheduled from the empty state, and every recovery path is a dead end."
+  },
+  "JOB-1364": {
+    "type": "bug",
+    "summary": "After switching from an expired-trial account to a freshly-created one, the new account's dashboard briefly flashes a red \"Trial expired\" pill before rehydrating to the correct \"14d left in trial\". Root cause is trial-status cache leaking across accounts; even a momentary flash is a trust killer for a brand-new merchant on their first render."
+  },
+  "JOB-680": {
+    "type": "feature",
+    "summary": "Adds a schedule-exception primitive so admins can block a single date (sick day, one-off) via a date-header popover and slide-out panel without editing the provider's recurring weekly pattern. When the blocked window overlaps existing appointments, the panel expands inline to render JOB-618's conflict-resolution flow; ships together with JOB-618 as one seamless UX and lays the foundation for the broader time-off system in JOB-617."
+  },
+  "JOB-531": {
+    "type": "feature",
+    "summary": "Shared Stripe charging engine that automatically bills the card on file when a customer late-cancels, reschedules within the policy window, or is marked no-show \u2014 using each business's configured flat/percentage/full-service fee amounts. Powers the cancel, reschedule, and no-show flows from one function, handles provider-initiated exemptions, reschedule-limit counts, failed charges, and no-card-on-file cases, and writes results to invoice line items for accounting."
+  },
+  "JOB-610": {
+    "type": "feature",
+    "summary": "Adds Twilio-backed SMS alongside every customer email (confirmations, reminders, cancellations, reschedules, fee notices) so time-sensitive messages actually reach customers who ignore email or have calls on DND. Includes E.164 phone validation, eight SMS templates with short links, STOP opt-out handling, and per-business SMS settings. Unblocks the provider-cancel, customer-cancel, and reschedule flows (JOB-552/546/548)."
+  },
+  "JOB-691": {
+    "type": "launch-blocker",
+    "summary": "Booking API trusts client-supplied SetupIntent IDs without re-checking with Stripe, so attackers can craft requests with forged or omitted payment fields and still get confirmed appointments \u2014 making the cancellation-fee policy unenforceable. Fix requires server-side Stripe verification at booking time, removing the \"skip card hold\" fallback, and blocking non-Connect merchants from the checkout step entirely. Closes Gap 1.2 from the SmartRoute logic gap audit."
+  },
+  "JOB-1379": {
+    "type": "bug",
+    "summary": "On the Day view calendar, the first click on an empty time slot renders the New Appointment preview at a narrower-than-column width; only after booking one appointment do subsequent clicks render at the correct full column width. Height (15 min) is fine \u2014 the defect is purely horizontal width on the initial click of a fresh session."
+  },
+  "JOB-1346": {
+    "type": "quick-win",
+    "summary": "Deletes the blue \"Click a provider's name to block time off or add an appointment\" tip banner that renders above the calendar day grid in Office filter mode. The affordance is self-evident (provider column headers are already clickable) and the banner reads as instructional noise; removal is unconditional across both Office and Mobile filters with spacing collapsed cleanly."
+  },
+  "JOB-1296": {
+    "type": "quick-win",
+    "summary": "The divider between \"Recently Viewed\" and \"Roadmap\" in the left sidebar has extra vertical padding, making that gap visibly larger than every other divider gap and breaking the sidebar's spacing rhythm. Fix normalizes the padding so all dividers read as consistent top-to-bottom."
+  },
+  "JOB-1368": {
+    "type": "quick-win",
+    "summary": "The admin shell renders the trial countdown twice \u2014 an amber pill in the left sidebar and the canonical pill at top-right next to income \u2014 creating ambiguous status and sidebar clutter. Fix removes the sidebar pill entirely, leaving the top-right as the single source of trial state, with Roadmap collapsing naturally into the freed space."
+  },
+  "JOB-688": {
+    "type": "feature",
+    "summary": "Persists Stripe PaymentIntent ID and outcome from cancellation/reschedule/no-show fee charges (currently discarded by the API routes) and renders a new read-only fee section in the admin AppointmentDetailsModal with amount, status pill, timestamp, and a deep link to Stripe. Foundation for fee failure handling and webhook reconciliation; without it merchants have no in-app record that a policy fee was charged."
+  },
+  "JOB-1464": {
+    "type": "quick-win",
+    "summary": "The trial-convert UpgradeModal renders \"Start {Tier} plan\" while the sibling PaymentForm uses \"Subscribe to {Tier}\", so the two subscribe entry points disagree and neither matches the JOB-1438 AC. Standardize both surfaces on one canonical title (Option A: \"Subscribe to {Tier}\") to align copy with spec."
+  },
+  "JOB-714": {
+    "type": "improvement",
+    "summary": "Removes the redundant Group Built review step from the booking flow by folding its only unique element (an optional group name field) inline into Who's Coming, with a dynamic \"Your Booking\" vs \"Your Group\" heading. Shortens the funnel by one screen for every group booking to cut drop-off before time selection."
+  },
+  "JOB-760": {
+    "type": "feature",
+    "summary": "Builds the shared tier-card primitive and ships the public /pricing page (Solo/Team/Business/Growth/Enterprise with \"Most Popular\" on Team) plus a read-only /billing panel showing current plan, seat usage, upcoming bill, payment method, and invoice history. Foundation for the v3 pricing rollout \u2014 upgrade/downgrade flows, at-capacity UX, and contact-sales form are split into follow-up tickets."
+  },
+  "JOB-551": {
+    "type": "launch-blocker",
+    "summary": "Adds a provider-picker step to the booking flow (\"Any Available\" vs a specific team member) and persists that choice as an `assignment_method` column on `appointment_sessions` (auto/requested/provider_replaced). Downstream cancellation-reassignment logic in JOB-552 depends on this field to decide whether to silently swap providers or notify the customer."
+  },
+  "JOB-546": {
+    "type": "feature",
+    "summary": "Builds the customer-facing cancel flow on the manage-booking page, including an amber fee-warning banner that dynamically renders flat/percentage/full-service amounts pulled from the company's cancellation policy when the appointment is inside the window. Handles group bookings (single fee to the booker), the provider-initiated exemption (no fee, cancellation_reason=provider_cancelled, flag cleared), and cascades status plus reason to all child sessions. Unblocks late-cancel revenue capture and is the customer-side counterpart to policy settings (JOB-528/544) and Stripe fee charging (JOB-531)."
+  },
+  "JOB-724": {
+    "type": "launch-blocker",
+    "summary": "When Google Distance Matrix errors mid-booking, calculateDriveTime returns null and the constraint silently passes the slot through, so geographically-impossible back-to-back mobile appointments can be booked and providers arrive late. Adds a bounded retry + conservative-heuristic fallback (with per-call timeout, 4xx fast-fail, structured logging) so slots are validated by Google, retry, or heuristic \u2014 never skipped. Flagged launch-blocker for the Reddit/outreach GTM where a single \"provider never showed\" complaint would outweigh the ~0.1% error rate."
+  },
+  "JOB-695": {
+    "type": "bug",
+    "summary": "The DB enum and settings UI accept `full_service` as a cancellation fee type, but the runtime evaluator in `evaluate.ts` only handles `flat` and `percentage`, so businesses choosing full_service silently fail to charge the correct amount. Fix extends `evaluateCancelPolicy` and `evaluateReschedulePolicy` to return the full service total (or booking total for group sessions) when feeType is `full_service`."
+  },
+  "JOB-668": {
+    "type": "launch-blocker",
+    "summary": "Collapses the cancellation policy's two-fee configuration (separate late-cancel and no-show fees) into a single fee that applies to late cancels, reschedules, and no-shows. Requires migrating existing businesses' fee values and updating the public policy page plus live settings preview. Simplifies the mental model for business owners who think in terms of one flat cancellation fee."
+  },
+  "JOB-666": {
+    "type": "improvement",
+    "summary": "Adds a group-booking clause to the public /book/[slug]/cancellation-policy page so customers booking for multiple people understand that all fees hit the single card entered at checkout. Copy must avoid \"per person\" language since customer-side cancel/reschedule is charged per-appointment, not per attendee."
+  },
+  "JOB-616": {
+    "type": "feature",
+    "summary": "Gives each clinician a per-user .ics subscription URL plus real-time SMS alerts on schedule changes (new/cancelled/rescheduled/reassigned appointments), so mobile providers see their route on their phone calendar without opening SmartRoute. Includes a vCard so texts show as \"SmartRoute\" and can bypass DND, plus manager controls to resend links, toggle SMS, and view last-sync time. Reuses the Twilio pipe from JOB-610."
+  },
+  "JOB-705": {
+    "type": "feature",
+    "summary": "Restores a clickable link on the appointment detail's replacement-chain label, which JOB-701 had to downgrade to plain text at launch because no admin deep-link route existed. Requires wiring either a `?appointmentId=` query param or a dedicated `/admin/appointments/[id]` route so pasting the URL opens the correct appointment modal, then re-enabling the anchor in `ReplacementChainLink`."
+  },
+  "JOB-523": {
+    "type": "feature",
+    "summary": "Build the public booking flow's time-picker screen: three-column layout with appointment summary, month calendar, and Morning/Afternoon/Evening slot groups sourced from the existing availability API. Must handle solo bookings, in-capacity groups, and staggered groups where availability requires staff for both batches and the second batch time auto-calculates from the first."
+  },
+  "JOB-683": {
+    "type": "quick-win",
+    "summary": "Booking checkout repeats the \"card won't be charged\" reassurance three times plus a redundant Secured-by-Stripe badge, which reads as contradicting Stripe's own future-charge mandate. Fix folds the reassurance into the section header (\"Your card won't be charged\" + \"Held to secure your appointment \u2014 only charged for no-shows or late changes\"), deletes the lock-icon callout and custom Stripe badge, and leaves Stripe's SCA mandate and cancellation-policy checkbox intact."
+  },
+  "JOB-579": {
+    "type": "feature",
+    "summary": "Adds a configurable rolling booking window (30/60/90/indefinite/custom days) that limits how far ahead customers can browse and book on the public booking page, set during onboarding and editable in Settings. Enforces the window in the date picker and empty states without cancelling existing bookings when shortened. Gives operators control over route-schedule pressure by capping forward visibility."
+  },
+  "JOB-448": {
+    "type": "improvement",
+    "summary": "Overhauls the Services settings page from a chunky card grid into a clean table + side-panel pattern matching the Create Client panel, stripping unused search/stats/cost/color/waiver fields and standardizing the Add button. Also introduces per-service buffer time (minutes before/after) that the calendar respects, preventing back-to-back bookings without prep or travel time."
+  },
+  "JOB-514": {
+    "type": "bug",
+    "summary": "Editing an appointment briefly shows the correct company location (e.g. \"Downtown Office\") before a secondary hydration overwrites it with the client's home address, so admins can't trust what's saved. Fix must also handle the no-location case (field stays empty, never auto-fills the client's address) and cover both the office and mobile appointment hooks that caused the earlier reopen."
+  },
+  "JOB-703": {
+    "type": "launch-blocker",
+    "summary": "Fresh mobile-groomer signups are permanently trapped in onboarding: both the checklist's \"Create your first appointment\" button and the header \"+\" dropdown's Schedule action do nothing, the calendar grid is gated behind onboarding completion, and saving mobile service delivery fails to tick step 5 \u2014 so users can never reach scheduling. UX score cratered from 5.0 to 3.0, likely fallout from the JOB-569/674/700/553 schedule-panel refactor severing the onboarding-to-modal wiring."
+  },
+  "JOB-527": {
+    "type": "feature",
+    "summary": "Adds a 10-minute slot reservation system to the public booking checkout so two customers can't grab the same time, backed by a new slot_reservations table and availability API filtering. Also covers the checkout error UX: amber countdown bar, hold-expired modal with form data preserved, \"just booked\" recovery with next-3-slots, and inline card-declined handling."
+  },
+  "JOB-657": {
+    "type": "bug",
+    "summary": "Changing an appointment's top-level status in the details modal updates the parent pill but leaves child session rows untouched, so group appointments show a Completed header over Scheduled client rows. Fix cascades the parent status to any child still in Scheduled while preserving sessions a provider manually set to No-Show/Cancelled/Completed, and keeps the calendar color in sync without a refresh. Closes the session-cascade gap JOB-549 shipped without."
+  },
+  "JOB-522": {
+    "type": "feature",
+    "summary": "New booking-flow screen shown when a party is larger than the business's capacity: collects the service address plus an indoor-vs-mobile-unit toggle, and lets the customer drag-reorder attendees around an automatic capacity divider (\"goes first\" / \"goes next\") that recalculates when capacity changes. Powers V1 stagger scheduling without introducing formal round management."
+  },
+  "JOB-1663": {
+    "type": "bug",
+    "summary": "The non-Connect merchant booking gate renders the company name jammed against the next word (\"SmartRoute Demohasn't finished setting up online payments\") because the SWC/JSX transform drops the literal space at the expression-text boundary. Fix is the canonical `{\" \"}` idiom in BookingPage.tsx to guarantee one space. Standing bug in copy unchanged since April, visible to every prospect hitting a non-Connect merchant's booking page."
+  },
+  "JOB-1652": {
+    "type": "ops",
+    "summary": "Coordinated review-and-ship pass over the SmartRoute PR backlog: batch-approve train #151 (~38 tickets) against an isolated Supabase staging branch, then work the risk lane individually (jest-dom matchers, text-to-date migration, Stripe Connect OAuth, trial nudge emails, card-on-file round-robin). Clears a large queue of merged-but-unshipped work and unblocks ~99 tests once #152 lands."
+  },
+  "JOB-1469": {
+    "type": "bug",
+    "summary": "The merchant \"New Booking\" Resend email fires for only ~19% of appointments on prod, with evidence suggesting anything created under ~24 hours of lead time silently skips dispatch. Fix must make dispatch instant and lead-time independent for both admin-calendar and public-booking creations, verified across varied lead times on a preview URL before merge."
+  },
+  "JOB-500": {
+    "type": "epic",
+    "summary": "Builds a hosted booking page at smart-route.app/book/{business} where end-customers book appointments as guests (no login), with email-based recognition for repeat customers and a Stripe card hold for cancellation protection. Establishes SmartRoute as the scheduling source of truth syncing to Mindbody/Booker, while backends still process service payments. Umbrella for transactional email ownership, onboarding to disable backend emails, and Stripe Connect follow-ups."
+  },
+  "JOB-503": {
+    "type": "launch-blocker",
+    "summary": "Build SmartRoute's own branded transactional email + SMS stack (confirmations, 24h reminders, cancel/reschedule, provider-cancelled options, timeout, book-again) to replace the Mindbody/Booker notifications disabled at onboarding. Templates must respect the requested-vs-auto provider rule (show real name only for `requested`, else \"Any Provider\") and route all manage-booking links back through SmartRoute so cancels/reschedules sync to the backend. Blocks launch because customers currently get no communication after booking through the public page."
+  },
+  "JOB-1396": {
+    "type": "bug",
+    "summary": "The merchant New Booking notification email renders its View Appointment CTA as `http:///appointments/{id}` \u2014 missing hostname \u2014 so every click hits Google's Redirect Notice instead of the appointment. Affects both public-booking and admin-created appointments, breaking the inbox-to-calendar jump for every new booking. Urgent, 1pt; PR #94 open, bounced from In Review back to In Progress."
+  },
+  "JOB-722": {
+    "type": "regression",
+    "summary": "The inline \"Add New Address\" flow in the New Appointment panel is broken again after JOB-471 shipped it in March \u2014 admins can't add a client address without leaving the panel, and there's no Google Places autocomplete to capture lat/lng. That missing lat/lng also blocks the JOB-720 admin-side service radius check for mobile appointments."
+  },
+  "JOB-569": {
+    "type": "launch-blocker",
+    "summary": "Reworks the admin schedule panel so calendar clicks pre-fill only date/time and default the provider to \"Any Available,\" which triggers round-robin auto-assignment via findNextAvailableProvider(); picking a specific staffer marks the session as \"requested\" so cancellations notify the customer. Includes solo-practitioner shortcut, qualification auto-switch, and multi-service eligibility filtering \u2014 critical for phone bookings where speed and correct assignment_method drive downstream cancellation behavior."
+  },
+  "JOB-525": {
+    "type": "feature",
+    "summary": "Builds the post-booking confirmation screen showing booking details, add-to-calendar links (Google, Outlook, Apple, .ics), and token-based Manage/Book Again buttons \u2014 including staggered group support that renders both batch times. Closes the customer booking flow so customers get a clear receipt without needing to log in."
+  },
+  "JOB-1420": {
+    "type": "epic",
+    "summary": "Umbrella tracking the MVP access work (partner outreach, API decisions, prospect-list build) that gates every per-platform scheduling integration for SmartRoute, with Vagaro as the locked MVP target. Owns decisions like Vagaro vs Booksy write-API access and Square/Acuity outbound feasibility; per-platform build work lives in sibling epic JOB-1543."
+  },
+  "JOB-1552": {
+    "type": "ops",
+    "summary": "Cold-outreach decision to pick between Vagaro and Booksy for write/create-appointment API access so SmartRoute can push bookings into the merchant's calendar and POS. Vagaro's public API is confirmed read-only and Booksy's partner door is locked, so if neither replies by 2026-07-22 the fallback is to promote Square or Acuity from post-MVP to MVP."
+  },
+  "JOB-1434": {
+    "type": "improvement",
+    "summary": "Strips the consumer-facing Stripe Link \"Save my information for faster checkout\" section (email, mobile, disclaimer) from the merchant Add Card side panel opened during the New Appointment flow. Merchants were filling in their own contact info or stalling because it was unclear whose account was being created; card fields and save behavior stay intact."
+  },
+  "JOB-1391": {
+    "type": "bug",
+    "summary": "The Profile and security view renders at /settings while /settings/profile shows an empty stub, so the left-nav Settings link never reaches the canonical URL. Fix requires redirecting /settings to /settings/profile, moving the full view to the canonical route, and deleting the placeholder Personal information card."
+  },
+  "JOB-1463": {
+    "type": "bug",
+    "summary": "The /billing UpgradeModal path creates a Stripe subscription with default_incomplete but never confirms the PaymentIntent: the server omits `latest_invoice.confirmation_secret` from the expand (returning clientSecret null on API 2025-11-17.clover), and the client calls onSuccess without running stripe.confirmCardPayment. Result: trial-expired users appear to upgrade successfully, aren't charged, and the \"Trial expired\" badge never clears until Stripe auto-cancels ~23h later. Fix mirrors the working PaymentForm confirmation flow."
+  },
+  "JOB-511": {
+    "type": "feature",
+    "summary": "Adds a Stripe Connect step to business onboarding so operators can link an existing Stripe account or create one inline, storing the connected account ID for later charges. This is the prerequisite for JOB-510's upfront payment collection at booking \u2014 without it, no business can take card payments through SmartRoute."
+  },
+  "JOB-700": {
+    "type": "launch-blocker",
+    "summary": "Builds the admin schedule panel's card-on-file UI (CardOnFileRow with 5 states, AdminCardModal via Stripe Elements + SetupIntent, and useScheduleSubmission wiring) on top of the already-shipped server enforcement that rejects cardless bookings. Without this, admins hit a 400 missing_payment_method with no way to collect a card in-flow, blocking the mandatory-card booking launch."
+  },
+  "JOB-458": {
+    "type": "improvement",
+    "summary": "Codify a single settings-page UI standard (breadcrumbs, typography, section cards, tabs, inputs, buttons, no stats cards) in settings-ui-standard.md and retrofit every existing settings page to match it. Eliminates the per-page styling drift that's making new settings work slow and inconsistent, and gives future pages a copy-paste template."
+  },
+  "JOB-553": {
+    "type": "launch-blocker",
+    "summary": "Replaces the naive first-match team-member picker in the public booking API with a shared round-robin engine that filters by is_active, rota/shifts, location assignment, service qualification, conflicts, and drive time, then rotates fairly across eligible providers. Also fixes a live bug where inactive team members can be auto-assigned, and becomes the shared assignment function used by the admin schedule panel (JOB-569) and provider-cancelled reassignment (JOB-552)."
+  },
+  "JOB-747": {
+    "type": "regression",
+    "summary": "On fresh Calendar load in Day/Week view, today's appointments render briefly in the team-member columns then vanish, leaving admins staring at empty columns despite having scheduled work. Suspected hydration race where a client effect (likely selectedTeamMembers/selectedPlaces reset or an empty-state guard in useVisibleTeamMembers/CalendarRenderer) filters the appointment set to empty right after mount. Reopened twice already \u2014 same flash-family pattern as JOB-299/455/496."
+  },
+  "JOB-755": {
+    "type": "bug",
+    "summary": "Stripe, marketing constants, and in-app billing each declare different prices ($29/$49/$79 vs $49/$119/$249), so customers get charged one amount and shown another with phantom per-member overages and a 1.5x multiplier. This ticket collapses all three sources onto the v3 four-tier structure (Solo/Team/Business/Growth + custom Enterprise), redefines \"staff\" as active-in-last-30-days, and migrates existing customers without billing surprises. Blocked, back In Progress after being bounced from Done."
+  },
+  "JOB-762": {
+    "type": "feature",
+    "summary": "Remove the Stripe SetupIntent friction at merchant signup so trials match Acuity/Fresha/Square: no card for 14 days, Solo-tier caps to prevent abuse, and a clickable countdown pill that routes to /billing. On day 15 the account enters hard-freeze read-only (dashboard viewable, edits and public booking page blocked with a \"contact merchant\" message) until card + tier are both captured. Currently blocked and back In Progress after failing review."
+  },
+  "JOB-1354": {
+    "type": "bug",
+    "summary": "Clicking Today in the Day/Week calendar returns to today's date but scrolls the grid to 12:00 AM instead of the current time, forcing admins to manually scroll to business hours on every click. Same root cause as JOB-505 (which fixed initial load) but for the Today button entry point."
+  },
+  "JOB-1412": {
+    "type": "bug",
+    "summary": "In the New Appointment side panel, the Location dropdown renders detached from its input on first open (floating mid-panel over the Clients section) and overflows the panel's right edge at narrow widths. Scrolling re-anchors it correctly, so the fix is portal/positioning logic \u2014 not menu state. Makes location selection feel broken and unreliable at collapsed sidebar widths."
+  },
+  "JOB-1454": {
+    "type": "infra",
+    "summary": "CI's E2E job hadn't actually run for months due to Verify/dotenvx breakages; now that infra is fixed, the ~37 specs have rotted (stale selectors, drifted seed/auth, timing) and the first real run hung 45+ min before cancellation. Triage each spec as regression vs stale vs local-only, get a clean green run, then drop retries from 2 and optionally carve a smoke subset so E2E can become a trustworthy PR gate again."
+  },
+  "JOB-1483": {
+    "type": "feature",
+    "summary": "Sends a transactional email to the customer the moment their booking is marked no-show (manual or auto path, deduped), explaining whether the no-show fee was charged and offering a rebook CTA. Closes the silent-charge gap that today generates support tickets from confused customers. Follow-up to JOB-503, inherits the JOB-1481 template family."
+  },
+  "JOB-1505": {
+    "type": "improvement",
+    "summary": "The \"You're Booked\" confirmation screen shows the internal mode label \"Mobile\" alone with no address, leaving customers without a mappable destination. Fix renders LOCATION as mode/venue prefix plus the full street address including ZIP (e.g. `Mobile \u00b7 2047 Westcreek Ln, Houston, TX 77027`), so customers can see both what kind of appointment it is and where to go."
+  },
+  "JOB-1507": {
+    "type": "improvement",
+    "summary": "Strips the SR-XXXXXX confirmation code from the You're Booked in-app screen and the Booking Confirmed / reschedule / cancel emails, since customers manage bookings via the magic-link token, not by quoting a number. Purely a noise-reduction cleanup; the .ics calendar surface is handled separately in JOB-1522."
+  },
+  "JOB-1509": {
+    "type": "bug",
+    "summary": "Manage Booking and Book Again CTAs in the customer Booking Confirmed email render dead links, stranding customers who can't reschedule, cancel, or rebook from the email. Likely shares a URL-builder root cause with JOB-1396 (merchant email's broken View Appointment link resolving to http:///), so the fix must land in the shared helper and be applied across all customer transactional emails under JOB-503."
+  },
+  "JOB-749": {
+    "type": "launch-blocker",
+    "summary": "Register the Twilio 10DLC number (832) 658-2799 with TCR under a Low Volume Standard brand and an Account Notification campaign, then wire onboarding consent capture and privacy-policy updates. Without it, US carriers will filter SmartRoute's booking confirmations, reminders, and reschedule alerts \u2014 blocking the SMS launch tied to JOB-610/697/698/616."
+  },
+  "JOB-1484": {
+    "type": "launch-blocker",
+    "summary": "Code audit confirmed Stripe Connect routes card holds and no-show fee charges directly to the merchant's connected account with zero platform fee, but a live test-mode round-trip is still required to prove the flow end-to-end. Now unblocked since JOB-511 (Connect onboarding) shipped \u2014 remaining work is deploying test keys to staging, onboarding a fake merchant, and running the AC checklist covering charge landing in merchant balance, receipt descriptor, and payout."
+  },
+  "JOB-1592": {
+    "type": "feature",
+    "summary": "Detect a merchant's current booking tool at signup and, if it's unsupported, surface a migration CTA with an affiliate link to Vagaro, Square, or Acuity. Captures merchants who would otherwise bounce, grows SmartRoute's roster on platforms it integrates with, and generates interim revenue while new integrations are in flight."
+  },
+  "JOB-1553": {
+    "type": "ops",
+    "summary": "Manual sleuthing playbook plus a curated list of 50+ mobile-services merchants on Square Appointments and Acuity Scheduling, sourced via Yelp/Google Maps, Instagram/TikTok hashtags, Reddit threads, and booking-widget fingerprinting. Neither platform has a public merchant directory, so this prep work makes outbound ready to launch the day the Square (JOB-1590) or Acuity (JOB-1591) integrations ship, and doubles as the target list for the affiliate model (JOB-1592) or standalone-platform contingency (JOB-1595)."
+  },
+  "JOB-1593": {
+    "type": "ops",
+    "summary": "Email Squire, Mindbody, Setmore, SimplyBook.me, and Booker to confirm whether their partner-tier APIs support create-appointment writes for a SmartRoute integration. Results feed the JOB-1595 breaking-point chain: if all 5 decline alongside Vagaro/Booksy/Square/Acuity stalling, the standalone booking platform contingency activates."
+  },
+  "JOB-1541": {
+    "type": "infra",
+    "summary": "Set up Klaviyo DKIM/SPF/DMARC so it can authenticate as support@smart-route.app alongside Resend, unblocking the TR-3 Day 51 re-engagement flow (JOB-1489) and future behavioral win-back campaigns. Default to shared-domain auth with Resend unless volume threatens transactional deliverability, in which case spin up a dedicated marketing subdomain."
+  },
+  "JOB-1523": {
+    "type": "bug",
+    "summary": "Bookings made without a chosen provider (Any Available) emit calendar events whose description contains the literal string \"Provider: undefined\" on both the customer .ics download and the admin's synced event. Fix is to render the Provider line conditionally \u2014 include it only when a provider name exists, omit it entirely otherwise \u2014 and apply the same guard to reschedule/cancel updates that inherit the format."
+  },
+  "JOB-738": {
+    "type": "feature",
+    "summary": "Wire Featurebase webhooks into SmartRoute's Next.js/Supabase/Resend stack to power two automated email flows: a 24-48h personalized follow-up to prospects who upvote roadmap items (warm-lead capture from Sabine's address), and a \"we shipped your request\" blast to all upvoters when a post is marked Shipped. Turns the public roadmap into both a qualified sales channel and a high-ROI retention touchpoint, sharing one webhook route, cron job, and Supabase schema across both flows."
+  },
+  "JOB-1579": {
+    "type": "launch-blocker",
+    "summary": "Enable Stripe's native customer-receipt emails (successful charges, failed payments, refunds) via Dashboard and configure Branding (logo, accent, support email) so MVP ships tax-compliant receipts with zero code. Includes a runbook so the toggles can be flipped off cleanly when JOB-1578's custom-branded receipts take over post-MVP."
+  },
+  "JOB-1402": {
+    "type": "marketing",
+    "summary": "Full rebuild of the smart-route.app marketing site (homepage, pricing, contact, about, supporting pages) as a coherent set rather than page-by-page patches. Current site predates the mobile beauty/wellness ICP, v3 pricing tiers, and locked \"Any Available is the flow\" positioning. Must reuse the JOB-760 pricing tier component and keep the Featurebase roadmap subdomain untouched."
+  },
+  "JOB-1554": {
+    "type": "marketing",
+    "summary": "Founder-led design-partner outreach to ~50-100 Vagaro CC-Processing merchants: cold email through warmed inboxes, 15-min discovery calls, a pre-recorded video walkthrough, and a \"founding customer at $X/mo at launch\" verbal ask logged in Attio. Goal is 10+ verbal commits within 8 weeks to validate that the Vagaro integration build (JOB-1544) is worth Zarian's weeks of engineering time before it ships into a vacuum."
+  },
+  "JOB-1285": {
+    "type": "marketing",
+    "summary": "Stand up SmartRoute's cold-outreach infrastructure: buy 1-2 non-brand outreach domains (e.g. trysmartroute.com), configure SPF/DKIM/DMARC, create 2-3 Workspace inboxes per domain, and connect them to the shared Instantly Growth subscription in warmup+outreach mode. Protects the brand domain from blocklist burn and unlocks growth-motion cold sends after a 2-4 week warming cycle."
+  },
+  "JOB-1269": {
+    "type": "ops",
+    "summary": "Publish SPF and DMARC TXT records for smart-route.app on Vercel DNS (DKIM already live), then register the domain in Google Postmaster Tools via a site-verification TXT. Unlocks Gmail deliverability monitoring and prevents outbound mail from being spam-flagged once SmartRoute starts sending customer email. Deferred behind JOB-1078 and the plaitqr.com auth work since SmartRoute has no imminent outbound mail."
+  },
+  "JOB-1403": {
+    "type": "feature",
+    "summary": "Ship SmartRoute's brand across every customer-facing surface: favicon and PWA/Apple icons in the Next.js repo, an OG card for link previews, and branded sender avatars plus header/footer marks for Workspace and Resend transactional emails. Currently the browser tab, shared links, and outbound emails all render as unbranded, undermining trust. Mirrors the JOB-990 rollout previously done for PlaitQR."
+  },
+  "JOB-756": {
+    "type": "ops",
+    "summary": "Sweep help docs, support macros, admin labels, legal pages, and non-pricing marketing site copy to purge leftover \"Clinic\" tier language that leaked from Stripe's original product description. SmartRoute doesn't serve clinical customers, so mixed naming risks misleading prospects into expecting HIPAA support. Complements parallel tickets covering pricing pages (JOB-760), transactional emails (JOB-874), and code-level tier IDs (JOB-755)."
+  },
+  "JOB-885": {
+    "type": "feature",
+    "summary": "Defines the full failed-renewal dunning policy: a 7-day soft grace with full access, then read-only mode (calendar viewable, no new bookings, public booking page paused) until Stripe Smart Retries exhaust around day 21 and the subscription cancels. Ships the subscription_status state machine, webhook + scheduled transitions, access enforcement, header pill/in-line UI cues, and the four-email sequence via Resend from billing@smart-route.app. Prevents silent revenue loss and double-booking while giving merchants a clear recovery path via card update."
+  }
+}

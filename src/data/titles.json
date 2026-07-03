@@ -1,0 +1,1122 @@
+{
+  "JOB-1427": {
+    "title": "Clients page UX refresh",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1427/clients-page-ux-refresh",
+    "job_parent_id": null
+  },
+  "JOB-1367": {
+    "title": "Onboarding: convert checklist rows to inline-expand accordion (umbrella)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1367/onboarding-convert-checklist-rows-to-inline-expand-accordion-umbrella",
+    "job_parent_id": null
+  },
+  "JOB-1599": {
+    "title": "GTM lead-magnet funnel",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1599/gtm-lead-magnet-funnel",
+    "job_parent_id": null
+  },
+  "JOB-1417": {
+    "title": "Attio CRM lifecycle integration",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1417/attio-crm-lifecycle-integration",
+    "job_parent_id": null
+  },
+  "JOB-1419": {
+    "title": "Brand, marketing site, and outbound presence",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1419/brand-marketing-site-and-outbound-presence",
+    "job_parent_id": null
+  },
+  "JOB-1378": {
+    "title": "Onboarding flow UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1378/onboarding-flow-ux",
+    "job_parent_id": null
+  },
+  "JOB-1595": {
+    "title": "Standalone booking platform contingency \u2014 full platform build if all integrations dead-end",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1595/standalone-booking-platform-contingency-full-platform-build-if-all",
+    "job_parent_id": null
+  },
+  "JOB-543": {
+    "title": "Cancel & Reschedule flows for customer booking page",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-543/cancel-and-reschedule-flows-for-customer-booking-page",
+    "job_parent_id": null
+  },
+  "JOB-1401": {
+    "title": "Transactional booking notifications: customer, merchant, team coverage",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1401/transactional-booking-notifications-customer-merchant-team-coverage",
+    "job_parent_id": null
+  },
+  "JOB-1413": {
+    "title": "Pricing, billing, and retention",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1413/pricing-billing-and-retention",
+    "job_parent_id": null
+  },
+  "JOB-1519": {
+    "title": "Multi-location, service area, and mobile delivery",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1519/multi-location-service-area-and-mobile-delivery",
+    "job_parent_id": null
+  },
+  "JOB-1468": {
+    "title": "Redesign calendar empty states: anchored banner, shift vs appointment vocab, in-place shift creation",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1468/redesign-calendar-empty-states-anchored-banner-shift-vs-appointment",
+    "job_parent_id": null
+  },
+  "JOB-1399": {
+    "title": "Client notifications IA restructure",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1399/client-notifications-ia-restructure",
+    "job_parent_id": null
+  },
+  "JOB-1380": {
+    "title": "Settings configuration UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1380/settings-configuration-ux",
+    "job_parent_id": null
+  },
+  "JOB-1418": {
+    "title": "Drive-time reliability and API cost observability",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1418/drive-time-reliability-and-api-cost-observability",
+    "job_parent_id": null
+  },
+  "JOB-1416": {
+    "title": "Provider scheduling and team management",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1416/provider-scheduling-and-team-management",
+    "job_parent_id": null
+  },
+  "JOB-1647": {
+    "title": "Sticky note banner on client profile page",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1647/sticky-note-banner-on-client-profile-page",
+    "job_parent_id": null
+  },
+  "JOB-1650": {
+    "title": "Simplify no-appointments alert copy and lock design tokens",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1650/simplify-no-appointments-alert-copy-and-lock-design-tokens",
+    "job_parent_id": null
+  },
+  "JOB-1643": {
+    "title": "Add Minor client type with date of birth and auto-transition to Adult at 18",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1643/add-minor-client-type-with-date-of-birth-and-auto-transition-to-adult",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1634": {
+    "title": "Past appointments from today still show as \"Next\" / \"Upcoming\" after time has passed",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1634/past-appointments-from-today-still-show-as-next-upcoming-after-time",
+    "job_parent_id": null
+  },
+  "JOB-1633": {
+    "title": "Client profile notes: raw HTML tags, small typography, editor doesn't clear after save",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1633/client-profile-notes-raw-html-tags-small-typography-editor-doesnt",
+    "job_parent_id": null
+  },
+  "JOB-1400": {
+    "title": "Merchant notifications for cancel, reschedule, no-show, provider-cancel",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1400/merchant-notifications-for-cancel-reschedule-no-show-provider-cancel",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-1532": {
+    "title": "Calendar page renders footer before calendar content on initial load",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1532/calendar-page-renders-footer-before-calendar-content-on-initial-load",
+    "job_parent_id": null
+  },
+  "JOB-1636": {
+    "title": "Client profile notes typed into editor don't persist to the database",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1636/client-profile-notes-typed-into-editor-dont-persist-to-the-database",
+    "job_parent_id": null
+  },
+  "JOB-1631": {
+    "title": "Lock appointment-defining fields in edit modal \u2014 force reschedule via status dropdown",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1631/lock-appointment-defining-fields-in-edit-modal-force-reschedule-via",
+    "job_parent_id": null
+  },
+  "JOB-1646": {
+    "title": "Empty-state banner on client profile when no upcoming appointments",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1646/empty-state-banner-on-client-profile-when-no-upcoming-appointments",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1645": {
+    "title": "Retire the Client status UI until Prospective earns its keep",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1645/retire-the-client-status-ui-until-prospective-earns-its-keep",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1632": {
+    "title": "Notes past-session linking \u2014 navigate to client profile timeline",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1632/notes-past-session-linking-navigate-to-client-profile-timeline",
+    "job_parent_id": null
+  },
+  "JOB-1628": {
+    "title": "Replace overflow meatball menu with trashcan icon in appointment edit modal",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1628/replace-overflow-meatball-menu-with-trashcan-icon-in-appointment-edit",
+    "job_parent_id": null
+  },
+  "JOB-1629": {
+    "title": "Remove \"Create Invoice\" affordance from appointment surfaces",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1629/remove-create-invoice-affordance-from-appointment-surfaces",
+    "job_parent_id": null
+  },
+  "JOB-1627": {
+    "title": "Remove \"Cancelled\" from appointment status dropdown",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1627/remove-cancelled-from-appointment-status-dropdown",
+    "job_parent_id": null
+  },
+  "JOB-1612": {
+    "title": "Admin appointment panel: inline helper text under provider picker",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1612/admin-appointment-panel-inline-helper-text-under-provider-picker",
+    "job_parent_id": null
+  },
+  "JOB-1614": {
+    "title": "Add Activity tab to main sidebar nav \u2014 migrate Auto-Changes Log out of Tasks",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1614/add-activity-tab-to-main-sidebar-nav-migrate-auto-changes-log-out-of",
+    "job_parent_id": null
+  },
+  "JOB-1609": {
+    "title": "Hide customer-facing SMS UI until customer SMS launches",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1609/hide-customer-facing-sms-ui-until-customer-sms-launches",
+    "job_parent_id": null
+  },
+  "JOB-1561": {
+    "title": "Inline Vagaro \"your services have been imported\" guide during onboarding (parallel to JOB-1558 / JOB-1559)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1561/inline-vagaro-your-services-have-been-imported-guide-during-onboarding",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1559": {
+    "title": "Inline Vagaro \"notifications to disable\" guide during onboarding (parallel to JOB-1558 Stripe guide)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1559/inline-vagaro-notifications-to-disable-guide-during-onboarding",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1607": {
+    "title": "[Waiting on PR#139] Booking page: duplicate review queue + auto-match activity feed",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1607/waiting-on-pr139-booking-page-duplicate-review-queue-auto-match",
+    "job_parent_id": null
+  },
+  "JOB-1605": {
+    "title": "Booking-platform stack search ads",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1605/booking-platform-stack-search-ads",
+    "job_parent_id": "JOB-1599"
+  },
+  "JOB-1604": {
+    "title": "Hourly rate calculator lead magnet",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1604/hourly-rate-calculator-lead-magnet",
+    "job_parent_id": "JOB-1599"
+  },
+  "JOB-1597": {
+    "title": "Late \u2014 viral browser game about mobile service scheduling pain",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1597/late-viral-browser-game-about-mobile-service-scheduling-pain",
+    "job_parent_id": "JOB-1599"
+  },
+  "JOB-1598": {
+    "title": "Impossible booking audit \u2014 show merchants which no-shows were never makeable",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1598/impossible-booking-audit-show-merchants-which-no-shows-were-never",
+    "job_parent_id": "JOB-1599"
+  },
+  "JOB-1531": {
+    "title": "Vagaro connect: API key entry + manual service-to-Vagaro mapping UI (MVP)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1531/vagaro-connect-api-key-entry-manual-service-to-vagaro-mapping-ui-mvp",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1547": {
+    "title": "Header income card: real monthly total and up/down trend",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1547/header-income-card-real-monthly-total-and-updown-trend",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1524": {
+    "title": "Onboarding: ask if merchant is mobile-only or also has a physical shop (gates Location step)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1524/onboarding-ask-if-merchant-is-mobile-only-or-also-has-a-physical-shop",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1527": {
+    "title": "Onboarding: inline services form in accordion card",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1527/onboarding-inline-services-form-in-accordion-card",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1581": {
+    "title": "Onboarding: \"Connect payments\" card (Stripe Connect)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1581/onboarding-connect-payments-card-stripe-connect",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1525": {
+    "title": "Onboarding: Mobile Service sub-mode step (Home, office, or venue / Mobile unit)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1525/onboarding-mobile-service-sub-mode-step-home-office-or-venue-mobile",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1582": {
+    "title": "Onboarding: \"Connect your scheduling tool\" card (Vagaro)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1582/onboarding-connect-your-scheduling-tool-card-vagaro",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1529": {
+    "title": "Onboarding: inline cancellation-policy form in 'Protect your business' card",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1529/onboarding-inline-cancellation-policy-form-in-protect-your-business",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1528": {
+    "title": "Onboarding: inline-expand the team card (solo shortcut + add teammate)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1528/onboarding-inline-expand-the-team-card-solo-shortcut-add-teammate",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1530": {
+    "title": "Onboarding: book-your-first-client card in accordion",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1530/onboarding-book-your-first-client-card-in-accordion",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1526": {
+    "title": "Onboarding: inline business-type picker in accordion card",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1526/onboarding-inline-business-type-picker-in-accordion-card",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1587": {
+    "title": "Service grouping (categories) in services onboarding step + booking page display",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1587/service-grouping-categories-in-services-onboarding-step-booking-page",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1389": {
+    "title": "Audit Payments / Stripe Connect settings for re-configure UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1389/audit-payments-stripe-connect-settings-for-re-configure-ux",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1558": {
+    "title": "Inline Stripe Connect payment-methods merchant guide during onboarding (from stripe-payment-methods-merchant-guide.html)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1558/inline-stripe-connect-payment-methods-merchant-guide-during-onboarding",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1365": {
+    "title": "Onboarding checklist cards use non-design-system borders and radius",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1365/onboarding-checklist-cards-use-non-design-system-borders-and-radius",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-1542": {
+    "title": "Sender architecture in code: /contact form sends to non-existent address; default sender domain missing hyphen; canonical sender constants missing",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1542/sender-architecture-in-code-contact-form-sends-to-non-existent-address",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-1481": {
+    "title": "Standardize merchant transactional email template \u2014 header, footer, brand color, date format, copy pattern",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1481/standardize-merchant-transactional-email-template-header-footer-brand",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-1555": {
+    "title": "Demo seed data \u2014 merchant fixture with last-month + this-month income for trend testing",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1555/demo-seed-data-merchant-fixture-with-last-month-this-month-income-for",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1422": {
+    "title": "Create client \u2192 Client status callout: missing space after \"Archived:\"",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1422/create-client-client-status-callout-missing-space-after-archived",
+    "job_parent_id": null
+  },
+  "JOB-1473": {
+    "title": "Team member role and provider status \u2014 add, edit, and list display",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1473/team-member-role-and-provider-status-add-edit-and-list-display",
+    "job_parent_id": null
+  },
+  "JOB-1453": {
+    "title": "Booking page \u2014 MVP UX improvements (post-walkthrough redesign)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1453/booking-page-mvp-ux-improvements-post-walkthrough-redesign",
+    "job_parent_id": null
+  },
+  "JOB-1514": {
+    "title": "Per-mode surcharge: merchant can charge extra for in-home vs in-vehicle service",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1514/per-mode-surcharge-merchant-can-charge-extra-for-in-home-vs-in-vehicle",
+    "job_parent_id": null
+  },
+  "JOB-1394": {
+    "title": "Admin schedule panel: shift-gate warning when booking outside provider shifts",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1394/admin-schedule-panel-shift-gate-warning-when-booking-outside-provider",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1508": {
+    "title": "Booking confirmation email footer \u2014 format phone and adopt standard transactional pattern",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1508/booking-confirmation-email-footer-format-phone-and-adopt-standard",
+    "job_parent_id": null
+  },
+  "JOB-1510": {
+    "title": "Booking confirmation email \u2014 primary CTA button should use merchant brand color",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1510/booking-confirmation-email-primary-cta-button-should-use-merchant",
+    "job_parent_id": null
+  },
+  "JOB-1395": {
+    "title": "\"Schedule a shift\" element flickers once on admin Calendar then never reappears",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1395/schedule-a-shift-element-flickers-once-on-admin-calendar-then-never",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1495": {
+    "title": "Calendar Settings panel UX polish: clarify toggle copy and add empty-data hint",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1495/calendar-settings-panel-ux-polish-clarify-toggle-copy-and-add-empty",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1499": {
+    "title": "Inactive or terminated team members with orphaned future appointments",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1499/inactive-or-terminated-team-members-with-orphaned-future-appointments",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1498": {
+    "title": "Appointment runs past shift end: duration-aware soft-block warning",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1498/appointment-runs-past-shift-end-duration-aware-soft-block-warning",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1497": {
+    "title": "Resource conflict warning when assigning a shared vehicle to two providers at the same shift time",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1497/resource-conflict-warning-when-assigning-a-shared-vehicle-to-two",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1494": {
+    "title": "Default Show team member shifts calendar setting to ON for new accounts",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1494/default-show-team-member-shifts-calendar-setting-to-on-for-new",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1411": {
+    "title": "Provider with no shift is treated as bookable across the admin booking UI (admin-side twin of JOB-1392)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1411/provider-with-no-shift-is-treated-as-bookable-across-the-admin-booking",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1406": {
+    "title": "Build Profile notification preferences \u2014 billing and account events",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1406/build-profile-notification-preferences-billing-and-account-events",
+    "job_parent_id": "JOB-1399"
+  },
+  "JOB-1410": {
+    "title": "Build booking event notification preferences \u2014 by event \u00d7 who triggered \u00d7 channel",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1410/build-booking-event-notification-preferences-by-event-who-triggered",
+    "job_parent_id": "JOB-1399"
+  },
+  "JOB-1408": {
+    "title": "Remove dead merchant Twilio credential UI and schema columns",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1408/remove-dead-merchant-twilio-credential-ui-and-schema-columns",
+    "job_parent_id": "JOB-1399"
+  },
+  "JOB-1409": {
+    "title": "Client notifications: Channels sub-page (Email + SMS master toggles)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1409/client-notifications-channels-sub-page-email-sms-master-toggles",
+    "job_parent_id": "JOB-1399"
+  },
+  "JOB-1387": {
+    "title": "Audit Team settings for re-configure UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1387/audit-team-settings-for-re-configure-ux",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1393": {
+    "title": "Pick a Time visual polish: date-cell hierarchy, trailing month row, time-slot grid",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1393/pick-a-time-visual-polish-date-cell-hierarchy-trailing-month-row-time",
+    "job_parent_id": null
+  },
+  "JOB-1456": {
+    "title": "Pick a service \u2014 page specification",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1456/pick-a-service-page-specification",
+    "job_parent_id": null
+  },
+  "JOB-1457": {
+    "title": "Where should we meet? \u2014 page specification",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1457/where-should-we-meet-page-specification",
+    "job_parent_id": null
+  },
+  "JOB-1445": {
+    "title": "Service descriptions \u2014 admin field + display on customer booking card",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1445/service-descriptions-admin-field-display-on-customer-booking-card",
+    "job_parent_id": null
+  },
+  "JOB-1447": {
+    "title": "Service card location chips collapse to mode-level at 2+ offices",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1447/service-card-location-chips-collapse-to-mode-level-at-2-offices",
+    "job_parent_id": null
+  },
+  "JOB-1439": {
+    "title": "Polish /billing page to match JOB-760 shipped spec",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1439/polish-billing-page-to-match-job-760-shipped-spec",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1428": {
+    "title": "Business-type vocabulary + custom field \"Show in list\" toggle",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1428/business-type-vocabulary-custom-field-show-in-list-toggle",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1429": {
+    "title": "Clients list: restyle Create client button",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1429/clients-list-restyle-create-client-button",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1430": {
+    "title": "Clients list: replace Location column with merchant-configurable Profile column",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1430/clients-list-replace-location-column-with-merchant-configurable",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1432": {
+    "title": "Client profile: \"All Time\" date range filter \u2014 preset chips + dual calendar",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1432/client-profile-all-time-date-range-filter-preset-chips-dual-calendar",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1431": {
+    "title": "Client profile: \"All Items\" filter menu \u2014 5 items at launch",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1431/client-profile-all-items-filter-menu-5-items-at-launch",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1433": {
+    "title": "Client profile: rename \"Notes\" sidebar card to \"Last note \u00b7 view all (N)\"",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1433/client-profile-rename-notes-sidebar-card-to-last-note-view-all-n",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1421": {
+    "title": "Create client panel: second half of form doesn't match first half styling",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1421/create-client-panel-second-half-of-form-doesnt-match-first-half",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1407": {
+    "title": "Add \"Unsaved changes\" pill to the design system",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1407/add-unsaved-changes-pill-to-the-design-system",
+    "job_parent_id": null
+  },
+  "JOB-1424": {
+    "title": "Client profile page doesn't display Custom Fields values",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1424/client-profile-page-doesnt-display-custom-fields-values",
+    "job_parent_id": "JOB-1427"
+  },
+  "JOB-1423": {
+    "title": "Appointment custom fields don't surface in the appointment booking flow",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1423/appointment-custom-fields-dont-surface-in-the-appointment-booking-flow",
+    "job_parent_id": null
+  },
+  "JOB-1383": {
+    "title": "Business Type change flow \u2014 re-configure copy, current badge, destructive-op safety",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1383/business-type-change-flow-re-configure-copy-current-badge-destructive",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1390": {
+    "title": "Audit Booking page publish settings for re-configure UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1390/audit-booking-page-publish-settings-for-re-configure-ux",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1384": {
+    "title": "Audit Company Information settings for re-configure UX (operate mode, business hours)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1384/audit-company-information-settings-for-re-configure-ux-operate-mode",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1386": {
+    "title": "Audit Locations & service-area settings for re-configure UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1386/audit-locations-and-service-area-settings-for-re-configure-ux",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1388": {
+    "title": "Audit Cancellation Policy settings for re-configure UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1388/audit-cancellation-policy-settings-for-re-configure-ux",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1385": {
+    "title": "Audit Services settings for re-configure UX",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1385/audit-services-settings-for-re-configure-ux",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1381": {
+    "title": "Custom Fields modal scrim cut off above page footer",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1381/custom-fields-modal-scrim-cut-off-above-page-footer",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-699": {
+    "title": "Tasks page UI: tabs + Auto-Changes Log (JOB-594 follow-up)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-699/tasks-page-ui-tabs-auto-changes-log-job-594-follow-up",
+    "job_parent_id": null
+  },
+  "JOB-594": {
+    "title": "Extend Tasks system: auto-created tasks for provider cancellations + auto-changes log",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-594/extend-tasks-system-auto-created-tasks-for-provider-cancellations-auto",
+    "job_parent_id": null
+  },
+  "JOB-552": {
+    "title": "Provider-cancelled reassignment + cancellation side-effects engine",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-552/provider-cancelled-reassignment-cancellation-side-effects-engine",
+    "job_parent_id": "JOB-543"
+  },
+  "JOB-1517": {
+    "title": "Card authorization disclosure names SmartRoute as the charging entity \u2014 should name the merchant",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1517/card-authorization-disclosure-names-smartroute-as-the-charging-entity",
+    "job_parent_id": "JOB-524"
+  },
+  "JOB-1404": {
+    "title": "Drop SettingsBreadcrumbs site-wide \u2014 sidebar + page title already wayfind",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1404/drop-settingsbreadcrumbs-site-wide-sidebar-page-title-already-wayfind",
+    "job_parent_id": null
+  },
+  "JOB-1506": {
+    "title": "Booking flow resets to step 1 when customer leaves the confirmation tab and comes back",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1506/booking-flow-resets-to-step-1-when-customer-leaves-the-confirmation",
+    "job_parent_id": "JOB-525"
+  },
+  "JOB-1486": {
+    "title": "Trial-end no-CC: copy + wiring for day 14 + day 51 nudges",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1486/trial-end-no-cc-copy-wiring-for-day-14-day-51-nudges",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1504": {
+    "title": "Almost Done \u2014 Google Places address autocomplete border doesn't match the rest of the form",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1504/almost-done-google-places-address-autocomplete-border-doesnt-match-the",
+    "job_parent_id": "JOB-524"
+  },
+  "JOB-1520": {
+    "title": "Hold expired screen \u2014 \"Try same time\" button requires two clicks to re-hold and continue to booking page",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1520/hold-expired-screen-try-same-time-button-requires-two-clicks-to-re",
+    "job_parent_id": "JOB-1453"
+  },
+  "JOB-1537": {
+    "title": "Booking page: match or create client from booking submission",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1537/booking-page-match-or-create-client-from-booking-submission",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-1539": {
+    "title": "Trial-end no-CC: booking widget pause copy on /book/{slug}",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1539/trial-end-no-cc-booking-widget-pause-copy-on-bookslug",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1540": {
+    "title": "During-trial merchant drip: Day 0 welcome + Day 12 ends-in-2-days",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1540/during-trial-merchant-drip-day-0-welcome-day-12-ends-in-2-days",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-742": {
+    "title": "Tech debt: migrate appointments.date (and siblings) from text to Postgres date",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-742/tech-debt-migrate-appointmentsdate-and-siblings-from-text-to-postgres",
+    "job_parent_id": null
+  },
+  "JOB-1348": {
+    "title": "Calendar preview block jumps to 8:00 AM when toggling location during appointment creation",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1348/calendar-preview-block-jumps-to-800-am-when-toggling-location-during",
+    "job_parent_id": null
+  },
+  "JOB-1351": {
+    "title": "Calendar preview block doesn't update when start time is changed in new appointment panel",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1351/calendar-preview-block-doesnt-update-when-start-time-is-changed-in-new",
+    "job_parent_id": null
+  },
+  "JOB-1471": {
+    "title": "Settings sidebar disappears when navigating to Role Permissions",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1471/settings-sidebar-disappears-when-navigating-to-role-permissions",
+    "job_parent_id": null
+  },
+  "JOB-1502": {
+    "title": "Header phone number unformatted across booking flow",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1502/header-phone-number-unformatted-across-booking-flow",
+    "job_parent_id": "JOB-1453"
+  },
+  "JOB-1503": {
+    "title": "\"We come to you\" label reads as mobile/in-vehicle but means at customer's location",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1503/we-come-to-you-label-reads-as-mobilein-vehicle-but-means-at-customers",
+    "job_parent_id": "JOB-1453"
+  },
+  "JOB-1513": {
+    "title": "Settings: per-merchant toggle for which mobile sub-modes are offered (in-home, in-vehicle, or both)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1513/settings-per-merchant-toggle-for-which-mobile-sub-modes-are-offered-in",
+    "job_parent_id": "JOB-1519"
+  },
+  "JOB-1516": {
+    "title": "Remove Stripe Link \"Save my info for faster checkout\" opt-in from booking checkout",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1516/remove-stripe-link-save-my-info-for-faster-checkout-opt-in-from",
+    "job_parent_id": "JOB-524"
+  },
+  "JOB-1522": {
+    "title": "Calendar event downloads: remove confirmation number from Google / Outlook / .ics",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1522/calendar-event-downloads-remove-confirmation-number-from-google",
+    "job_parent_id": "JOB-503"
+  },
+  "JOB-1536": {
+    "title": "Clients list shows \"Invalid Date\" under Next appt and never populates Last appt",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1536/clients-list-shows-invalid-date-under-next-appt-and-never-populates",
+    "job_parent_id": null
+  },
+  "JOB-706": {
+    "title": "Calendar exports (Google/Outlook/Apple .ics): use full street address for location and auto-add guests",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-706/calendar-exports-googleoutlookapple-ics-use-full-street-address-for",
+    "job_parent_id": null
+  },
+  "JOB-766": {
+    "title": "Snapshot location address on appointment at booking time so calendar exports preserve booking-time address",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-766/snapshot-location-address-on-appointment-at-booking-time-so-calendar",
+    "job_parent_id": null
+  },
+  "JOB-1414": {
+    "title": "Cancel, reschedule, and policy fee enforcement",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1414/cancel-reschedule-and-policy-fee-enforcement",
+    "job_parent_id": null
+  },
+  "JOB-1466": {
+    "title": "[Sentry] Error: Rendered more hooks than during the previous render.",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1466/sentry-error-rendered-more-hooks-than-during-the-previous-render",
+    "job_parent_id": null
+  },
+  "JOB-1512": {
+    "title": "Booking page lets customers book providers without a shift on partial-coverage dates",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1512/booking-page-lets-customers-book-providers-without-a-shift-on-partial",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-447": {
+    "title": "Replace freeform category text input with combo-box and inline management on services page",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-447/replace-freeform-category-text-input-with-combo-box-and-inline",
+    "job_parent_id": null
+  },
+  "JOB-878": {
+    "title": "/billing \u2014 downgrade flow with retention modal (Confirm disabled until caps fit)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-878/billing-downgrade-flow-with-retention-modal-confirm-disabled-until",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-877": {
+    "title": "/billing \u2014 upgrade flow with review panel + Stripe proration",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-877/billing-upgrade-flow-with-review-panel-stripe-proration",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-887": {
+    "title": "Fix email sender domain + split merchant vs. end-customer senders (3-sender architecture)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-887/fix-email-sender-domain-split-merchant-vs-end-customer-senders-3",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-886": {
+    "title": "Configure dedicated billing@smart-route.app Resend sender for dunning emails",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-886/configure-dedicated-billingsmart-routeapp-resend-sender-for-dunning",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-452": {
+    "title": "Restyle \"Mar: $0.00\" income indicator in header \u2014 add trend icon, bold amount, label",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-452/restyle-mar-dollar000-income-indicator-in-header-add-trend-icon-bold",
+    "job_parent_id": null
+  },
+  "JOB-524": {
+    "title": "Booking page: Checkout screen (all variants)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-524/booking-page-checkout-screen-all-variants",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-763": {
+    "title": "Signup \u2014 capture operation type (office / mobile / hybrid) + retention segmentation",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-763/signup-capture-operation-type-office-mobile-hybrid-retention",
+    "job_parent_id": null
+  },
+  "JOB-720": {
+    "title": "Service area validation: customer checkout gate + admin soft-override",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-720/service-area-validation-customer-checkout-gate-admin-soft-override",
+    "job_parent_id": "JOB-1519"
+  },
+  "JOB-1392": {
+    "title": "Booking calendar shows phantom availability when no shifts exist (regression of JOB-628)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1392/booking-calendar-shows-phantom-availability-when-no-shifts-exist",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-548": {
+    "title": "Customer reschedule flow",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-548/customer-reschedule-flow",
+    "job_parent_id": "JOB-543"
+  },
+  "JOB-709": {
+    "title": "Manage Booking button on Confirmation screen leads to \"Invalid Link\" error",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-709/manage-booking-button-on-confirmation-screen-leads-to-invalid-link",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-1440": {
+    "title": "Day view loads with one provider at full grid width instead of the scheduled roster",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1440/day-view-loads-with-one-provider-at-full-grid-width-instead-of-the",
+    "job_parent_id": null
+  },
+  "JOB-993": {
+    "title": "[Health Check] Git hygiene: 11 worktrees + 5 stashes + 12 ahead commits",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-993/health-check-git-hygiene-11-worktrees-5-stashes-12-ahead-commits",
+    "job_parent_id": null
+  },
+  "JOB-954": {
+    "title": "[Sentry] SyntaxError: Unexpected EOF",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-954/sentry-syntaxerror-unexpected-eof",
+    "job_parent_id": null
+  },
+  "JOB-873": {
+    "title": "Run prisma migrate deploy in prod pipeline to prevent schema-drift outages",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-873/run-prisma-migrate-deploy-in-prod-pipeline-to-prevent-schema-drift",
+    "job_parent_id": null
+  },
+  "JOB-1353": {
+    "title": "[Sentry] Error: An unexpected response was received from the server.",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1353/sentry-error-an-unexpected-response-was-received-from-the-server",
+    "job_parent_id": null
+  },
+  "JOB-630": {
+    "title": "Trial-ended banner shows on desktop \u2014 should be mobile-only",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-630/trial-ended-banner-shows-on-desktop-should-be-mobile-only",
+    "job_parent_id": null
+  },
+  "JOB-1377": {
+    "title": "Wire sidebar Roadmap link to roadmap.smart-route.app",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1377/wire-sidebar-roadmap-link-to-roadmapsmart-routeapp",
+    "job_parent_id": "JOB-736"
+  },
+  "JOB-932": {
+    "title": "[Sentry] SyntaxError: Failed to execute 'appendChild' on 'Node': Invalid or unexpected token",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-932/sentry-syntaxerror-failed-to-execute-appendchild-on-node-invalid-or",
+    "job_parent_id": null
+  },
+  "JOB-1492": {
+    "title": "Schedule error fallback: accurate copy, matching button labels, single error state",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1492/schedule-error-fallback-accurate-copy-matching-button-labels-single",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1467": {
+    "title": "Schedule a shift CTA from calendar empty state hits cascading error fallback; recovery buttons mislabeled",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1467/schedule-a-shift-cta-from-calendar-empty-state-hits-cascading-error",
+    "job_parent_id": "JOB-1468"
+  },
+  "JOB-1364": {
+    "title": "New account inherits \"Trial expired\" status from a separate existing account",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1364/new-account-inherits-trial-expired-status-from-a-separate-existing",
+    "job_parent_id": null
+  },
+  "JOB-680": {
+    "title": "Schedule exceptions: block a specific date without changing the recurring pattern",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-680/schedule-exceptions-block-a-specific-date-without-changing-the",
+    "job_parent_id": "JOB-1416"
+  },
+  "JOB-531": {
+    "title": "Policy fee charging via Stripe (cancel, reschedule, no-show)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-531/policy-fee-charging-via-stripe-cancel-reschedule-no-show",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-610": {
+    "title": "SMS/text notification system for customer communications",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-610/smstext-notification-system-for-customer-communications",
+    "job_parent_id": "JOB-1480"
+  },
+  "JOB-691": {
+    "title": "Card-on-file must be verified server-side before a booking is created",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-691/card-on-file-must-be-verified-server-side-before-a-booking-is-created",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-1379": {
+    "title": "New appointment selector preview too narrow horizontally on first click",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1379/new-appointment-selector-preview-too-narrow-horizontally-on-first",
+    "job_parent_id": null
+  },
+  "JOB-1346": {
+    "title": "Remove \"Click a provider's name\u2026\" tip banner from calendar",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1346/remove-click-a-providers-name-tip-banner-from-calendar",
+    "job_parent_id": null
+  },
+  "JOB-1296": {
+    "title": "Sidebar \u2014 vertical gap between \"Recently Viewed\" and \"Roadmap\" feels off",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1296/sidebar-vertical-gap-between-recently-viewed-and-roadmap-feels-off",
+    "job_parent_id": null
+  },
+  "JOB-1368": {
+    "title": "Remove duplicate \"14 days left\" pill from sidebar \u2014 top-right trial pill is canonical",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1368/remove-duplicate-14-days-left-pill-from-sidebar-top-right-trial-pill",
+    "job_parent_id": null
+  },
+  "JOB-688": {
+    "title": "Persist policy fee charge state + surface in admin modal",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-688/persist-policy-fee-charge-state-surface-in-admin-modal",
+    "job_parent_id": "JOB-1414"
+  },
+  "JOB-1464": {
+    "title": "Align subscribe-modal title copy: UpgradeModal \"Start X plan\" vs PaymentForm \"Subscribe to X\"",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-1464/align-subscribe-modal-title-copy-upgrademodal-start-x-plan-vs",
+    "job_parent_id": null
+  },
+  "JOB-714": {
+    "title": "Merge Group Built screen into Who's Coming \u2014 eliminate separate review step",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-714/merge-group-built-screen-into-whos-coming-eliminate-separate-review",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-760": {
+    "title": "Pricing page + in-app billing page \u2014 4 tier cards + Enterprise (Most Popular on Team)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-760/pricing-page-in-app-billing-page-4-tier-cards-enterprise-most-popular",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-551": {
+    "title": "Provider selection screen + assignment_method tracking",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-551/provider-selection-screen-assignment-method-tracking",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-546": {
+    "title": "Customer cancel flow with policy enforcement",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-546/customer-cancel-flow-with-policy-enforcement",
+    "job_parent_id": "JOB-543"
+  },
+  "JOB-724": {
+    "title": "Drive time: retry + safe-failure policy for transient Google errors",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-724/drive-time-retry-safe-failure-policy-for-transient-google-errors",
+    "job_parent_id": "JOB-1418"
+  },
+  "JOB-695": {
+    "title": "Policy fee engine: support full_service fee type at runtime",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-695/policy-fee-engine-support-full-service-fee-type-at-runtime",
+    "job_parent_id": "JOB-1414"
+  },
+  "JOB-668": {
+    "title": "Simplify fee settings: one fee for all actions (remove separate no-show fee)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-668/simplify-fee-settings-one-fee-for-all-actions-remove-separate-no-show",
+    "job_parent_id": "JOB-1414"
+  },
+  "JOB-666": {
+    "title": "Add group booking language to public cancellation policy page",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-666/add-group-booking-language-to-public-cancellation-policy-page",
+    "job_parent_id": "JOB-1414"
+  },
+  "JOB-616": {
+    "title": "Clinician schedule sync: calendar subscription + SMS change alerts",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-616/clinician-schedule-sync-calendar-subscription-sms-change-alerts",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-705": {
+    "title": "Appointment detail deep-link support (JOB-701 follow-up)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-705/appointment-detail-deep-link-support-job-701-follow-up",
+    "job_parent_id": null
+  },
+  "JOB-523": {
+    "title": "Booking page: Time picker screen (solo + group)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-523/booking-page-time-picker-screen-solo-group",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-683": {
+    "title": "Consolidate card-hold copy on checkout \u2014 remove 3x reassurance redundancy",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-683/consolidate-card-hold-copy-on-checkout-remove-3x-reassurance",
+    "job_parent_id": "JOB-524"
+  },
+  "JOB-579": {
+    "title": "Booking window setting \u2014 how far in advance customers can see availability",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-579/booking-window-setting-how-far-in-advance-customers-can-see",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-448": {
+    "title": "Redesign services page: table layout, remove search/stats/cost/color, standardize button, add buffer time",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-448/redesign-services-page-table-layout-remove-searchstatscostcolor",
+    "job_parent_id": null
+  },
+  "JOB-514": {
+    "title": "Appointment location reverts to client home address instead of being empty",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-514/appointment-location-reverts-to-client-home-address-instead-of-being",
+    "job_parent_id": null
+  },
+  "JOB-703": {
+    "title": "[UX Regression] calendar dropped 5.0 -> 3.0 (fresh-mobile-groomer)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-703/ux-regression-calendar-dropped-50-30-fresh-mobile-groomer",
+    "job_parent_id": null
+  },
+  "JOB-527": {
+    "title": "Booking page: Slot hold + error states",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-527/booking-page-slot-hold-error-states",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-657": {
+    "title": "Parent appointment status cascades to all child sessions (preserve per-session divergence)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-657/parent-appointment-status-cascades-to-all-child-sessions-preserve-per",
+    "job_parent_id": "JOB-543"
+  },
+  "JOB-522": {
+    "title": "Booking page: Where + stagger order screen (group exceeding capacity)",
+    "job_url": "https://linear.app/joinourbuild/issue/JOB-522/booking-page-where-stagger-order-screen-group-exceeding-capacity",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-1663": {
+    "title": "Booking gate: missing space after company name (\"{name}hasn't\")",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1663/",
+    "job_parent_id": null
+  },
+  "JOB-1652": {
+    "title": "Review & ship SmartRoute PR backlog, batch (train #151) + risk lane",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1652/",
+    "job_parent_id": null
+  },
+  "JOB-1469": {
+    "title": "Merchant New Booking email dispatches inconsistently \u2014 most appointments trigger no email",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1469/",
+    "job_parent_id": "JOB-1399"
+  },
+  "JOB-500": {
+    "title": "Full-page standalone booking page (Mindbody-style)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-500/",
+    "job_parent_id": null
+  },
+  "JOB-503": {
+    "title": "SmartRoute transactional emails (confirmation, reminders, book again)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-503/",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-1396": {
+    "title": "Merchant New Booking email: View Appointment button renders invalid http:/// link",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1396/",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-722": {
+    "title": "Add New Address inline in scheduling panel not working",
+    "job_url": "https://linear.app/joinourbuild/issue/job-722/",
+    "job_parent_id": null
+  },
+  "JOB-569": {
+    "title": "Admin schedule panel: \"Any Available\" option with smart assignment",
+    "job_url": "https://linear.app/joinourbuild/issue/job-569/",
+    "job_parent_id": null
+  },
+  "JOB-525": {
+    "title": "Booking page: Confirmation screen",
+    "job_url": "https://linear.app/joinourbuild/issue/job-525/",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-1420": {
+    "title": "Third-party scheduling platform integrations",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1420/",
+    "job_parent_id": null
+  },
+  "JOB-1552": {
+    "title": "Vagaro vs Booksy \u2014 which platform unlocks write-appointment API access",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1552/",
+    "job_parent_id": "JOB-1420"
+  },
+  "JOB-1434": {
+    "title": "Remove \"Save my information for faster checkout\" from Add Card panel",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1434/",
+    "job_parent_id": null
+  },
+  "JOB-1391": {
+    "title": "/settings renders Profile and security; /settings/profile is an empty stub",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1391/",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-1463": {
+    "title": "Modal Upgrade leaves subscription incomplete, PaymentIntent never confirmed (badge never clears)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1463/",
+    "job_parent_id": null
+  },
+  "JOB-511": {
+    "title": "Onboarding: Stripe Connect account setup for businesses",
+    "job_url": "https://linear.app/joinourbuild/issue/job-511/",
+    "job_parent_id": "JOB-1367"
+  },
+  "JOB-700": {
+    "title": "Admin schedule panel card-on-file UI (JOB-674 follow-up)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-700/",
+    "job_parent_id": null
+  },
+  "JOB-458": {
+    "title": "Define and document UI/UX standard for all settings pages \u2014 apply consistently across existing and new pages",
+    "job_url": "https://linear.app/joinourbuild/issue/job-458/",
+    "job_parent_id": "JOB-1380"
+  },
+  "JOB-553": {
+    "title": "Round-robin provider auto-assignment for \"Any Available\" bookings",
+    "job_url": "https://linear.app/joinourbuild/issue/job-553/",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-747": {
+    "title": "Calendar Day view: today's appointments flash in, then columns render empty",
+    "job_url": "https://linear.app/joinourbuild/issue/job-747/",
+    "job_parent_id": null
+  },
+  "JOB-755": {
+    "title": "Reconcile SmartRoute pricing \u2014 $29/$49/$79/$119 Solo/Team/Business/Growth + Custom Enterprise",
+    "job_url": "https://linear.app/joinourbuild/issue/job-755/",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-762": {
+    "title": "14-day free trial without credit card requirement",
+    "job_url": "https://linear.app/joinourbuild/issue/job-762/",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1354": {
+    "title": "\"Today\" button on calendar jumps to midnight instead of current time",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1354/",
+    "job_parent_id": null
+  },
+  "JOB-1412": {
+    "title": "New Appointment panel: Location dropdown renders detached from input and overflows panel",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1412/",
+    "job_parent_id": null
+  },
+  "JOB-1454": {
+    "title": "Green the E2E suite in CI, specs rotted while E2E was dormant",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1454/",
+    "job_parent_id": null
+  },
+  "JOB-1483": {
+    "title": "Customer no-show notification email (JOB-503 follow-up)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1483/",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-1505": {
+    "title": "Confirmation LOCATION missing the address (renders \"Mobile\" alone)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1505/",
+    "job_parent_id": "JOB-525"
+  },
+  "JOB-1507": {
+    "title": "Remove confirmation number from booking confirmation surfaces (email + in-app screen)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1507/",
+    "job_parent_id": "JOB-500"
+  },
+  "JOB-1509": {
+    "title": "Booking confirmation email \u2014 Manage Booking and Book Again buttons don't work",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1509/",
+    "job_parent_id": "JOB-503"
+  },
+  "JOB-749": {
+    "title": "Register Twilio number +18326582799 for 10DLC (A2P) before SMS launch",
+    "job_url": "https://linear.app/joinourbuild/issue/job-749/",
+    "job_parent_id": "JOB-1401"
+  },
+  "JOB-1484": {
+    "title": "Verify Stripe Connect end-to-end \u2014 card collection on booking page, destination charges on no-show fees, merchant payout",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1484/",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1592": {
+    "title": "Affiliate revenue \u2014 help merchants migrate to integrated platforms (Vagaro, Square, Acuity) for interim income",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1592/",
+    "job_parent_id": "JOB-1543"
+  },
+  "JOB-1553": {
+    "title": "Outbound prospect-list build \u2014 find mobile-services merchants on Square/Acuity (no public directory)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1553/",
+    "job_parent_id": "JOB-1420"
+  },
+  "JOB-1593": {
+    "title": "Understand platform fit \u2014 outreach to partial-fit alternatives (Squire, Mindbody, Setmore, SimplyBook.me, Booker)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1593/",
+    "job_parent_id": "JOB-1420"
+  },
+  "JOB-1541": {
+    "title": "Configure Klaviyo sender authentication for support@smart-route.app",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1541/",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1523": {
+    "title": "Calendar event payload renders \"Provider: undefined\" when no provider was selected",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1523/",
+    "job_parent_id": "JOB-503"
+  },
+  "JOB-738": {
+    "title": "Build Featurebase-driven email automation (prospect warm-lead + ship-notification, native SmartRoute backend)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-738/",
+    "job_parent_id": "JOB-736"
+  },
+  "JOB-1579": {
+    "title": "Configure Stripe-native customer receipt emails (Dashboard setup)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1579/",
+    "job_parent_id": "JOB-1413"
+  },
+  "JOB-1402": {
+    "title": "Re-create smart-route.app marketing site",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1402/",
+    "job_parent_id": "JOB-1419"
+  },
+  "JOB-1554": {
+    "title": "Founder-led design-partner calls \u2014 outreach, video presentation, track to commit (Vagaro merchants first)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1554/",
+    "job_parent_id": "JOB-1419"
+  },
+  "JOB-1285": {
+    "title": "Cold-outreach setup \u2014 outreach domains, Workspace inboxes, Instantly, warming",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1285/",
+    "job_parent_id": "JOB-1419"
+  },
+  "JOB-1269": {
+    "title": "Email auth setup for smart-route.app (SPF + DMARC, Vercel DNS)",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1269/",
+    "job_parent_id": "JOB-1419"
+  },
+  "JOB-1403": {
+    "title": "Brand visuals: favicon, web icons, and email graphics",
+    "job_url": "https://linear.app/joinourbuild/issue/job-1403/",
+    "job_parent_id": "JOB-1419"
+  },
+  "JOB-756": {
+    "title": "Audit + remove \"Clinic\" language from help docs, emails, support macros, non-pricing marketing content",
+    "job_url": "https://linear.app/joinourbuild/issue/job-756/",
+    "job_parent_id": "JOB-1419"
+  },
+  "JOB-885": {
+    "title": "Subscription dunning policy \u2014 7-day soft-grace + access states for failed renewal charges",
+    "job_url": "https://linear.app/joinourbuild/issue/job-885/",
+    "job_parent_id": null
+  }
+}

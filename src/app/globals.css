@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+:root {
+	--bg: #FAFAF9;
+	--bg-2: #F1F0EC;
+	--ink: #16171A;
+	--ink-2: #3B3D42;
+	--muted: #6E7078;
+	--muted-2: #A5A7AE;
+	--rule: #E6E4DE;
+	--rule-2: #EFEDE7;
+
+	--st-backlog:   #A8A29A;
+	--st-triage:    #B4762A;
+	--st-todo:      #57578F;
+	--st-progress:  #2F5D8A;
+	--st-review:    #6E7E43;
+	--st-done:      #3F6E42;
+	--st-canceled:  #9C968C;
+	--st-duplicate: #B8B0A2;
+	--st-changes:   #9E5F26;
+}
+
+@theme inline {
+	--color-bg: var(--bg);
+	--color-bg-2: var(--bg-2);
+	--color-ink: var(--ink);
+	--color-ink-2: var(--ink-2);
+	--color-muted: var(--muted);
+	--color-muted-2: var(--muted-2);
+	--color-rule: var(--rule);
+	--color-rule-2: var(--rule-2);
+	--font-body: var(--font-plex-sans);
+	--font-mono: var(--font-plex-mono);
+}
+
+html, body {
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-plex-sans), 'IBM Plex Sans', system-ui, sans-serif;
+	font-size: 13px;
+	line-height: 1.45;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+*:focus-visible {
+	outline: 1.5px solid var(--ink);
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
+::selection {
+	background: var(--ink);
+	color: var(--bg);
+}

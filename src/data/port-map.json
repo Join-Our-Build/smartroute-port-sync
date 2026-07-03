@@ -1,0 +1,1145 @@
+{
+  "total": 224,
+  "wave1_count": 101,
+  "wave2_count": 123,
+  "wave2_failed_backlinks": [
+    "JOB-724",
+    "JOB-683",
+    "JOB-703",
+    "JOB-657",
+    "JOB-503",
+    "JOB-722",
+    "JOB-569",
+    "JOB-1391",
+    "JOB-1463",
+    "JOB-700",
+    "JOB-1354",
+    "JOB-1412",
+    "JOB-1507",
+    "JOB-1592",
+    "JOB-1553",
+    "JOB-1541"
+  ],
+  "map": {
+    "JOB-1427": {
+      "per_id": "PER-10",
+      "per_url": "https://linear.app/sabinemr/issue/PER-10/clients-page-ux-refresh",
+      "back_link_added": true
+    },
+    "JOB-1367": {
+      "per_id": "PER-24",
+      "per_url": "https://linear.app/sabinemr/issue/PER-24/onboarding-convert-checklist-rows-to-inline-expand-accordion-umbrella",
+      "back_link_added": true
+    },
+    "JOB-1599": {
+      "per_id": "PER-18",
+      "per_url": "https://linear.app/sabinemr/issue/PER-18/gtm-lead-magnet-funnel",
+      "back_link_added": true
+    },
+    "JOB-1417": {
+      "per_id": "PER-9",
+      "per_url": "https://linear.app/sabinemr/issue/PER-9/attio-crm-lifecycle-integration",
+      "back_link_added": true
+    },
+    "JOB-1419": {
+      "per_id": "PER-15",
+      "per_url": "https://linear.app/sabinemr/issue/PER-15/brand-marketing-site-and-outbound-presence",
+      "back_link_added": true
+    },
+    "JOB-1378": {
+      "per_id": "PER-14",
+      "per_url": "https://linear.app/sabinemr/issue/PER-14/onboarding-flow-ux",
+      "back_link_added": true
+    },
+    "JOB-1595": {
+      "per_id": "PER-20",
+      "per_url": "https://linear.app/sabinemr/issue/PER-20/standalone-booking-platform-contingency-full-platform-build-if-all",
+      "back_link_added": true
+    },
+    "JOB-543": {
+      "per_id": "PER-16",
+      "per_url": "https://linear.app/sabinemr/issue/PER-16/cancel-and-reschedule-flows-for-customer-booking-page",
+      "back_link_added": true
+    },
+    "JOB-1401": {
+      "per_id": "PER-21",
+      "per_url": "https://linear.app/sabinemr/issue/PER-21/transactional-booking-notifications-customer-merchant-team-coverage",
+      "back_link_added": true
+    },
+    "JOB-1413": {
+      "per_id": "PER-17",
+      "per_url": "https://linear.app/sabinemr/issue/PER-17/pricing-billing-and-retention",
+      "back_link_added": true
+    },
+    "JOB-1519": {
+      "per_id": "PER-12",
+      "per_url": "https://linear.app/sabinemr/issue/PER-12/multi-location-service-area-and-mobile-delivery",
+      "back_link_added": true
+    },
+    "JOB-1468": {
+      "per_id": "PER-23",
+      "per_url": "https://linear.app/sabinemr/issue/PER-23/redesign-calendar-empty-states-anchored-banner-shift-vs-appointment",
+      "back_link_added": true
+    },
+    "JOB-1399": {
+      "per_id": "PER-22",
+      "per_url": "https://linear.app/sabinemr/issue/PER-22/client-notifications-ia-restructure",
+      "back_link_added": true
+    },
+    "JOB-1380": {
+      "per_id": "PER-19",
+      "per_url": "https://linear.app/sabinemr/issue/PER-19/settings-configuration-ux",
+      "back_link_added": true
+    },
+    "JOB-1418": {
+      "per_id": "PER-11",
+      "per_url": "https://linear.app/sabinemr/issue/PER-11/drive-time-reliability-and-api-cost-observability",
+      "back_link_added": true
+    },
+    "JOB-1416": {
+      "per_id": "PER-13",
+      "per_url": "https://linear.app/sabinemr/issue/PER-13/provider-scheduling-and-team-management",
+      "back_link_added": true
+    },
+    "JOB-1647": {
+      "per_id": "PER-55",
+      "per_url": "https://linear.app/sabinemr/issue/PER-55/sticky-note-banner-on-client-profile-page",
+      "back_link_added": true
+    },
+    "JOB-1650": {
+      "per_id": "PER-32",
+      "per_url": "https://linear.app/sabinemr/issue/PER-32/simplify-no-appointments-alert-copy-and-lock-design-tokens",
+      "back_link_added": true
+    },
+    "JOB-1643": {
+      "per_id": "PER-41",
+      "per_url": "https://linear.app/sabinemr/issue/PER-41/add-minor-client-type-with-date-of-birth-and-auto-transition-to-adult",
+      "back_link_added": true
+    },
+    "JOB-1634": {
+      "per_id": "PER-34",
+      "per_url": "https://linear.app/sabinemr/issue/PER-34/past-appointments-from-today-still-show-as-next-upcoming-after-time",
+      "back_link_added": true
+    },
+    "JOB-1633": {
+      "per_id": "PER-35",
+      "per_url": "https://linear.app/sabinemr/issue/PER-35/client-profile-notes-raw-html-tags-small-typography-editor-doesnt",
+      "back_link_added": true
+    },
+    "JOB-1400": {
+      "per_id": "PER-33",
+      "per_url": "https://linear.app/sabinemr/issue/PER-33/merchant-notifications-for-cancel-reschedule-no-show-provider-cancel",
+      "back_link_added": true
+    },
+    "JOB-1532": {
+      "per_id": "PER-38",
+      "per_url": "https://linear.app/sabinemr/issue/PER-38/calendar-page-renders-footer-before-calendar-content-on-initial-load",
+      "back_link_added": true
+    },
+    "JOB-1636": {
+      "per_id": "PER-39",
+      "per_url": "https://linear.app/sabinemr/issue/PER-39/client-profile-notes-typed-into-editor-dont-persist-to-the-database",
+      "back_link_added": true
+    },
+    "JOB-1631": {
+      "per_id": "PER-40",
+      "per_url": "https://linear.app/sabinemr/issue/PER-40/lock-appointment-defining-fields-in-edit-modal-force-reschedule-via",
+      "back_link_added": true
+    },
+    "JOB-1646": {
+      "per_id": "PER-31",
+      "per_url": "https://linear.app/sabinemr/issue/PER-31/empty-state-banner-on-client-profile-when-no-upcoming-appointments",
+      "back_link_added": true
+    },
+    "JOB-1645": {
+      "per_id": "PER-28",
+      "per_url": "https://linear.app/sabinemr/issue/PER-28/retire-the-client-status-ui-until-prospective-earns-its-keep",
+      "back_link_added": true
+    },
+    "JOB-1632": {
+      "per_id": "PER-29",
+      "per_url": "https://linear.app/sabinemr/issue/PER-29/notes-past-session-linking-navigate-to-client-profile-timeline",
+      "back_link_added": true
+    },
+    "JOB-1628": {
+      "per_id": "PER-27",
+      "per_url": "https://linear.app/sabinemr/issue/PER-27/replace-overflow-meatball-menu-with-trashcan-icon-in-appointment-edit",
+      "back_link_added": true
+    },
+    "JOB-1629": {
+      "per_id": "PER-25",
+      "per_url": "https://linear.app/sabinemr/issue/PER-25/remove-create-invoice-affordance-from-appointment-surfaces",
+      "back_link_added": true
+    },
+    "JOB-1627": {
+      "per_id": "PER-26",
+      "per_url": "https://linear.app/sabinemr/issue/PER-26/remove-cancelled-from-appointment-status-dropdown",
+      "back_link_added": true
+    },
+    "JOB-1612": {
+      "per_id": "PER-30",
+      "per_url": "https://linear.app/sabinemr/issue/PER-30/admin-appointment-panel-inline-helper-text-under-provider-picker",
+      "back_link_added": true
+    },
+    "JOB-1614": {
+      "per_id": "PER-37",
+      "per_url": "https://linear.app/sabinemr/issue/PER-37/add-activity-tab-to-main-sidebar-nav-migrate-auto-changes-log-out-of",
+      "back_link_added": true
+    },
+    "JOB-1609": {
+      "per_id": "PER-36",
+      "per_url": "https://linear.app/sabinemr/issue/PER-36/hide-customer-facing-sms-ui-until-customer-sms-launches",
+      "back_link_added": true
+    },
+    "JOB-1561": {
+      "per_id": "PER-43",
+      "per_url": "https://linear.app/sabinemr/issue/PER-43/inline-vagaro-your-services-have-been-imported-guide-during-onboarding",
+      "back_link_added": true
+    },
+    "JOB-1559": {
+      "per_id": "PER-42",
+      "per_url": "https://linear.app/sabinemr/issue/PER-42/inline-vagaro-notifications-to-disable-guide-during-onboarding",
+      "back_link_added": true
+    },
+    "JOB-1607": {
+      "per_id": "PER-45",
+      "per_url": "https://linear.app/sabinemr/issue/PER-45/waiting-on-pr139-booking-page-duplicate-review-queue-auto-match",
+      "back_link_added": true
+    },
+    "JOB-1605": {
+      "per_id": "PER-46",
+      "per_url": "https://linear.app/sabinemr/issue/PER-46/booking-platform-stack-search-ads",
+      "back_link_added": true
+    },
+    "JOB-1604": {
+      "per_id": "PER-44",
+      "per_url": "https://linear.app/sabinemr/issue/PER-44/hourly-rate-calculator-lead-magnet",
+      "back_link_added": true
+    },
+    "JOB-1597": {
+      "per_id": "PER-47",
+      "per_url": "https://linear.app/sabinemr/issue/PER-47/late-viral-browser-game-about-mobile-service-scheduling-pain",
+      "back_link_added": true
+    },
+    "JOB-1598": {
+      "per_id": "PER-48",
+      "per_url": "https://linear.app/sabinemr/issue/PER-48/impossible-booking-audit-show-merchants-which-no-shows-were-never",
+      "back_link_added": true
+    },
+    "JOB-1531": {
+      "per_id": "PER-49",
+      "per_url": "https://linear.app/sabinemr/issue/PER-49/vagaro-connect-api-key-entry-manual-service-to-vagaro-mapping-ui-mvp",
+      "back_link_added": true
+    },
+    "JOB-1547": {
+      "per_id": "PER-60",
+      "per_url": "https://linear.app/sabinemr/issue/PER-60/header-income-card-real-monthly-total-and-updown-trend",
+      "back_link_added": true
+    },
+    "JOB-1524": {
+      "per_id": "PER-52",
+      "per_url": "https://linear.app/sabinemr/issue/PER-52/onboarding-ask-if-merchant-is-mobile-only-or-also-has-a-physical-shop",
+      "back_link_added": true
+    },
+    "JOB-1527": {
+      "per_id": "PER-51",
+      "per_url": "https://linear.app/sabinemr/issue/PER-51/onboarding-inline-services-form-in-accordion-card",
+      "back_link_added": true
+    },
+    "JOB-1581": {
+      "per_id": "PER-50",
+      "per_url": "https://linear.app/sabinemr/issue/PER-50/onboarding-connect-payments-card-stripe-connect",
+      "back_link_added": true
+    },
+    "JOB-1525": {
+      "per_id": "PER-56",
+      "per_url": "https://linear.app/sabinemr/issue/PER-56/onboarding-mobile-service-sub-mode-step-home-office-or-venue-mobile",
+      "back_link_added": true
+    },
+    "JOB-1582": {
+      "per_id": "PER-61",
+      "per_url": "https://linear.app/sabinemr/issue/PER-61/onboarding-connect-your-scheduling-tool-card-vagaro",
+      "back_link_added": true
+    },
+    "JOB-1529": {
+      "per_id": "PER-54",
+      "per_url": "https://linear.app/sabinemr/issue/PER-54/onboarding-inline-cancellation-policy-form-in-protect-your-business",
+      "back_link_added": true
+    },
+    "JOB-1528": {
+      "per_id": "PER-53",
+      "per_url": "https://linear.app/sabinemr/issue/PER-53/onboarding-inline-expand-the-team-card-solo-shortcut-add-teammate",
+      "back_link_added": true
+    },
+    "JOB-1530": {
+      "per_id": "PER-59",
+      "per_url": "https://linear.app/sabinemr/issue/PER-59/onboarding-book-your-first-client-card-in-accordion",
+      "back_link_added": true
+    },
+    "JOB-1526": {
+      "per_id": "PER-58",
+      "per_url": "https://linear.app/sabinemr/issue/PER-58/onboarding-inline-business-type-picker-in-accordion-card",
+      "back_link_added": true
+    },
+    "JOB-1587": {
+      "per_id": "PER-64",
+      "per_url": "https://linear.app/sabinemr/issue/PER-64/service-grouping-categories-in-services-onboarding-step-booking-page",
+      "back_link_added": true
+    },
+    "JOB-1389": {
+      "per_id": "PER-57",
+      "per_url": "https://linear.app/sabinemr/issue/PER-57/audit-payments-stripe-connect-settings-for-re-configure-ux",
+      "back_link_added": true
+    },
+    "JOB-1558": {
+      "per_id": "PER-62",
+      "per_url": "https://linear.app/sabinemr/issue/PER-62/inline-stripe-connect-payment-methods-merchant-guide-during-onboarding",
+      "back_link_added": true
+    },
+    "JOB-1365": {
+      "per_id": "PER-67",
+      "per_url": "https://linear.app/sabinemr/issue/PER-67/onboarding-checklist-cards-use-non-design-system-borders-and-radius",
+      "back_link_added": true
+    },
+    "JOB-1542": {
+      "per_id": "PER-69",
+      "per_url": "https://linear.app/sabinemr/issue/PER-69/sender-architecture-in-code-contact-form-sends-to-non-existent-address",
+      "back_link_added": true
+    },
+    "JOB-1481": {
+      "per_id": "PER-71",
+      "per_url": "https://linear.app/sabinemr/issue/PER-71/standardize-merchant-transactional-email-template-header-footer-brand",
+      "back_link_added": true
+    },
+    "JOB-1555": {
+      "per_id": "PER-66",
+      "per_url": "https://linear.app/sabinemr/issue/PER-66/demo-seed-data-merchant-fixture-with-last-month-this-month-income-for",
+      "back_link_added": true
+    },
+    "JOB-1422": {
+      "per_id": "PER-63",
+      "per_url": "https://linear.app/sabinemr/issue/PER-63/create-client-client-status-callout-missing-space-after-archived",
+      "back_link_added": true
+    },
+    "JOB-1473": {
+      "per_id": "PER-78",
+      "per_url": "https://linear.app/sabinemr/issue/PER-78/team-member-role-and-provider-status-add-edit-and-list-display",
+      "back_link_added": true
+    },
+    "JOB-1453": {
+      "per_id": "PER-80",
+      "per_url": "https://linear.app/sabinemr/issue/PER-80/booking-page-mvp-ux-improvements-post-walkthrough-redesign",
+      "back_link_added": true
+    },
+    "JOB-1514": {
+      "per_id": "PER-65",
+      "per_url": "https://linear.app/sabinemr/issue/PER-65/per-mode-surcharge-merchant-can-charge-extra-for-in-home-vs-in-vehicle",
+      "back_link_added": true
+    },
+    "JOB-1394": {
+      "per_id": "PER-75",
+      "per_url": "https://linear.app/sabinemr/issue/PER-75/admin-schedule-panel-shift-gate-warning-when-booking-outside-provider",
+      "back_link_added": true
+    },
+    "JOB-1508": {
+      "per_id": "PER-68",
+      "per_url": "https://linear.app/sabinemr/issue/PER-68/booking-confirmation-email-footer-format-phone-and-adopt-standard",
+      "back_link_added": true
+    },
+    "JOB-1510": {
+      "per_id": "PER-73",
+      "per_url": "https://linear.app/sabinemr/issue/PER-73/booking-confirmation-email-primary-cta-button-should-use-merchant",
+      "back_link_added": true
+    },
+    "JOB-1395": {
+      "per_id": "PER-76",
+      "per_url": "https://linear.app/sabinemr/issue/PER-76/schedule-a-shift-element-flickers-once-on-admin-calendar-then-never",
+      "back_link_added": true
+    },
+    "JOB-1495": {
+      "per_id": "PER-70",
+      "per_url": "https://linear.app/sabinemr/issue/PER-70/calendar-settings-panel-ux-polish-clarify-toggle-copy-and-add-empty",
+      "back_link_added": true
+    },
+    "JOB-1499": {
+      "per_id": "PER-72",
+      "per_url": "https://linear.app/sabinemr/issue/PER-72/inactive-or-terminated-team-members-with-orphaned-future-appointments",
+      "back_link_added": true
+    },
+    "JOB-1498": {
+      "per_id": "PER-74",
+      "per_url": "https://linear.app/sabinemr/issue/PER-74/appointment-runs-past-shift-end-duration-aware-soft-block-warning",
+      "back_link_added": true
+    },
+    "JOB-1497": {
+      "per_id": "PER-79",
+      "per_url": "https://linear.app/sabinemr/issue/PER-79/resource-conflict-warning-when-assigning-a-shared-vehicle-to-two",
+      "back_link_added": true
+    },
+    "JOB-1494": {
+      "per_id": "PER-77",
+      "per_url": "https://linear.app/sabinemr/issue/PER-77/default-show-team-member-shifts-calendar-setting-to-on-for-new",
+      "back_link_added": true
+    },
+    "JOB-1411": {
+      "per_id": "PER-82",
+      "per_url": "https://linear.app/sabinemr/issue/PER-82/provider-with-no-shift-is-treated-as-bookable-across-the-admin-booking",
+      "back_link_added": true
+    },
+    "JOB-1406": {
+      "per_id": "PER-88",
+      "per_url": "https://linear.app/sabinemr/issue/PER-88/build-profile-notification-preferences-billing-and-account-events",
+      "back_link_added": true
+    },
+    "JOB-1410": {
+      "per_id": "PER-95",
+      "per_url": "https://linear.app/sabinemr/issue/PER-95/build-booking-event-notification-preferences-by-event-who-triggered",
+      "back_link_added": false
+    },
+    "JOB-1408": {
+      "per_id": "PER-83",
+      "per_url": "https://linear.app/sabinemr/issue/PER-83/remove-dead-merchant-twilio-credential-ui-and-schema-columns",
+      "back_link_added": true
+    },
+    "JOB-1409": {
+      "per_id": "PER-90",
+      "per_url": "https://linear.app/sabinemr/issue/PER-90/client-notifications-channels-sub-page-email-sms-master-toggles",
+      "back_link_added": true
+    },
+    "JOB-1387": {
+      "per_id": "PER-81",
+      "per_url": "https://linear.app/sabinemr/issue/PER-81/audit-team-settings-for-re-configure-ux",
+      "back_link_added": true
+    },
+    "JOB-1393": {
+      "per_id": "PER-99",
+      "per_url": "https://linear.app/sabinemr/issue/PER-99/pick-a-time-visual-polish-date-cell-hierarchy-trailing-month-row-time",
+      "back_link_added": false
+    },
+    "JOB-1456": {
+      "per_id": "PER-107",
+      "per_url": "https://linear.app/sabinemr/issue/PER-107/pick-a-service-page-specification",
+      "back_link_added": false
+    },
+    "JOB-1457": {
+      "per_id": "PER-101",
+      "per_url": "https://linear.app/sabinemr/issue/PER-101/where-should-we-meet-page-specification",
+      "back_link_added": false
+    },
+    "JOB-1445": {
+      "per_id": "PER-85",
+      "per_url": "https://linear.app/sabinemr/issue/PER-85/service-descriptions-admin-field-display-on-customer-booking-card",
+      "back_link_added": false
+    },
+    "JOB-1447": {
+      "per_id": "PER-86",
+      "per_url": "https://linear.app/sabinemr/issue/PER-86/service-card-location-chips-collapse-to-mode-level-at-2-offices",
+      "back_link_added": true
+    },
+    "JOB-1439": {
+      "per_id": "PER-98",
+      "per_url": "https://linear.app/sabinemr/issue/PER-98/polish-billing-page-to-match-job-760-shipped-spec",
+      "back_link_added": false
+    },
+    "JOB-1428": {
+      "per_id": "PER-87",
+      "per_url": "https://linear.app/sabinemr/issue/PER-87/business-type-vocabulary-custom-field-show-in-list-toggle",
+      "back_link_added": false
+    },
+    "JOB-1429": {
+      "per_id": "PER-84",
+      "per_url": "https://linear.app/sabinemr/issue/PER-84/clients-list-restyle-create-client-button",
+      "back_link_added": true
+    },
+    "JOB-1430": {
+      "per_id": "PER-89",
+      "per_url": "https://linear.app/sabinemr/issue/PER-89/clients-list-replace-location-column-with-merchant-configurable",
+      "back_link_added": true
+    },
+    "JOB-1432": {
+      "per_id": "PER-91",
+      "per_url": "https://linear.app/sabinemr/issue/PER-91/client-profile-all-time-date-range-filter-preset-chips-dual-calendar",
+      "back_link_added": true
+    },
+    "JOB-1431": {
+      "per_id": "PER-94",
+      "per_url": "https://linear.app/sabinemr/issue/PER-94/client-profile-all-items-filter-menu-5-items-at-launch",
+      "back_link_added": false
+    },
+    "JOB-1433": {
+      "per_id": "PER-92",
+      "per_url": "https://linear.app/sabinemr/issue/PER-92/client-profile-rename-notes-sidebar-card-to-last-note-view-all-n",
+      "back_link_added": false
+    },
+    "JOB-1421": {
+      "per_id": "PER-93",
+      "per_url": "https://linear.app/sabinemr/issue/PER-93/create-client-panel-second-half-of-form-doesnt-match-first-half",
+      "back_link_added": true
+    },
+    "JOB-1407": {
+      "per_id": "PER-102",
+      "per_url": "https://linear.app/sabinemr/issue/PER-102/add-unsaved-changes-pill-to-the-design-system",
+      "back_link_added": false
+    },
+    "JOB-1424": {
+      "per_id": "PER-97",
+      "per_url": "https://linear.app/sabinemr/issue/PER-97/client-profile-page-doesnt-display-custom-fields-values",
+      "back_link_added": true
+    },
+    "JOB-1423": {
+      "per_id": "PER-96",
+      "per_url": "https://linear.app/sabinemr/issue/PER-96/appointment-custom-fields-dont-surface-in-the-appointment-booking-flow",
+      "back_link_added": true
+    },
+    "JOB-1383": {
+      "per_id": "PER-109",
+      "per_url": "https://linear.app/sabinemr/issue/PER-109/business-type-change-flow-re-configure-copy-current-badge-destructive",
+      "back_link_added": true
+    },
+    "JOB-1390": {
+      "per_id": "PER-100",
+      "per_url": "https://linear.app/sabinemr/issue/PER-100/audit-booking-page-publish-settings-for-re-configure-ux",
+      "back_link_added": false
+    },
+    "JOB-1384": {
+      "per_id": "PER-103",
+      "per_url": "https://linear.app/sabinemr/issue/PER-103/audit-company-information-settings-for-re-configure-ux-operate-mode",
+      "back_link_added": true
+    },
+    "JOB-1386": {
+      "per_id": "PER-104",
+      "per_url": "https://linear.app/sabinemr/issue/PER-104/audit-locations-and-service-area-settings-for-re-configure-ux",
+      "back_link_added": false
+    },
+    "JOB-1388": {
+      "per_id": "PER-105",
+      "per_url": "https://linear.app/sabinemr/issue/PER-105/audit-cancellation-policy-settings-for-re-configure-ux",
+      "back_link_added": false
+    },
+    "JOB-1385": {
+      "per_id": "PER-108",
+      "per_url": "https://linear.app/sabinemr/issue/PER-108/audit-services-settings-for-re-configure-ux",
+      "back_link_added": true
+    },
+    "JOB-1381": {
+      "per_id": "PER-106",
+      "per_url": "https://linear.app/sabinemr/issue/PER-106/custom-fields-modal-scrim-cut-off-above-page-footer",
+      "back_link_added": false
+    },
+    "JOB-699": {
+      "per_id": "PER-112",
+      "per_url": "https://linear.app/sabinemr/issue/PER-112/tasks-page-ui-tabs-auto-changes-log-job-594-follow-up",
+      "back_link_added": true
+    },
+    "JOB-594": {
+      "per_id": "PER-118",
+      "per_url": "https://linear.app/sabinemr/issue/PER-118/extend-tasks-system-auto-created-tasks-for-provider-cancellations-auto",
+      "back_link_added": true
+    },
+    "JOB-552": {
+      "per_id": "PER-126",
+      "per_url": "https://linear.app/sabinemr/issue/PER-126/provider-cancelled-reassignment-cancellation-side-effects-engine",
+      "back_link_added": true
+    },
+    "JOB-1517": {
+      "per_id": "PER-111",
+      "per_url": "https://linear.app/sabinemr/issue/PER-111/card-authorization-disclosure-names-smartroute-as-the-charging-entity",
+      "back_link_added": true
+    },
+    "JOB-1404": {
+      "per_id": "PER-115",
+      "per_url": "https://linear.app/sabinemr/issue/PER-115/drop-settingsbreadcrumbs-site-wide-sidebar-page-title-already-wayfind",
+      "back_link_added": true
+    },
+    "JOB-1506": {
+      "per_id": "PER-110",
+      "per_url": "https://linear.app/sabinemr/issue/PER-110/booking-flow-resets-to-step-1-when-customer-leaves-the-confirmation",
+      "back_link_added": true
+    },
+    "JOB-1486": {
+      "per_id": "PER-123",
+      "per_url": "https://linear.app/sabinemr/issue/PER-123/trial-end-no-cc-copy-wiring-for-day-14-day-51-nudges",
+      "back_link_added": true
+    },
+    "JOB-1504": {
+      "per_id": "PER-124",
+      "per_url": "https://linear.app/sabinemr/issue/PER-124/almost-done-google-places-address-autocomplete-border-doesnt-match-the",
+      "back_link_added": true
+    },
+    "JOB-1520": {
+      "per_id": "PER-119",
+      "per_url": "https://linear.app/sabinemr/issue/PER-119/hold-expired-screen-try-same-time-button-requires-two-clicks-to-re",
+      "back_link_added": true
+    },
+    "JOB-1537": {
+      "per_id": "PER-117",
+      "per_url": "https://linear.app/sabinemr/issue/PER-117/booking-page-match-or-create-client-from-booking-submission",
+      "back_link_added": true
+    },
+    "JOB-1539": {
+      "per_id": "PER-113",
+      "per_url": "https://linear.app/sabinemr/issue/PER-113/trial-end-no-cc-booking-widget-pause-copy-on-bookslug",
+      "back_link_added": true
+    },
+    "JOB-1540": {
+      "per_id": "PER-120",
+      "per_url": "https://linear.app/sabinemr/issue/PER-120/during-trial-merchant-drip-day-0-welcome-day-12-ends-in-2-days",
+      "back_link_added": true
+    },
+    "JOB-742": {
+      "per_id": "PER-114",
+      "per_url": "https://linear.app/sabinemr/issue/PER-114/tech-debt-migrate-appointmentsdate-and-siblings-from-text-to-postgres",
+      "back_link_added": true
+    },
+    "JOB-1348": {
+      "per_id": "PER-116",
+      "per_url": "https://linear.app/sabinemr/issue/PER-116/calendar-preview-block-jumps-to-800-am-when-toggling-location-during",
+      "back_link_added": true
+    },
+    "JOB-1351": {
+      "per_id": "PER-122",
+      "per_url": "https://linear.app/sabinemr/issue/PER-122/calendar-preview-block-doesnt-update-when-start-time-is-changed-in-new",
+      "back_link_added": true
+    },
+    "JOB-1471": {
+      "per_id": "PER-121",
+      "per_url": "https://linear.app/sabinemr/issue/PER-121/settings-sidebar-disappears-when-navigating-to-role-permissions",
+      "back_link_added": true
+    },
+    "JOB-1502": {
+      "per_id": "PER-125",
+      "per_url": "https://linear.app/sabinemr/issue/PER-125/header-phone-number-unformatted-across-booking-flow",
+      "back_link_added": true
+    },
+    "JOB-1503": {
+      "per_id": "PER-128",
+      "per_url": "https://linear.app/sabinemr/issue/PER-128/we-come-to-you-label-reads-as-mobilein-vehicle-but-means-at-customers",
+      "back_link_added": true
+    },
+    "JOB-1513": {
+      "per_id": "PER-132",
+      "per_url": "https://linear.app/sabinemr/issue/PER-132/settings-per-merchant-toggle-for-which-mobile-sub-modes-are-offered-in",
+      "back_link_added": true
+    },
+    "JOB-1516": {
+      "per_id": "PER-133",
+      "per_url": "https://linear.app/sabinemr/issue/PER-133/remove-stripe-link-save-my-info-for-faster-checkout-opt-in-from",
+      "back_link_added": true
+    },
+    "JOB-1522": {
+      "per_id": "PER-131",
+      "per_url": "https://linear.app/sabinemr/issue/PER-131/calendar-event-downloads-remove-confirmation-number-from-google",
+      "back_link_added": true
+    },
+    "JOB-1536": {
+      "per_id": "PER-129",
+      "per_url": "https://linear.app/sabinemr/issue/PER-129/clients-list-shows-invalid-date-under-next-appt-and-never-populates",
+      "back_link_added": true
+    },
+    "JOB-706": {
+      "per_id": "PER-135",
+      "per_url": "https://linear.app/sabinemr/issue/PER-135/calendar-exports-googleoutlookapple-ics-use-full-street-address-for",
+      "back_link_added": true
+    },
+    "JOB-766": {
+      "per_id": "PER-130",
+      "per_url": "https://linear.app/sabinemr/issue/PER-130/snapshot-location-address-on-appointment-at-booking-time-so-calendar",
+      "back_link_added": true
+    },
+    "JOB-1414": {
+      "per_id": "PER-134",
+      "per_url": "https://linear.app/sabinemr/issue/PER-134/cancel-reschedule-and-policy-fee-enforcement",
+      "back_link_added": true
+    },
+    "JOB-1466": {
+      "per_id": "PER-127",
+      "per_url": "https://linear.app/sabinemr/issue/PER-127/sentry-error-rendered-more-hooks-than-during-the-previous-render",
+      "back_link_added": true
+    },
+    "JOB-1512": {
+      "per_id": "PER-141",
+      "per_url": "https://linear.app/sabinemr/issue/PER-141/booking-page-lets-customers-book-providers-without-a-shift-on-partial",
+      "back_link_added": true
+    },
+    "JOB-447": {
+      "per_id": "PER-136",
+      "per_url": "https://linear.app/sabinemr/issue/PER-136/replace-freeform-category-text-input-with-combo-box-and-inline",
+      "back_link_added": true
+    },
+    "JOB-878": {
+      "per_id": "PER-157",
+      "per_url": "https://linear.app/sabinemr/issue/PER-157/billing-downgrade-flow-with-retention-modal-confirm-disabled-until",
+      "back_link_added": true
+    },
+    "JOB-877": {
+      "per_id": "PER-152",
+      "per_url": "https://linear.app/sabinemr/issue/PER-152/billing-upgrade-flow-with-review-panel-stripe-proration",
+      "back_link_added": true
+    },
+    "JOB-887": {
+      "per_id": "PER-146",
+      "per_url": "https://linear.app/sabinemr/issue/PER-146/fix-email-sender-domain-split-merchant-vs-end-customer-senders-3",
+      "back_link_added": true
+    },
+    "JOB-886": {
+      "per_id": "PER-139",
+      "per_url": "https://linear.app/sabinemr/issue/PER-139/configure-dedicated-billingsmart-routeapp-resend-sender-for-dunning",
+      "back_link_added": true
+    },
+    "JOB-452": {
+      "per_id": "PER-138",
+      "per_url": "https://linear.app/sabinemr/issue/PER-138/restyle-mar-dollar000-income-indicator-in-header-add-trend-icon-bold",
+      "back_link_added": true
+    },
+    "JOB-524": {
+      "per_id": "PER-137",
+      "per_url": "https://linear.app/sabinemr/issue/PER-137/booking-page-checkout-screen-all-variants",
+      "back_link_added": true
+    },
+    "JOB-763": {
+      "per_id": "PER-143",
+      "per_url": "https://linear.app/sabinemr/issue/PER-143/signup-capture-operation-type-office-mobile-hybrid-retention",
+      "back_link_added": true
+    },
+    "JOB-720": {
+      "per_id": "PER-144",
+      "per_url": "https://linear.app/sabinemr/issue/PER-144/service-area-validation-customer-checkout-gate-admin-soft-override",
+      "back_link_added": true
+    },
+    "JOB-1392": {
+      "per_id": "PER-155",
+      "per_url": "https://linear.app/sabinemr/issue/PER-155/booking-calendar-shows-phantom-availability-when-no-shifts-exist",
+      "back_link_added": true
+    },
+    "JOB-548": {
+      "per_id": "PER-163",
+      "per_url": "https://linear.app/sabinemr/issue/PER-163/customer-reschedule-flow",
+      "back_link_added": true
+    },
+    "JOB-709": {
+      "per_id": "PER-142",
+      "per_url": "https://linear.app/sabinemr/issue/PER-142/manage-booking-button-on-confirmation-screen-leads-to-invalid-link",
+      "back_link_added": true
+    },
+    "JOB-1440": {
+      "per_id": "PER-148",
+      "per_url": "https://linear.app/sabinemr/issue/PER-148/day-view-loads-with-one-provider-at-full-grid-width-instead-of-the",
+      "back_link_added": true
+    },
+    "JOB-993": {
+      "per_id": "PER-140",
+      "per_url": "https://linear.app/sabinemr/issue/PER-140/health-check-git-hygiene-11-worktrees-5-stashes-12-ahead-commits",
+      "back_link_added": true
+    },
+    "JOB-954": {
+      "per_id": "PER-145",
+      "per_url": "https://linear.app/sabinemr/issue/PER-145/sentry-syntaxerror-unexpected-eof",
+      "back_link_added": true
+    },
+    "JOB-873": {
+      "per_id": "PER-147",
+      "per_url": "https://linear.app/sabinemr/issue/PER-147/run-prisma-migrate-deploy-in-prod-pipeline-to-prevent-schema-drift",
+      "back_link_added": true
+    },
+    "JOB-1353": {
+      "per_id": "PER-149",
+      "per_url": "https://linear.app/sabinemr/issue/PER-149/sentry-error-an-unexpected-response-was-received-from-the-server",
+      "back_link_added": true
+    },
+    "JOB-630": {
+      "per_id": "PER-151",
+      "per_url": "https://linear.app/sabinemr/issue/PER-151/trial-ended-banner-shows-on-desktop-should-be-mobile-only",
+      "back_link_added": true
+    },
+    "JOB-1377": {
+      "per_id": "PER-154",
+      "per_url": "https://linear.app/sabinemr/issue/PER-154/wire-sidebar-roadmap-link-to-roadmapsmart-routeapp",
+      "back_link_added": true
+    },
+    "JOB-932": {
+      "per_id": "PER-153",
+      "per_url": "https://linear.app/sabinemr/issue/PER-153/sentry-syntaxerror-failed-to-execute-appendchild-on-node-invalid-or",
+      "back_link_added": true
+    },
+    "JOB-1492": {
+      "per_id": "PER-156",
+      "per_url": "https://linear.app/sabinemr/issue/PER-156/schedule-error-fallback-accurate-copy-matching-button-labels-single",
+      "back_link_added": true
+    },
+    "JOB-1467": {
+      "per_id": "PER-169",
+      "per_url": "https://linear.app/sabinemr/issue/PER-169/schedule-a-shift-cta-from-calendar-empty-state-hits-cascading-error",
+      "back_link_added": true
+    },
+    "JOB-1364": {
+      "per_id": "PER-160",
+      "per_url": "https://linear.app/sabinemr/issue/PER-160/new-account-inherits-trial-expired-status-from-a-separate-existing",
+      "back_link_added": true
+    },
+    "JOB-680": {
+      "per_id": "PER-159",
+      "per_url": "https://linear.app/sabinemr/issue/PER-159/schedule-exceptions-block-a-specific-date-without-changing-the",
+      "back_link_added": true
+    },
+    "JOB-531": {
+      "per_id": "PER-168",
+      "per_url": "https://linear.app/sabinemr/issue/PER-168/policy-fee-charging-via-stripe-cancel-reschedule-no-show",
+      "back_link_added": true
+    },
+    "JOB-610": {
+      "per_id": "PER-158",
+      "per_url": "https://linear.app/sabinemr/issue/PER-158/smstext-notification-system-for-customer-communications",
+      "back_link_added": true
+    },
+    "JOB-691": {
+      "per_id": "PER-165",
+      "per_url": "https://linear.app/sabinemr/issue/PER-165/card-on-file-must-be-verified-server-side-before-a-booking-is-created",
+      "back_link_added": true
+    },
+    "JOB-1379": {
+      "per_id": "PER-170",
+      "per_url": "https://linear.app/sabinemr/issue/PER-170/new-appointment-selector-preview-too-narrow-horizontally-on-first",
+      "back_link_added": true
+    },
+    "JOB-1346": {
+      "per_id": "PER-167",
+      "per_url": "https://linear.app/sabinemr/issue/PER-167/remove-click-a-providers-name-tip-banner-from-calendar",
+      "back_link_added": true
+    },
+    "JOB-1296": {
+      "per_id": "PER-164",
+      "per_url": "https://linear.app/sabinemr/issue/PER-164/sidebar-vertical-gap-between-recently-viewed-and-roadmap-feels-off",
+      "back_link_added": true
+    },
+    "JOB-1368": {
+      "per_id": "PER-166",
+      "per_url": "https://linear.app/sabinemr/issue/PER-166/remove-duplicate-14-days-left-pill-from-sidebar-top-right-trial-pill",
+      "back_link_added": true
+    },
+    "JOB-688": {
+      "per_id": "PER-172",
+      "per_url": "https://linear.app/sabinemr/issue/PER-172/persist-policy-fee-charge-state-surface-in-admin-modal",
+      "back_link_added": true
+    },
+    "JOB-1464": {
+      "per_id": "PER-161",
+      "per_url": "https://linear.app/sabinemr/issue/PER-161/align-subscribe-modal-title-copy-upgrademodal-start-x-plan-vs",
+      "back_link_added": true
+    },
+    "JOB-714": {
+      "per_id": "PER-162",
+      "per_url": "https://linear.app/sabinemr/issue/PER-162/merge-group-built-screen-into-whos-coming-eliminate-separate-review",
+      "back_link_added": true
+    },
+    "JOB-760": {
+      "per_id": "PER-179",
+      "per_url": "https://linear.app/sabinemr/issue/PER-179/pricing-page-in-app-billing-page-4-tier-cards-enterprise-most-popular",
+      "back_link_added": true
+    },
+    "JOB-551": {
+      "per_id": "PER-173",
+      "per_url": "https://linear.app/sabinemr/issue/PER-173/provider-selection-screen-assignment-method-tracking",
+      "back_link_added": true
+    },
+    "JOB-546": {
+      "per_id": "PER-171",
+      "per_url": "https://linear.app/sabinemr/issue/PER-171/customer-cancel-flow-with-policy-enforcement",
+      "back_link_added": true
+    },
+    "JOB-724": {
+      "per_id": "PER-187",
+      "per_url": "https://linear.app/sabinemr/issue/PER-187/drive-time-retry-safe-failure-policy-for-transient-google-errors",
+      "back_link_added": false
+    },
+    "JOB-695": {
+      "per_id": "PER-174",
+      "per_url": "https://linear.app/sabinemr/issue/PER-174/policy-fee-engine-support-full-service-fee-type-at-runtime",
+      "back_link_added": true
+    },
+    "JOB-668": {
+      "per_id": "PER-178",
+      "per_url": "https://linear.app/sabinemr/issue/PER-178/simplify-fee-settings-one-fee-for-all-actions-remove-separate-no-show",
+      "back_link_added": true
+    },
+    "JOB-666": {
+      "per_id": "PER-175",
+      "per_url": "https://linear.app/sabinemr/issue/PER-175/add-group-booking-language-to-public-cancellation-policy-page",
+      "back_link_added": true
+    },
+    "JOB-616": {
+      "per_id": "PER-180",
+      "per_url": "https://linear.app/sabinemr/issue/PER-180/clinician-schedule-sync-calendar-subscription-sms-change-alerts",
+      "back_link_added": true
+    },
+    "JOB-705": {
+      "per_id": "PER-177",
+      "per_url": "https://linear.app/sabinemr/issue/PER-177/appointment-detail-deep-link-support-job-701-follow-up",
+      "back_link_added": true
+    },
+    "JOB-523": {
+      "per_id": "PER-176",
+      "per_url": "https://linear.app/sabinemr/issue/PER-176/booking-page-time-picker-screen-solo-group",
+      "back_link_added": true
+    },
+    "JOB-683": {
+      "per_id": "PER-190",
+      "per_url": "https://linear.app/sabinemr/issue/PER-190/consolidate-card-hold-copy-on-checkout-remove-3x-reassurance",
+      "back_link_added": false
+    },
+    "JOB-579": {
+      "per_id": "PER-185",
+      "per_url": "https://linear.app/sabinemr/issue/PER-185/booking-window-setting-how-far-in-advance-customers-can-see",
+      "back_link_added": true
+    },
+    "JOB-448": {
+      "per_id": "PER-189",
+      "per_url": "https://linear.app/sabinemr/issue/PER-189/redesign-services-page-table-layout-remove-searchstatscostcolor",
+      "back_link_added": true
+    },
+    "JOB-514": {
+      "per_id": "PER-186",
+      "per_url": "https://linear.app/sabinemr/issue/PER-186/appointment-location-reverts-to-client-home-address-instead-of-being",
+      "back_link_added": true
+    },
+    "JOB-703": {
+      "per_id": "PER-182",
+      "per_url": "https://linear.app/sabinemr/issue/PER-182/ux-regression-calendar-dropped-50-30-fresh-mobile-groomer",
+      "back_link_added": false
+    },
+    "JOB-527": {
+      "per_id": "PER-183",
+      "per_url": "https://linear.app/sabinemr/issue/PER-183/booking-page-slot-hold-error-states",
+      "back_link_added": true
+    },
+    "JOB-657": {
+      "per_id": "PER-193",
+      "per_url": "https://linear.app/sabinemr/issue/PER-193/parent-appointment-status-cascades-to-all-child-sessions-preserve-per",
+      "back_link_added": false
+    },
+    "JOB-522": {
+      "per_id": "PER-184",
+      "per_url": "https://linear.app/sabinemr/issue/PER-184/booking-page-where-stagger-order-screen-group-exceeding-capacity",
+      "back_link_added": true
+    },
+    "JOB-1663": {
+      "per_id": "PER-181",
+      "per_url": "https://linear.app/sabinemr/issue/PER-181/booking-gate-missing-space-after-company-name-namehasnt",
+      "back_link_added": true
+    },
+    "JOB-1652": {
+      "per_id": "PER-188",
+      "per_url": "https://linear.app/sabinemr/issue/PER-188/review-and-ship-smartroute-pr-backlog-batch-train-151-risk-lane",
+      "back_link_added": true
+    },
+    "JOB-1469": {
+      "per_id": "PER-202",
+      "per_url": "https://linear.app/sabinemr/issue/PER-202/merchant-new-booking-email-dispatches-inconsistently-most-appointments",
+      "back_link_added": true
+    },
+    "JOB-500": {
+      "per_id": "PER-191",
+      "per_url": "https://linear.app/sabinemr/issue/PER-191/full-page-standalone-booking-page-mindbody-style",
+      "back_link_added": true
+    },
+    "JOB-503": {
+      "per_id": "PER-194",
+      "per_url": "https://linear.app/sabinemr/issue/PER-194/smartroute-transactional-emails-confirmation-reminders-book-again",
+      "back_link_added": false
+    },
+    "JOB-1396": {
+      "per_id": "PER-199",
+      "per_url": "https://linear.app/sabinemr/issue/PER-199/merchant-new-booking-email-view-appointment-button-renders-invalid",
+      "back_link_added": true
+    },
+    "JOB-722": {
+      "per_id": "PER-192",
+      "per_url": "https://linear.app/sabinemr/issue/PER-192/add-new-address-inline-in-scheduling-panel-not-working",
+      "back_link_added": false
+    },
+    "JOB-569": {
+      "per_id": "PER-198",
+      "per_url": "https://linear.app/sabinemr/issue/PER-198/admin-schedule-panel-any-available-option-with-smart-assignment",
+      "back_link_added": false
+    },
+    "JOB-525": {
+      "per_id": "PER-196",
+      "per_url": "https://linear.app/sabinemr/issue/PER-196/booking-page-confirmation-screen",
+      "back_link_added": true
+    },
+    "JOB-1420": {
+      "per_id": "PER-204",
+      "per_url": "https://linear.app/sabinemr/issue/PER-204/third-party-scheduling-platform-integrations",
+      "back_link_added": true
+    },
+    "JOB-1552": {
+      "per_id": "PER-197",
+      "per_url": "https://linear.app/sabinemr/issue/PER-197/vagaro-vs-booksy-which-platform-unlocks-write-appointment-api-access",
+      "back_link_added": true
+    },
+    "JOB-1434": {
+      "per_id": "PER-195",
+      "per_url": "https://linear.app/sabinemr/issue/PER-195/remove-save-my-information-for-faster-checkout-from-add-card-panel",
+      "back_link_added": true
+    },
+    "JOB-1391": {
+      "per_id": "PER-205",
+      "per_url": "https://linear.app/sabinemr/issue/PER-205/settings-renders-profile-and-security-settingsprofile-is-an-empty-stub",
+      "back_link_added": false
+    },
+    "JOB-1463": {
+      "per_id": "PER-201",
+      "per_url": "https://linear.app/sabinemr/issue/PER-201/modal-upgrade-leaves-subscription-incomplete-paymentintent-never",
+      "back_link_added": false
+    },
+    "JOB-511": {
+      "per_id": "PER-200",
+      "per_url": "https://linear.app/sabinemr/issue/PER-200/onboarding-stripe-connect-account-setup-for-businesses",
+      "back_link_added": true
+    },
+    "JOB-700": {
+      "per_id": "PER-207",
+      "per_url": "https://linear.app/sabinemr/issue/PER-207/admin-schedule-panel-card-on-file-ui-job-674-follow-up",
+      "back_link_added": false
+    },
+    "JOB-458": {
+      "per_id": "PER-203",
+      "per_url": "https://linear.app/sabinemr/issue/PER-203/define-and-document-uiux-standard-for-all-settings-pages-apply",
+      "back_link_added": true
+    },
+    "JOB-553": {
+      "per_id": "PER-212",
+      "per_url": "https://linear.app/sabinemr/issue/PER-212/round-robin-provider-auto-assignment-for-any-available-bookings",
+      "back_link_added": true
+    },
+    "JOB-747": {
+      "per_id": "PER-208",
+      "per_url": "https://linear.app/sabinemr/issue/PER-208/calendar-day-view-todays-appointments-flash-in-then-columns-render",
+      "back_link_added": true
+    },
+    "JOB-755": {
+      "per_id": "PER-211",
+      "per_url": "https://linear.app/sabinemr/issue/PER-211/reconcile-smartroute-pricing-dollar29dollar49dollar79dollar119",
+      "back_link_added": true
+    },
+    "JOB-762": {
+      "per_id": "PER-209",
+      "per_url": "https://linear.app/sabinemr/issue/PER-209/14-day-free-trial-without-credit-card-requirement",
+      "back_link_added": true
+    },
+    "JOB-1354": {
+      "per_id": "PER-206",
+      "per_url": "https://linear.app/sabinemr/issue/PER-206/today-button-on-calendar-jumps-to-midnight-instead-of-current-time",
+      "back_link_added": false
+    },
+    "JOB-1412": {
+      "per_id": "PER-218",
+      "per_url": "https://linear.app/sabinemr/issue/PER-218/new-appointment-panel-location-dropdown-renders-detached-from-input",
+      "back_link_added": false
+    },
+    "JOB-1454": {
+      "per_id": "PER-210",
+      "per_url": "https://linear.app/sabinemr/issue/PER-210/green-the-e2e-suite-in-ci-specs-rotted-while-e2e-was-dormant",
+      "back_link_added": true
+    },
+    "JOB-1483": {
+      "per_id": "PER-214",
+      "per_url": "https://linear.app/sabinemr/issue/PER-214/customer-no-show-notification-email-job-503-follow-up",
+      "back_link_added": true
+    },
+    "JOB-1505": {
+      "per_id": "PER-213",
+      "per_url": "https://linear.app/sabinemr/issue/PER-213/confirmation-location-missing-the-address-renders-mobile-alone",
+      "back_link_added": true
+    },
+    "JOB-1507": {
+      "per_id": "PER-217",
+      "per_url": "https://linear.app/sabinemr/issue/PER-217/remove-confirmation-number-from-booking-confirmation-surfaces-email-in",
+      "back_link_added": false
+    },
+    "JOB-1509": {
+      "per_id": "PER-220",
+      "per_url": "https://linear.app/sabinemr/issue/PER-220/booking-confirmation-email-manage-booking-and-book-again-buttons-dont",
+      "back_link_added": true
+    },
+    "JOB-749": {
+      "per_id": "PER-216",
+      "per_url": "https://linear.app/sabinemr/issue/PER-216/register-twilio-number-18326582799-for-10dlc-a2p-before-sms-launch",
+      "back_link_added": true
+    },
+    "JOB-1484": {
+      "per_id": "PER-225",
+      "per_url": "https://linear.app/sabinemr/issue/PER-225/verify-stripe-connect-end-to-end-card-collection-on-booking-page",
+      "back_link_added": true
+    },
+    "JOB-1592": {
+      "per_id": "PER-215",
+      "per_url": "https://linear.app/sabinemr/issue/PER-215/affiliate-revenue-help-merchants-migrate-to-integrated-platforms",
+      "back_link_added": false
+    },
+    "JOB-1553": {
+      "per_id": "PER-219",
+      "per_url": "https://linear.app/sabinemr/issue/PER-219/outbound-prospect-list-build-find-mobile-services-merchants-on",
+      "back_link_added": false
+    },
+    "JOB-1593": {
+      "per_id": "PER-233",
+      "per_url": "https://linear.app/sabinemr/issue/PER-233/understand-platform-fit-outreach-to-partial-fit-alternatives-squire",
+      "back_link_added": true
+    },
+    "JOB-1541": {
+      "per_id": "PER-221",
+      "per_url": "https://linear.app/sabinemr/issue/PER-221/configure-klaviyo-sender-authentication-for-supportsmart-routeapp",
+      "back_link_added": false
+    },
+    "JOB-1523": {
+      "per_id": "PER-222",
+      "per_url": "https://linear.app/sabinemr/issue/PER-222/calendar-event-payload-renders-provider-undefined-when-no-provider-was",
+      "back_link_added": true
+    },
+    "JOB-738": {
+      "per_id": "PER-229",
+      "per_url": "https://linear.app/sabinemr/issue/PER-229/build-featurebase-driven-email-automation-prospect-warm-lead-ship",
+      "back_link_added": true
+    },
+    "JOB-1579": {
+      "per_id": "PER-224",
+      "per_url": "https://linear.app/sabinemr/issue/PER-224/configure-stripe-native-customer-receipt-emails-dashboard-setup",
+      "back_link_added": true
+    },
+    "JOB-1402": {
+      "per_id": "PER-223",
+      "per_url": "https://linear.app/sabinemr/issue/PER-223/re-create-smart-routeapp-marketing-site",
+      "back_link_added": true
+    },
+    "JOB-1554": {
+      "per_id": "PER-227",
+      "per_url": "https://linear.app/sabinemr/issue/PER-227/founder-led-design-partner-calls-outreach-video-presentation-track-to",
+      "back_link_added": true
+    },
+    "JOB-1285": {
+      "per_id": "PER-231",
+      "per_url": "https://linear.app/sabinemr/issue/PER-231/cold-outreach-setup-outreach-domains-workspace-inboxes-instantly",
+      "back_link_added": true
+    },
+    "JOB-1269": {
+      "per_id": "PER-230",
+      "per_url": "https://linear.app/sabinemr/issue/PER-230/email-auth-setup-for-smart-routeapp-spf-dmarc-vercel-dns",
+      "back_link_added": true
+    },
+    "JOB-1403": {
+      "per_id": "PER-226",
+      "per_url": "https://linear.app/sabinemr/issue/PER-226/brand-visuals-favicon-web-icons-and-email-graphics",
+      "back_link_added": true
+    },
+    "JOB-756": {
+      "per_id": "PER-228",
+      "per_url": "https://linear.app/sabinemr/issue/PER-228/audit-remove-clinic-language-from-help-docs-emails-support-macros-non",
+      "back_link_added": true
+    },
+    "JOB-885": {
+      "per_id": "PER-232",
+      "per_url": "https://linear.app/sabinemr/issue/PER-232/subscription-dunning-policy-7-day-soft-grace-access-states-for-failed",
+      "back_link_added": true
+    }
+  }
+}
