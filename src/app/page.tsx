@@ -4,7 +4,7 @@ import { Header } from '@/components/Header'
 import { ColumnHeader } from '@/components/ColumnHeader'
 import { EpicSection } from '@/components/EpicSection'
 
-export const revalidate = 300
+export const revalidate = 3600
 
 export default async function DashboardPage() {
 	let jobIssues: Awaited<ReturnType<typeof fetchJobIssues>> = []

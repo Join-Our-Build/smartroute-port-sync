@@ -59,7 +59,7 @@ async function fetchAllIssues(apiKey: string, projectId: string): Promise<Node[]
 				query: ISSUES_QUERY,
 				variables: { projectId, after },
 			}),
-			next: { revalidate: 300 },
+			next: { revalidate: 3600 },
 		})
 		if (!res.ok) {
 			const text = await res.text()
