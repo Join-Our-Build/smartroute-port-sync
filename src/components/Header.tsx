@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import { useTransition } from 'react'
+import { refreshDashboard } from '@/app/actions'
 
 export function Header({
 	stats,
@@ -13,7 +14,11 @@ export function Header({
 	const router = useRouter()
 	const [isPending, startTransition] = useTransition()
 
-	const refresh = () => startTransition(() => router.refresh())
+	const refresh = () =>
+		startTransition(async () => {
+			await refreshDashboard()
+			router.refresh()
+		})
 
 	const minsAgo = Math.max(0, Math.round((Date.now() - new Date(lastFetchIso).getTime()) / 60000))
 
