@@ -33,14 +33,18 @@ export function TicketRow({
 				{isEpicHeader ? '▼' : isChild ? (isLast ? '└' : '├') : ''}
 			</div>
 
-			<a
-				href={row.job_url}
-				target="_blank"
-				rel="noopener noreferrer"
-				className="font-mono text-[11px] text-ink hover:text-red hover:underline underline-offset-2 truncate"
-			>
-				{row.job_id}
-			</a>
+			{row.job_id ? (
+				<a
+					href={row.job_url}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="font-mono text-[11px] text-ink hover:text-red hover:underline underline-offset-2 truncate"
+				>
+					{row.job_id}
+				</a>
+			) : (
+				<span className="font-mono text-[11px] text-muted-2">—</span>
+			)}
 
 			<span
 				className="text-[10px] font-medium uppercase tracking-wide truncate"
@@ -57,7 +61,11 @@ export function TicketRow({
 			</span>
 
 			<div className="justify-self-start">
-				<StatusPill status={row.job_status} />
+				{row.job_id ? (
+					<StatusPill status={row.job_status} />
+				) : (
+					<span className="font-mono text-[11px] text-muted-2">—</span>
+				)}
 			</div>
 
 			<a

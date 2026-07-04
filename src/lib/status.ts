@@ -31,6 +31,7 @@ export const TYPE_STYLES: Record<string, { fg: string; label: string }> = {
 	marketing: { fg: '#8A5A2B', label: 'Marketing' },
 	'tech-debt': { fg: '#54524F', label: 'Tech Debt' },
 	infra: { fg: '#57578F', label: 'Infra' },
+	new: { fg: '#2F5D8A', label: 'New' },
 }
 
 export function typeStyle(t: string) {

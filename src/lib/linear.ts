@@ -3,24 +3,35 @@ import type { LiveIssue } from './types'
 const LINEAR_GRAPHQL = 'https://api.linear.app/graphql'
 
 const SMARTROUTE_PROJECT_ID_JOB = '0f9d70d7-bdcd-4b99-80a9-e8c48733787c'
-const NEW_SMARTROUTE_PROJECT_ID_PER = '120e5916-ea87-4784-8e21-f3b41d9329ce'
+const PER_TEAM_KEY = 'PER'
 
-const ISSUES_QUERY = `
+const ISSUE_FIELDS = `
+	identifier
+	title
+	url
+	priority
+	updatedAt
+	state { name type }
+	assignee { name email }
+	parent { identifier }
+`
+
+const PROJECT_ISSUES_QUERY = `
 	query ProjectIssues($projectId: String!, $after: String) {
 		project(id: $projectId) {
 			issues(first: 250, after: $after) {
 				pageInfo { hasNextPage endCursor }
-				nodes {
-					identifier
-					title
-					url
-					priority
-					updatedAt
-					state { name type }
-					assignee { name email }
-					parent { identifier }
-				}
+				nodes { ${ISSUE_FIELDS} }
 			}
+		}
+	}
+`
+
+const TEAM_ISSUES_QUERY = `
+	query TeamIssues($teamKey: String!, $after: String) {
+		issues(filter: { team: { key: { eq: $teamKey } } }, first: 250, after: $after) {
+			pageInfo { hasNextPage endCursor }
+			nodes { ${ISSUE_FIELDS} }
 		}
 	}
 `
@@ -41,11 +52,16 @@ type IssuesPage = {
 	nodes: Node[]
 }
 type GraphQLResponse = {
-	data?: { project?: { issues?: IssuesPage } }
+	data?: Record<string, unknown>
 	errors?: unknown
 }
 
-async function fetchAllIssues(apiKey: string, projectId: string): Promise<Node[]> {
+async function fetchAllIssues(
+	apiKey: string,
+	query: string,
+	variables: Record<string, string>,
+	pluck: (data: Record<string, unknown> | undefined) => IssuesPage | undefined,
+): Promise<Node[]> {
 	const nodes: Node[] = []
 	let after: string | null = null
 	for (let i = 0; i < 20; i++) {
@@ -56,8 +72,8 @@ async function fetchAllIssues(apiKey: string, projectId: string): Promise<Node[]
 				Authorization: apiKey,
 			},
 			body: JSON.stringify({
-				query: ISSUES_QUERY,
-				variables: { projectId, after },
+				query,
+				variables: { ...variables, after },
 			}),
 			next: { revalidate: 3600 },
 		})
@@ -69,7 +85,7 @@ async function fetchAllIssues(apiKey: string, projectId: string): Promise<Node[]
 		if (data.errors) {
 			throw new Error(`Linear GraphQL errors: ${JSON.stringify(data.errors).slice(0, 300)}`)
 		}
-		const issues = data.data?.project?.issues
+		const issues = pluck(data.data)
 		if (!issues) return nodes
 		nodes.push(...issues.nodes)
 		if (!issues.pageInfo.hasNextPage) return nodes
@@ -94,13 +110,23 @@ function toLive(n: Node): LiveIssue {
 export async function fetchJobIssues(): Promise<LiveIssue[]> {
 	const key = process.env.LINEAR_JOB_API_KEY
 	if (!key) throw new Error('LINEAR_JOB_API_KEY is not set')
-	const nodes = await fetchAllIssues(key, SMARTROUTE_PROJECT_ID_JOB)
+	const nodes = await fetchAllIssues(
+		key,
+		PROJECT_ISSUES_QUERY,
+		{ projectId: SMARTROUTE_PROJECT_ID_JOB },
+		(data) => (data?.project as { issues?: IssuesPage } | undefined)?.issues,
+	)
 	return nodes.map(toLive)
 }
 
 export async function fetchPerIssues(): Promise<LiveIssue[]> {
 	const key = process.env.LINEAR_PER_API_KEY
 	if (!key) throw new Error('LINEAR_PER_API_KEY is not set')
-	const nodes = await fetchAllIssues(key, NEW_SMARTROUTE_PROJECT_ID_PER)
+	const nodes = await fetchAllIssues(
+		key,
+		TEAM_ISSUES_QUERY,
+		{ teamKey: PER_TEAM_KEY },
+		(data) => data?.issues as IssuesPage | undefined,
+	)
 	return nodes.map(toLive)
 }

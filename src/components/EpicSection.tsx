@@ -2,14 +2,14 @@ import type { EpicGroup } from '@/lib/types'
 import { TicketRow } from './TicketRow'
 
 export function EpicSection({ group }: { group: EpicGroup }) {
-	const isOrphan = group.job_id === '__orphans__'
+	const isFlat = group.job_id === '__orphans__' || group.job_id === '__per_native__'
 
-	if (isOrphan) {
+	if (isFlat) {
 		return (
 			<section className="mt-6">
 				<div className="flex items-baseline gap-2 py-1.5 px-1 mb-1 sticky top-14 bg-bg z-10 border-b border-rule">
 					<span className="font-medium text-[12px] text-ink">
-						Standalone tickets
+						{group.title}
 					</span>
 					<span className="font-mono text-[10.5px] text-muted-2 tabular-nums">
 						{group.children.length}
@@ -18,7 +18,7 @@ export function EpicSection({ group }: { group: EpicGroup }) {
 				<div>
 					{group.children.map((c, i) => (
 						<TicketRow
-							key={c.job_id}
+							key={c.job_id || c.per_id}
 							row={c}
 							isChild
 							childIndex={i}

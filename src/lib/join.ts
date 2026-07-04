@@ -95,12 +95,50 @@ export function joinData(jobIssues: LiveIssue[], perIssues: LiveIssue[]): EpicGr
 		return b.children.length - a.children.length
 	})
 
+	// PER-native tickets: created directly in PER, no JOB counterpart.
+	// Pinned first — this is the live work, everything below is port history.
+	const mappedPerIds = new Set(Object.values(portMap).map((e) => e.per_id))
+	const perNumber = (id: string) => Number.parseInt(id.split('-')[1] ?? '0', 10)
+	const native = perIssues
+		.filter((p) => !mappedPerIds.has(p.id))
+		.sort((a, b) => perNumber(b.id) - perNumber(a.id))
+	if (native.length > 0) {
+		groups.unshift({
+			job_id: '__per_native__',
+			per_id: '__per_native__',
+			title: 'New in PER',
+			summary: `${native.length} tasks created directly in PER — no JOB counterpart.`,
+			type: 'new',
+			job_status: null,
+			per_status: null,
+			job_url: '',
+			per_url: '',
+			children: native.map((p) => ({
+				job_id: '',
+				per_id: p.id,
+				per_url: p.url,
+				per_url_actual: p.url,
+				type: 'new',
+				summary: '',
+				title: p.title,
+				job_status: null,
+				per_status: p.status,
+				job_url: '',
+				job_priority: null,
+				per_priority: p.priority,
+				epic_id: null,
+				job_updated: null,
+				per_updated: p.updatedAt,
+			})),
+		})
+	}
+
 	return groups
 }
 
 export function computeStats(groups: EpicGroup[]) {
 	const all: TicketRow[] = groups.flatMap((g) => g.children.concat(
-		g.job_id === '__orphans__'
+		g.job_id === '__orphans__' || g.job_id === '__per_native__'
 			? []
 			: [
 					{
@@ -130,7 +168,7 @@ export function computeStats(groups: EpicGroup[]) {
 	}
 	return {
 		total: all.length,
-		epics: groups.filter((g) => g.job_id !== '__orphans__').length,
+		epics: groups.filter((g) => g.job_id !== '__orphans__' && g.job_id !== '__per_native__').length,
 		byPerStatus,
 		byJobStatus,
 	}
