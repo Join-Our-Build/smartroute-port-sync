@@ -37,6 +37,7 @@ export type TicketRow = {
 	epic_id: string | null // JOB-XXX of the epic parent (if any)
 	job_updated: string | null
 	per_updated: string | null
+	tags?: string[] // manual markers from port-map.json, e.g. "post-mvp"
 }
 
 export type EpicGroup = {

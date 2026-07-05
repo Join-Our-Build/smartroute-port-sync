@@ -58,6 +58,15 @@ export function TicketRow({
 				title={row.title}
 			>
 				{row.title}
+				{row.tags?.map((tag) => (
+					<span
+						key={tag}
+						className="ml-2 inline-block align-middle rounded border px-1.5 py-px font-mono text-[9px] uppercase tracking-wide leading-none"
+						style={{ color: '#F2994A', borderColor: '#F2994A66' }}
+					>
+						{tag}
+					</span>
+				))}
 			</span>
 
 			<div className="justify-self-start">

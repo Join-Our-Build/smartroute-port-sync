@@ -4,7 +4,10 @@ import summariesJson from '../data/summaries.json'
 import titlesJson from '../data/titles.json'
 
 type PortMap = {
-	map: Record<string, { per_id: string; per_url: string; back_link_added: boolean }>
+	map: Record<
+		string,
+		{ per_id: string; per_url: string; back_link_added: boolean; tags?: string[] }
+	>
 }
 type Summaries = Record<string, { type: string; summary: string }>
 type Titles = Record<string, { title: string; job_url: string; job_parent_id?: string | null }>
@@ -43,6 +46,7 @@ export function joinData(jobIssues: LiveIssue[], perIssues: LiveIssue[]): EpicGr
 			epic_id: isEpicChild ? jobParent : null,
 			job_updated: job?.updatedAt ?? null,
 			per_updated: per?.updatedAt ?? null,
+			tags: entry.tags,
 		})
 	}
 

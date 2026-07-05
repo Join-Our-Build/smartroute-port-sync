@@ -789,7 +789,8 @@
     "JOB-610": {
       "per_id": "PER-158",
       "per_url": "https://linear.app/sabinemr/issue/PER-158/smstext-notification-system-for-customer-communications",
-      "back_link_added": true
+      "back_link_added": true,
+      "tags": ["post-mvp"]
     },
     "JOB-691": {
       "per_id": "PER-165",
