@@ -14,6 +14,7 @@ const ISSUE_FIELDS = `
 	state { name type }
 	assignee { name email }
 	parent { identifier }
+	labels { nodes { name } }
 `
 
 const PROJECT_ISSUES_QUERY = `
@@ -45,6 +46,7 @@ type Node = {
 	state: { name: string; type: string } | null
 	assignee: { name: string; email: string } | null
 	parent: { identifier: string } | null
+	labels: { nodes: { name: string }[] } | null
 }
 
 type IssuesPage = {
@@ -104,6 +106,7 @@ function toLive(n: Node): LiveIssue {
 		parentId: n.parent?.identifier ?? null,
 		priority: n.priority,
 		updatedAt: n.updatedAt,
+		labels: n.labels?.nodes.map((l) => l.name) ?? [],
 	}
 }
 

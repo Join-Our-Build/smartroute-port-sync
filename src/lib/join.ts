@@ -16,6 +16,19 @@ const portMap = (portMapJson as unknown as PortMap).map
 const summaries = summariesJson as unknown as Summaries
 const titles = titlesJson as unknown as Titles
 
+// A ticket is "post-MVP" if it carries the manual port-map tag OR a live Linear
+// "post-mvp" label. Native PER tickets (no JOB counterpart) only ever have the
+// live label, so tag-only detection would miss them (e.g. PER-249).
+const POST_MVP_TAG = 'post-mvp'
+function rowTags(
+	manual: string[] | undefined,
+	liveLabels: string[] | undefined,
+): string[] | undefined {
+	const set = new Set(manual ?? [])
+	if ((liveLabels ?? []).some((l) => l.toLowerCase() === POST_MVP_TAG)) set.add(POST_MVP_TAG)
+	return set.size ? [...set] : undefined
+}
+
 export function joinData(jobIssues: LiveIssue[], perIssues: LiveIssue[]): EpicGroup[] {
 	const jobById = new Map(jobIssues.map((i) => [i.id, i]))
 	const perById = new Map(perIssues.map((i) => [i.id, i]))
@@ -46,7 +59,7 @@ export function joinData(jobIssues: LiveIssue[], perIssues: LiveIssue[]): EpicGr
 			epic_id: isEpicChild ? jobParent : null,
 			job_updated: job?.updatedAt ?? null,
 			per_updated: per?.updatedAt ?? null,
-			tags: entry.tags,
+			tags: rowTags(entry.tags, per?.labels),
 		})
 	}
 
@@ -133,6 +146,7 @@ export function joinData(jobIssues: LiveIssue[], perIssues: LiveIssue[]): EpicGr
 				epic_id: null,
 				job_updated: null,
 				per_updated: p.updatedAt,
+				tags: rowTags(undefined, p.labels),
 			})),
 		})
 	}
@@ -164,9 +178,13 @@ export function computeStats(groups: EpicGroup[]) {
 					},
 			  ]
 	))
+	// Post-MVP tickets are deferred out of MVP scope. They still render in the
+	// list (with their orange badge), but drop out of the headline total and the
+	// progress denominator — same treatment as Canceled/Duplicate.
+	const scoped = all.filter((r) => !(r.tags ?? []).includes(POST_MVP_TAG))
 	const byPerStatus: Record<string, number> = {}
 	const byJobStatus: Record<string, number> = {}
-	for (const r of all) {
+	for (const r of scoped) {
 		if (r.per_status) byPerStatus[r.per_status] = (byPerStatus[r.per_status] ?? 0) + 1
 		if (r.job_status) byJobStatus[r.job_status] = (byJobStatus[r.job_status] ?? 0) + 1
 	}
@@ -174,9 +192,9 @@ export function computeStats(groups: EpicGroup[]) {
 	// the denominator — they're no longer work, so they neither help nor hurt the %.
 	const done = byPerStatus['Done'] ?? 0
 	const closedOut = (byPerStatus['Canceled'] ?? 0) + (byPerStatus['Duplicate'] ?? 0)
-	const actionable = all.length - closedOut
+	const actionable = scoped.length - closedOut
 	return {
-		total: all.length,
+		total: scoped.length,
 		epics: groups.filter((g) => g.job_id !== '__orphans__' && g.job_id !== '__per_native__').length,
 		done,
 		donePct: actionable > 0 ? Math.round((done / actionable) * 100) : 0,

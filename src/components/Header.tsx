@@ -42,7 +42,7 @@ export function Header({
 					<span
 						className="flex items-center gap-2 font-mono text-[11px] font-medium"
 						style={{ color: 'var(--st-done)' }}
-						title={`${stats.done} of ${stats.total} PER tickets done (canceled/duplicate excluded from %)`}
+						title={`${stats.done} of ${stats.total} PER tickets done (post-mvp, canceled & duplicate excluded)`}
 					>
 						{stats.done} done · {stats.donePct}%
 						<span className="relative h-[3px] w-16 overflow-hidden rounded-full bg-rule">

@@ -19,6 +19,7 @@ export type LiveIssue = {
 	parentId: string | null
 	priority: number
 	updatedAt: string
+	labels?: string[] // live Linear label names, e.g. "post-mvp"
 }
 
 export type TicketRow = {
