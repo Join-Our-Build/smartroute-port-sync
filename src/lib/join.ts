@@ -170,9 +170,16 @@ export function computeStats(groups: EpicGroup[]) {
 		if (r.per_status) byPerStatus[r.per_status] = (byPerStatus[r.per_status] ?? 0) + 1
 		if (r.job_status) byJobStatus[r.job_status] = (byJobStatus[r.job_status] ?? 0) + 1
 	}
+	// Progress: Done over actionable tickets. Canceled/Duplicate are excluded from
+	// the denominator — they're no longer work, so they neither help nor hurt the %.
+	const done = byPerStatus['Done'] ?? 0
+	const closedOut = (byPerStatus['Canceled'] ?? 0) + (byPerStatus['Duplicate'] ?? 0)
+	const actionable = all.length - closedOut
 	return {
 		total: all.length,
 		epics: groups.filter((g) => g.job_id !== '__orphans__' && g.job_id !== '__per_native__').length,
+		done,
+		donePct: actionable > 0 ? Math.round((done / actionable) * 100) : 0,
 		byPerStatus,
 		byJobStatus,
 	}

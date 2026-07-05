@@ -8,7 +8,14 @@ export function Header({
 	stats,
 	lastFetchIso,
 }: {
-	stats: { total: number; epics: number; byPerStatus: Record<string, number>; byJobStatus: Record<string, number> }
+	stats: {
+		total: number
+		epics: number
+		done: number
+		donePct: number
+		byPerStatus: Record<string, number>
+		byJobStatus: Record<string, number>
+	}
 	lastFetchIso: string
 }) {
 	const router = useRouter()
@@ -31,6 +38,19 @@ export function Header({
 					</h1>
 					<span className="font-mono text-[11px] text-muted-2">
 						{stats.total} tickets · {stats.epics} epics
+					</span>
+					<span
+						className="flex items-center gap-2 font-mono text-[11px] font-medium"
+						style={{ color: 'var(--st-done)' }}
+						title={`${stats.done} of ${stats.total} PER tickets done (canceled/duplicate excluded from %)`}
+					>
+						{stats.done} done · {stats.donePct}%
+						<span className="relative h-[3px] w-16 overflow-hidden rounded-full bg-rule">
+							<span
+								className="absolute inset-y-0 left-0 rounded-full"
+								style={{ width: `${stats.donePct}%`, background: 'var(--st-done)' }}
+							/>
+						</span>
 					</span>
 				</div>
 				<div className="flex items-baseline gap-4">
